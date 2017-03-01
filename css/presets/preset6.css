@@ -6,16 +6,16 @@ a,
 .single-table.featured .btn.btn-primary, 
 .contact-info ul li a:hover, 
 #footer .footer-bottom a  {
-  color: #028fcc;
+  color: #f7ca18;
 }
 
 .btn.btn-primary:hover,
 .btn-submit:hover {
-  background-color: #027db3
+  background-color: #d5ab07;
 }
 
 a:hover, a:focus {
-	color: #027db3;
+	color: #d5ab07;
 }
 
 .main-nav, 
@@ -34,64 +34,21 @@ a:hover, a:focus {
 .left-control:hover, 
 .right-control:hover, 
 .folio-overview a:hover {
-  background-color:#028fcc;
+  background-color:#f7ca18;
 }
 
 .twitter-left-control:hover, 
 .twitter-right-control:hover, 
 .btn-loadmore:hover  {
-	border: 1px solid #028fcc;
+	border: 1px solid #f7ca18;
 }
 
 .caption .btn-start:hover, 
 .left-control:hover, 
 .right-control:hover {
-	border-color: #028fcc;
+	border-color: #f7ca18;
 }
 
 .twitter-icon .fa-twitter:after {
-	border-color: #028fcc transparent transparent;
-}
-span.glyphicon.glyphicon-bullhorn{
-	background-color: #028fcc;
-}
-
-.scrollex {
-	background-color: #028fcc;
-}
-
-.scrollexer {
-	background-color: #028fcc;
-}
-
-	.scrollex:hover {
-	padding:0px;
-	margin: 0px;
-	background-color: rgba(0,0,0,.2);
-	
-}
-	.scrollexer:hover {
-	padding-bottom:-190px;
-	margin: 0px;
-	background-color: rgba(0,0,0,.2);
-	
-}
-
-li.dropdown.dropdown-toggle:focus {
-	background-color: #028fcc;
-	color:#fff;
-}
-li.dropdown:focus {
-	background-color: #028fcc;
-	color:#fff;
-}
-
-.dropdown-toggle:hover {
-	background-color: #028fcc;
-	color:#fff;
-}
-
-.dropdown-toggle:focus {
-	background-color: #028fcc;
-	color:#fff;
+	border-color: #f7ca18 transparent transparent;
 }
