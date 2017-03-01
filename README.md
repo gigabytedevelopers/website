@@ -1,4 +1,4 @@
-The Official Open-Source of Gigabyte Developers Incorporated webpage
+Official <a href="http://gigabytedevsic.byethost31.com">Gigabyte Developers Inc</a> website
 ====================================================================
 
 [![Crates.io](https://img.shields.io/crates/l/rustc-serialize.svg)](#)
