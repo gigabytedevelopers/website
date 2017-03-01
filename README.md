@@ -1,5 +1,5 @@
-The Official Open-Source version of Gigabyte Developers Incorporated webpage
-============================================================================
+The Official Open-Source of Gigabyte Developers Incorporated webpage
+====================================================================
 
 [![Crates.io](https://img.shields.io/crates/l/rustc-serialize.svg)](#)
 [![DUB](https://img.shields.io/badge/downloads-1k%2Fweek-blue.svg)]()
