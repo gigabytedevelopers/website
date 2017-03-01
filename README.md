@@ -2,7 +2,7 @@ Official <a href="http://gigabytedevsic.byethost31.com">Gigabyte Developers Inc<
 ====================================================================
 
 [![Crates.io](https://img.shields.io/crates/l/rustc-serialize.svg)](#)
-[![DUB](https://img.shields.io/badge/downloads-1k%2Fweek-blue.svg)]()
+[![DUB](https://img.shields.io/badge/downloads-1k%2Fweek-green.svg)]()
 [![DUB](https://img.shields.io/badge/Powered%20by-PHP-blue.svg)]()
 
 <h1><strong>About The Developer</strong></h1>
