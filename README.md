@@ -1,4 +1,4 @@
-Official <a href="http://gigabytedevsic.byethost31.com">Gigabyte Developers Incorporated</a> website (Open-Source)
+Open-Source <a href="http://gigabytedevsic.byethost31.com">Gigabyte Developers Incorporated</a> website
 ====================================================================
 
 [![Crates.io](https://img.shields.io/crates/l/rustc-serialize.svg)](#)
