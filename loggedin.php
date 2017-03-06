@@ -21,32 +21,6 @@ global $session_user_id;
   <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
   <link rel="stylesheet" href="css/icomoon.css">
-  
-  <script src="js/contactjs/jquery-migrate-1.1.1.js"></script>
-
-<script src="js/contactjs/jquery.easing.1.3.js"></script>
-
-<script src="js/contactjs/script.js"></script> 
-
-<script src="js/contactjs/superfish.js"></script>
-
-<script src="js/contactjs/jquery.equalheights.js"></script>
-
-<script src="js/contactjs/jquery.mobilemenu.js"></script>
-
-<script src="js/contactjs/tmStickUp.js"></script>
-
-<script src="js/contactjs/jquery.ui.totop.js"></script>
-
-  <script src="js/contactjs/TMForm.js"></script>
-  
-  <script src="js/contactjs/modal.js"></script>
-
-  <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-  <![endif]-->
-  
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="images/gigaicon.ico">
 </head><!--/head-->
@@ -61,14 +35,6 @@ global $session_user_id;
 		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
 		fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
-	
-  <!--.preloader-->
-<!--  <div id="loadingScreen" class="loading-screen">
-        <span class="css-animations loading-screen logos animates">GIGABYTE</span>
-    </div> -->
-  <!--<div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>-->
-  <!--/.preloader-->
-
 <noscript>
   <p>To contact us, please enable JavaScript in your browser, and then reload this page.</p>
 </noscript>
@@ -132,8 +98,6 @@ global $session_user_id;
           </div>
         </div>
       </div>
-      <!-- <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-      <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a> -->
 
       <a id="tohash" href="#services"><i class="fa fa-angle-down"></i></a>
 
@@ -753,88 +717,6 @@ if (is_admin($session_user_id, 1) === true) {
           <p>Latest updates on the happenings at Gigabyte Developers Incorporated, latest tutorials by our team regarding lots and lots of programming languages and some Software Development platforms. </p>
         </div>
       </div>
-       <!-- <div class="blog-posts">
-        <div class="row">
-          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="post-thumb">
-              <a href="#"><img class="img-responsive" src="images/blog/1.jpg" alt=""></a> 
-              <div class="post-meta">
-                <span><i class="fa fa-comments-o"></i> 3 Comments</span>
-                <span><i class="fa fa-heart"></i> 0 Likes</span> 
-              </div>
-              <div class="post-icon">
-                <i class="fa fa-pencil"></i>
-              </div>
-            </div>
-            <div class="entry-header">
-              <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h3>
-              <span class="date">June 26, 2014</span>
-              <span class="cetagory">in <strong>Photography</strong></span>
-            </div>
-            <div class="entry-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="post-thumb">
-              <div id="post-carousel"  class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#post-carousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#post-carousel" data-slide-to="1"></li>
-                  <li data-target="#post-carousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <a href="#"><img class="img-responsive" src="images/blog/2.jpg" alt=""></a>
-                  </div>
-                  <div class="item">
-                    <a href="#"><img class="img-responsive" src="images/blog/1.jpg" alt=""></a>
-                  </div>
-                  <div class="item">
-                    <a href="#"><img class="img-responsive" src="images/blog/3.jpg" alt=""></a>
-                  </div>
-                </div>                               
-                <a class="blog-left-control" href="#post-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-                <a class="blog-right-control" href="#post-carousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
-              </div>                            
-              <div class="post-meta">
-                <span><i class="fa fa-comments-o"></i> 3 Comments</span>
-                <span><i class="fa fa-heart"></i> 0 Likes</span> 
-              </div>
-              <div class="post-icon">
-                <i class="fa fa-picture-o"></i>
-              </div>
-            </div>
-            <div class="entry-header">
-              <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h3>
-              <span class="date">June 26, 2014</span>
-              <span class="cetagory">in <strong>Photography</strong></span>
-            </div>
-            <div class="entry-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
-            <div class="post-thumb">
-              <a href="#"><img class="img-responsive" src="images/blog/3.jpg" alt=""></a>
-              <div class="post-meta">
-                <span><i class="fa fa-comments-o"></i> 3 Comments</span>
-                <span><i class="fa fa-heart"></i> 0 Likes</span> 
-              </div>
-              <div class="post-icon">
-                <i class="fa fa-video-camera"></i>
-              </div>
-            </div>
-            <div class="entry-header">
-              <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h3>
-              <span class="date">June 26, 2014</span>
-              <span class="cetagory">in <strong>Photography</strong></span>
-            </div>
-            <div class="entry-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
-          </div>                    
-        </div> -->
 		
 		<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgigabytedevelopersinc%2F&tabs=timeline&width=300&height=400&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="382" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 		
@@ -843,8 +725,6 @@ if (is_admin($session_user_id, 1) === true) {
 		
 		<a class="twitter-timeline" href="https://twitter.com/gigabytedevsinc" data-widget-id="740168844568842240">Tweets by @gigabytedevsinc</a>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-		
-		<!--<a class="twitter-timeline" data-lang="en" data-width="400" data-height="400" data-dnt="true" href="https://twitter.com/theaccess_team">Tweets by theaccess_team</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 	
 	
         <div class="load-more wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
@@ -1122,5 +1002,16 @@ $(window).scroll(function () {
 <script type="text/javascript" src="js/jquery.sudoSlider.min.js"></script>
 <script type="text/javascript" src="js/global.js"></script>
 <script type="text/javascript" src="js/modernizr.js"></script>
+<script src="js/contactjs/jquery-migrate-1.1.1.js"></script>
+<script src="js/contactjs/jquery.easing.1.3.js"></script>
+<script src="js/contactjs/script.js"></script> 
+<script src="js/contactjs/superfish.js"></script>
+<script src="js/contactjs/jquery.equalheights.js"></script>
+<script src="js/contactjs/jquery.mobilemenu.js"></script>
+<script src="js/contactjs/tmStickUp.js"></script>
+<script src="js/contactjs/jquery.ui.totop.js"></script>
+<script src="js/contactjs/TMForm.js"></script> 
+<script src="js/contactjs/modal.js"></script>
+
 </body>
 </html>

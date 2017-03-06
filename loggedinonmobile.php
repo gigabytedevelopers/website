@@ -87,8 +87,6 @@ global $session_user_id;
           </div>
         </div>
       </div>
-      <!-- <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-      <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a> -->
 
       <a id="tohash" href="#services"><i class="fa fa-angle-down"></i></a>
 
@@ -565,9 +563,9 @@ global $session_user_id;
           <div class="col-sm-3">
             <div class="single-table">
               <h3>Free Plan</h3>
-              <!-- <div class="price">
+              <div class="price">
                 $0<span>/Month</span>                          
-              </div> -->
+              </div>
               <ul>
                 <li>Introductory Python Classes</li>
                 <li>Introductory HTML/CSS Classes</li>
@@ -585,9 +583,9 @@ global $session_user_id;
           <div class="col-sm-3">
             <div class="single-table">
               <h3>Basic Plan</h3>
-              <!-- <div class="price">
+              <div class="price">
                 $0<span>/Month</span>                                
-              </div> -->
+              </div>
               <ul>
                 <li>Basic Python Classes</li>
                 <li>Basic HTML/CSS Classes</li>
@@ -605,9 +603,9 @@ global $session_user_id;
           <div class="col-sm-3">
             <div class="single-table featured">
               <h3>Standard Plan</h3>
-              <!-- <div class="price">
+              <div class="price">
                 $0<span>/Month</span>                                
-              </div> -->
+              </div>
               <ul>
                 <li>Standard Python Classes</li>
                 <li>Standard HTML/CSS Classes</li>
@@ -625,9 +623,9 @@ global $session_user_id;
           <div class="col-sm-3">
             <div class="single-table">
              <h3>Professional Plan</h3>
-              <!-- <div class="price">
+              <div class="price">
                 $0<span>/Month</span>                    
-              </div> -->
+              </div>
               <ul>
                 <li>Professional Python Classes</li>
                 <li>Professional HTML Classes</li>
@@ -653,8 +651,6 @@ global $session_user_id;
 
   <section id="twitter" class="parallax">
     <div>
-      <!-- <a class="twitter-left-control" href="#twitter-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-      <a class="twitter-right-control" href="#twitter-carousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a> -->
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
@@ -695,9 +691,6 @@ global $session_user_id;
 		
 		<a class="twitter-timeline" href="https://twitter.com/gigabytedevsinc" data-widget-id="740168844568842240">Tweets by @gigabytedevsinc</a>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-		
-		<!--<a class="twitter-timeline" data-lang="en" data-width="400" data-height="400" data-dnt="true" href="https://twitter.com/theaccess_team">Tweets by theaccess_team</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-	
 	
         <div class="load-more">
           <a href="#" class="btn-loadmore" data-single_url="portfolio-single.html"><i class="fa fa-repeat"></i> Load More</a>
@@ -884,7 +877,6 @@ global $session_user_id;
             <p>&copy; 2016 Gigabyte Developers Incorporated.</p>
           </div>
           <div class="col-sm-6">
-            <!-- <p class="pull-right">Crafted by <a href="http://designscrazed.org/">Allie</a></p> -->
           </div>
         </div>
       </div>

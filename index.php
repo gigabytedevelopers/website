@@ -21,26 +21,6 @@ global $session_user_id;
   <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
   <link rel="stylesheet" href="css/icomoon.css">
-  
-  <script src="js/contactjs/jquery-migrate-1.1.1.js"></script>
-
-<script src="js/contactjs/jquery.easing.1.3.js"></script>
-
-<script src="js/contactjs/script.js"></script> 
-
-<script src="js/contactjs/superfish.js"></script>
-
-<script src="js/contactjs/jquery.equalheights.js"></script>
-
-<script src="js/contactjs/jquery.mobilemenu.js"></script>
-
-<script src="js/contactjs/tmStickUp.js"></script>
-
-<script src="js/contactjs/jquery.ui.totop.js"></script>
-
-  <script src="js/contactjs/TMForm.js"></script>
-  
-  <script src="js/contactjs/modal.js"></script>
 
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -55,7 +35,7 @@ global $session_user_id;
   <script type="text/javascript">
   <!--
   if (screen.width <= 800) {
-    window.location = "http://www.gigabytedevsinc.byethost31.com/mobile";
+    window.location = "http://localhost/gigabytedevsincnew/mobile";
   }
   //-->
 </script>
@@ -652,9 +632,9 @@ function opendialog(page) {
           <div class="col-sm-3">
             <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
               <h3>Free Plan</h3>
-              <!-- <div class="price">
+              <div class="price">
                 $0<span>/Month</span>                          
-              </div> -->
+              </div>
               <ul>
                 <li>Introductory Python Classes</li>
                 <li>Introductory HTML/CSS Classes</li>
@@ -672,9 +652,9 @@ function opendialog(page) {
           <div class="col-sm-3">
             <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
               <h3>Basic Plan</h3>
-              <!-- <div class="price">
+              <div class="price">
                 $0<span>/Month</span>                                
-              </div> -->
+              </div>
               <ul>
                 <li>Basic Python Classes</li>
                 <li>Basic HTML/CSS Classes</li>
@@ -692,9 +672,9 @@ function opendialog(page) {
           <div class="col-sm-3">
             <div class="single-table featured wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
               <h3>Standard Plan</h3>
-              <!-- <div class="price">
+              <div class="price">
                 $0<span>/Month</span>                                
-              </div> -->
+              </div>
               <ul>
                 <li>Standard Python Classes</li>
                 <li>Standard HTML/CSS Classes</li>
@@ -712,9 +692,9 @@ function opendialog(page) {
           <div class="col-sm-3">
             <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
              <h3>Professional Plan</h3>
-              <!-- <div class="price">
+              <div class="price">
                 $0<span>/Month</span>                    
-              </div> -->
+              </div>
               <ul>
                 <li>Professional Python Classes</li>
                 <li>Professional HTML Classes</li>
@@ -776,88 +756,6 @@ function opendialog(page) {
           <p>Latest updates on the happenings at Gigabyte Developers Incorporated, latest tutorials by our team regarding lots and lots of programming languages and some Software Development platforms. </p>
         </div>
       </div>
-       <!-- <div class="blog-posts">
-        <div class="row">
-          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="post-thumb">
-              <a href="#"><img class="img-responsive" src="images/blog/1.jpg" alt=""></a> 
-              <div class="post-meta">
-                <span><i class="fa fa-comments-o"></i> 3 Comments</span>
-                <span><i class="fa fa-heart"></i> 0 Likes</span> 
-              </div>
-              <div class="post-icon">
-                <i class="fa fa-pencil"></i>
-              </div>
-            </div>
-            <div class="entry-header">
-              <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h3>
-              <span class="date">June 26, 2014</span>
-              <span class="cetagory">in <strong>Photography</strong></span>
-            </div>
-            <div class="entry-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="post-thumb">
-              <div id="post-carousel"  class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#post-carousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#post-carousel" data-slide-to="1"></li>
-                  <li data-target="#post-carousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <a href="#"><img class="img-responsive" src="images/blog/2.jpg" alt=""></a>
-                  </div>
-                  <div class="item">
-                    <a href="#"><img class="img-responsive" src="images/blog/1.jpg" alt=""></a>
-                  </div>
-                  <div class="item">
-                    <a href="#"><img class="img-responsive" src="images/blog/3.jpg" alt=""></a>
-                  </div>
-                </div>                               
-                <a class="blog-left-control" href="#post-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-                <a class="blog-right-control" href="#post-carousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
-              </div>                            
-              <div class="post-meta">
-                <span><i class="fa fa-comments-o"></i> 3 Comments</span>
-                <span><i class="fa fa-heart"></i> 0 Likes</span> 
-              </div>
-              <div class="post-icon">
-                <i class="fa fa-picture-o"></i>
-              </div>
-            </div>
-            <div class="entry-header">
-              <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h3>
-              <span class="date">June 26, 2014</span>
-              <span class="cetagory">in <strong>Photography</strong></span>
-            </div>
-            <div class="entry-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
-          </div>
-          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
-            <div class="post-thumb">
-              <a href="#"><img class="img-responsive" src="images/blog/3.jpg" alt=""></a>
-              <div class="post-meta">
-                <span><i class="fa fa-comments-o"></i> 3 Comments</span>
-                <span><i class="fa fa-heart"></i> 0 Likes</span> 
-              </div>
-              <div class="post-icon">
-                <i class="fa fa-video-camera"></i>
-              </div>
-            </div>
-            <div class="entry-header">
-              <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h3>
-              <span class="date">June 26, 2014</span>
-              <span class="cetagory">in <strong>Photography</strong></span>
-            </div>
-            <div class="entry-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
-          </div>                    
-        </div> -->
 		
 		<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgigabytedevelopersinc%2F&tabs=timeline&width=300&height=400&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="382" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 		
@@ -906,7 +804,7 @@ function opendialog(page) {
 	<!-- greywrap -->
 
   <section id="contact">
- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15885.369892254239!2d7.489328367024799!3d5.516085470816583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042c334a5b7942b%3A0xf1cad6c310f743d0!2sWorld+Bank+Estate!5e0!3m2!1sen!2sng!4v1466686298378" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15885.369892254239!2d7.489328367024799!3d5.516085470816583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042c334a5b7942b%3A0xf1cad6c310f743d0!2sWorld+Bank+Estate!5e0!3m2!1sen!2sng!4v1466686298378" class="mapiframe" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     <div id="contact-us" class="parallax">
       <div class="container">
         <div class="row">
@@ -1039,7 +937,7 @@ function opendialog(page) {
     <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
       <div class="container text-center">
         <div class="footer-logo">
-          <a href="index.html"><img class="img-responsive" src="images/gigalogo.png" alt=""></a>
+          <a href="index"><img class="img-responsive" src="images/gigalogo.png" alt=""></a>
         </div>
         <div class="social-icons">
           <ul>
@@ -1123,5 +1021,15 @@ $(window).scroll(function () {
 <script type="text/javascript" src="js/jquery.sudoSlider.min.js"></script>
 <script type="text/javascript" src="js/global.js"></script>
 <script type="text/javascript" src="js/modernizr.js"></script>
+<script src="js/contactjs/jquery-migrate-1.1.1.js"></script>
+<script src="js/contactjs/jquery.easing.1.3.js"></script>
+<script src="js/contactjs/script.js"></script> 
+<script src="js/contactjs/superfish.js"></script>
+<script src="js/contactjs/jquery.equalheights.js"></script>
+<script src="js/contactjs/jquery.mobilemenu.js"></script>
+<script src="js/contactjs/tmStickUp.js"></script>
+<script src="js/contactjs/jquery.ui.totop.js"></script>
+<script src="js/contactjs/TMForm.js"></script>
+<script src="js/contactjs/modal.js"></script>
 </body>
 </html>
