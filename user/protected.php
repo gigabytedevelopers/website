@@ -6,13 +6,13 @@ include 'core/init.php';
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> 
+<!--[if (gt IE 9)|!(IE)]><!-->
 <html lang="en" class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="UTF-8" />
         <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
         <title>Gigabyte Developers Incorporated | No Access</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Official User Page of Gigabyte Developers Incorporated" />
         <meta name="keywords" content="php, ajax, javascript, jquery, aspx, python, html5, css3, form, switch, animation, :target, pseudo-class" />
         <meta name="author" content="Gigabyte Developers Incorporated" />
@@ -44,7 +44,7 @@ include 'core/init.php';
 					<a href="index3.html" class="current-demo">Demo 3</a>
 				</nav> -->
             </header>
-            <section>				
+            <section>
                 <div id="container_demo" >
                     <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
                     <a class="hiddenanchor" id="toregister"></a>

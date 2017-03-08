@@ -14,7 +14,7 @@ global $session_user_id;
   <meta name="author" content="Gigabyte Developers Incorporated">
   <title>Gigabyte Developers Incorporated | Home</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/animate.min.css" rel="stylesheet"> 
+  <link href="css/animate.min.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/lightbox.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
@@ -104,18 +104,18 @@ global $session_user_id;
           </button>
           <a class="navbar-brand" href="index">
             <h1><img class="img-responsive" src="images/gigalogo.png" alt="logo"></h1>
-          </a>                    
+          </a>
         </div>
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">                 
+          <ul class="nav navbar-nav navbar-right">
             <li class="scroll active"><a href="#home">Home</a></li>
-            <li class="scroll"><a href="#services">Service</a></li> 
-            <li class="scroll"><a href="#about-us">About Us</a></li>                     
+            <li class="scroll"><a href="#services">Service</a></li>
+            <li class="scroll"><a href="#about-us">About Us</a></li>
             <li class="scroll"><a href="#portfolio">Portfolio</a></li>
             <li class="scroll"><a href="#team">Team</a></li>
 			<li class="scroll"><a href="#classes">Classes</a></li>
             <li class="scroll"><a href="#blog">Blog</a></li>
-            <li class="scroll"><a href="#contact">Contact</a></li>   
+            <li class="scroll"><a href="#contact">Contact</a></li>
 			<li class="dropdown">
             <a id="drop1" href="javascript:void(0)" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile Menu<b class="caret"></b></a>
             <ul class="dropdown-menu" aria-labelledby="drop1">
@@ -136,7 +136,7 @@ global $session_user_id;
             <h2>Our Services</h2>
             <p>Our team at Gigabyte Developers Incorporated work ceaselessly to offer you a wide range of professional services in and outside the computer world of technologies. You can also <a href="contact" target="_blank">Contact Us</a> if you want to know more about the services we render to our customers.</p>
           </div>
-        </div> 
+        </div>
       </div>
       <div class="text-center our-services">
         <div class="row">
@@ -242,7 +242,7 @@ global $session_user_id;
           <h2>Our Portfolio</h2>
           <p>Here are some visual representation of our abilities, skills, capabilities, knowledge, qualities and potential. Some materials in this section represent tangible work related events at Gigabyte Developers Incorporated.</p>
         </div>
-      </div> 
+      </div>
     </div>
     <div class="container-fluid">
       <div class="row">
@@ -516,7 +516,7 @@ global $session_user_id;
             </div>
           </div>
         </div>
-      </div>            
+      </div>
     </div>
   </section><!--/#team-->
 
@@ -530,19 +530,19 @@ global $session_user_id;
         </div>
         <div class="col-sm-3 col-xs-6">
           <i class="fa fa-desktop"></i>
-          <h3>200+</h3>                    
+          <h3>200+</h3>
           <p>Modern Websites</p>
-        </div> 
+        </div>
         <div class="col-sm-3 col-xs-6">
           <i class="fa fa-trophy"></i>
-          <h3 class="timer">10</h3>                    
+          <h3 class="timer">10</h3>
           <p>WINNING AWARDS</p>
-        </div> 
+        </div>
         <div class="col-sm-3 col-xs-6">
-          <i class="fa fa-comment-o"></i>                    
+          <i class="fa fa-comment-o"></i>
           <h3>24/7</h3>
           <p>Fast Support</p>
-        </div>                 
+        </div>
       </div>
     </div>
   </section><!--/#features-->
@@ -560,7 +560,7 @@ global $session_user_id;
             <div class="single-table">
               <h3>Free Plan</h3>
               <!-- <div class="price">
-                $0<span>/Month</span>                          
+                $0<span>/Month</span>
               </div> -->
               <ul>
                 <li>Introductory Python Classes</li>
@@ -580,7 +580,7 @@ global $session_user_id;
             <div class="single-table">
               <h3>Basic Plan</h3>
               <!-- <div class="price">
-                $0<span>/Month</span>                                
+                $0<span>/Month</span>
               </div> -->
               <ul>
                 <li>Basic Python Classes</li>
@@ -600,7 +600,7 @@ global $session_user_id;
             <div class="single-table featured">
               <h3>Standard Plan</h3>
               <!-- <div class="price">
-                $0<span>/Month</span>                                
+                $0<span>/Month</span>
               </div> -->
               <ul>
                 <li>Standard Python Classes</li>
@@ -620,7 +620,7 @@ global $session_user_id;
             <div class="single-table">
              <h3>Professional Plan</h3>
               <!-- <div class="price">
-                $0<span>/Month</span>                    
+                $0<span>/Month</span>
               </div> -->
               <ul>
                 <li>Professional Python Classes</li>
@@ -664,11 +664,11 @@ global $session_user_id;
                 <div class="item">
                   <p>Introducing Shortcode generator for Helix V2 based templates <a href="#"><span>#helixframework #joomla</span> http://bit.ly/1qlgwav</a></p>
                 </div>
-                <div class="item">                                
+                <div class="item">
                   <p>Introducing Shortcode generator for Helix V2 based templates <a href="#"><span>#helixframework #joomla</span> http://bit.ly/1qlgwav</a></p>
                 </div>
-              </div>                        
-            </div>                    
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -683,19 +683,19 @@ global $session_user_id;
         </div>
       </div>
 		<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgigabytedevelopersinc%2F&tabs=timeline&width=300&height=400&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="382" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-		
+
 		<a class="twitter-timeline" href="https://twitter.com/Enwokoma" data-widget-id="740163416065724417">Tweets by @Enwokoma</a>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-		
+
 		<a class="twitter-timeline" href="https://twitter.com/gigabytedevsinc" data-widget-id="740168844568842240">Tweets by @gigabytedevsinc</a>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-		
+
 		<!--<a class="twitter-timeline" data-lang="en" data-width="400" data-height="400" data-dnt="true" href="https://twitter.com/theaccess_team">Tweets by theaccess_team</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-	
-	
+
+
         <div class="load-more">
           <a href="#" class="btn-loadmore" data-single_url="portfolio-single.html"><i class="fa fa-repeat"></i> Load More</a>
-        </div>                
+        </div>
       </div>
     </div>
 	  <div id="portfolio-single-wrap">
@@ -703,7 +703,7 @@ global $session_user_id;
 		  </div>
 	  </div><!-- /#portfolio-single-wrap -->
   </section><!--/#blog-->
-  
+
 	<!-- ==== GREYWRAP ==== -->
 	<div id="greywrap">
 		<div class="container">
@@ -744,7 +744,7 @@ global $session_user_id;
                     <div class="form-group">
                       <input type="text" name="name" class="form-control" placeholder="Name" required="required">
                     </div>
-                  </div> 
+                  </div>
                   <div class="col-sm-6">
                     <div class="form-group">
                       <input type="email" name="email" class="form-control" placeholder="Email Address" required="required">
@@ -756,11 +756,11 @@ global $session_user_id;
                 </div>
                 <div class="form-group">
                   <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
-                </div>                        
+                </div>
                 <div class="form-group">
                   <button data-type="submit" class="btn-submit" name="submit" id="send"> Send Now</button>
                 </div>
-              </form>  
+              </form>
             </div>
             <div class="col-sm-6">
               <div class="contact-info">
@@ -771,12 +771,12 @@ global $session_user_id;
                   <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="mailto:gigabytedevelopers@gmail.com"> gigabytedevelopers@gmail.com</a></li>
                   <li><i class="fa fa-globe"></i> <span> Website:</span> <a href="http://www.gigsbytedevelopersinc.netai.net" target="_blank">www.gigabytedevelopersinc.com</a></li>
                 </ul>
-              </div>                            
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>        
+    </div>
   </section><!--/#contact-->
 	<div class="partners">
 		<div class="container">
@@ -784,7 +784,7 @@ global $session_user_id;
 				<div class="col-lg-12">
 					<h2 class="heading">Our Partners</h2></div>
 				</div>
-				<div class="col-xs-12"> 
+				<div class="col-xs-12">
 					<div class="row">
 						<nav>
 							<ul>
@@ -819,7 +819,7 @@ global $session_user_id;
 					<span class="icon icon-facebook"></span> <a href="http://www.facebook.com/gigabytedevelopersinc" target="_blank"> Gigabyte Developers Incorporated </a> <br/>
 				</p>
 			</div><!-- col -->
-			
+
 			<div class="col-lg-4">
 				<h3>Newsletter</h3>
 				<p>Register to our newsletter and be updated with the latests information regarding our services, offers and much more.</p>
@@ -845,7 +845,7 @@ global $session_user_id;
 					</form><!-- form -->
 				</p>
 			</div><!-- col -->
-			
+
 			<div class="col-lg-4">
 				<h3>Support Us</h3>
 				<p>Do you love our work and would like us to achieve more? If, yes! Then why not support us to aid our continuity by simply clicking on the donate button below and donate to us. No amount is too small.<br/>Note: "God loves a cheerfull giver"!</p>
@@ -863,7 +863,7 @@ global $session_user_id;
           <ul>
             <li><a class="twitter" href="http://www.twitter.com/gigabytedevsinc" target="_blank"><i class="fa fa-twitter"></i></a></li>
             <li><a class="facebook" href="http://www.facebook.com/gigabytedevelopersinc" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="googleplus" href="http://plus.google.com/+GigabyteDevelopers" target="_blank"><i class="fa fa-google-plus"></i></a></li> 
+            <li><a class="googleplus" href="http://plus.google.com/+GigabyteDevelopers" target="_blank"><i class="fa fa-google-plus"></i></a></li>
             <li><a class="pinterest" href="http://pinterest.com/gigabytedevsinc" target="_blank"><i class="fa fa-pinterest"></i></a></li>
             <li><a class="skype" href="skype:emmanuel.nwokoma?call"><i class="fa fa-skype"></i></a></li>
             <li><a class="linkedin" href="http://www.linkedin.com/emmanuelnwokoma" target="_blank"><i class="fa fa-linkedin"></i></a></li>
