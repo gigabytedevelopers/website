@@ -1,87 +1,1 @@
-
-.carousel_wrapper {
-	background-color: #6b7494;
-	padding: 86px 0 0;
-}
-
-#owl {
-	padding-bottom: 183px;
-	z-index: 1;
-	position: relative;
-	margin: 0 -15px;
-}
-
-.owl_link {
-	color: #fff;
-	display: inline-block;
-	margin-bottom: 37px;
-	font: 30px/52px 'Marvel', sans-serif;
-}
-
-.owl-item {
-	float: left;
-}
-
-#owl .item {
-	padding: 0 15px;
-	position: relative;
-	overflow: hidden;
-	text-align: center;
-}
-
-#owl .item .color2 {
-	font-weight: normal;
-}
-
-#owl .banner_title {
-	padding-bottom: 76px;
-}
-
-#owl .banner_title:after {
-	bottom: 53px;
-}
-
-#owl .banner p {
-	padding: 49px 48px 0;
-	margin-bottom: 32px;
-}
-
-#owl .item .banner {
-	margin: 0;
-}
-
-#owl .owl-wrapper-outer {
-	overflow: hidden;
-}
-
-.owl-carousel .owl-wrapper{
-	display: none;
-	position: relative;
-	-webkit-transform: translate3d(0px, 0px, 0px);
-	-webkit-perspective: 1000;
-}
-
-#owl .owl-prev, #owl .owl-next {
-	cursor: pointer;
-	position: absolute;
-	background: url(../images/prevnext-1.png) 0 0 no-repeat;
-	display: block;
-	width: 24px;
-	height: 40px;
-	bottom: 89px;
-	left: 50%;
-	margin-left: -37px;
-	overflow: hidden;
-	text-indent: -999px;
-	z-index: 20;
-}
-
-#owl .owl-next {
-	margin-left: 11px;
-	background-position: right bottom;
-}
-
-#owl .owl-next:hover,
-#owl .owl-prev:hover {
-	opacity: 0.5;
-}
+.carousel_wrapper {	background-color: #6b7494;	padding: 86px 0 0;}#owl {	padding-bottom: 183px;	z-index: 1;	position: relative;	margin: 0 -15px;}.owl_link {	color: #fff;	display: inline-block;	margin-bottom: 37px;	font: 30px/52px 'Marvel', sans-serif;}.owl-item {	float: left;}#owl .item {	padding: 0 15px;	position: relative;	overflow: hidden;	text-align: center;}#owl .item .color2 {	font-weight: normal;}#owl .banner_title {	padding-bottom: 76px;}#owl .banner_title:after {	bottom: 53px;}#owl .banner p {	padding: 49px 48px 0;	margin-bottom: 32px;}#owl .item .banner {	margin: 0;}#owl .owl-wrapper-outer {	overflow: hidden;}.owl-carousel .owl-wrapper{	display: none;	position: relative;	-webkit-transform: translate3d(0px, 0px, 0px);	-webkit-perspective: 1000;}#owl .owl-prev, #owl .owl-next {	cursor: pointer;	position: absolute;	background: url(../images/prevnext-1.png) 0 0 no-repeat;	display: block;	width: 24px;	height: 40px;	bottom: 89px;	left: 50%;	margin-left: -37px;	overflow: hidden;	text-indent: -999px;	z-index: 20;}#owl .owl-next {	margin-left: 11px;	background-position: right bottom;}#owl .owl-next:hover,#owl .owl-prev:hover {	opacity: 0.5;}

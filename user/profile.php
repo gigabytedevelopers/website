@@ -4,7 +4,7 @@ protect_page();
 
 if (isset($_GET['username']) === true && empty($_GET['username']) === false) {
 	$username 		= $_GET['username'];
-	
+
 	if (user_exists($username) === true) {
 	$user_id 		= user_id_from_username($username);
 	$profile_data 	= user_data($user_id, 'username', 'first_name', 'last_name', 'email', 'profile', 'country', 'phonenumber', 'sex');
@@ -15,13 +15,13 @@ if (isset($_GET['username']) === true && empty($_GET['username']) === false) {
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> 
+<!--[if (gt IE 9)|!(IE)]><!-->
 <html lang="en" class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="UTF-8" />
         <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
         <title>Gigabyte Developers Incorporated | Profile</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Official User Profile Page of Gigabyte Developers Incorporated" />
         <meta name="keywords" content="php, ajax, javascript, jquery, aspx, python, html5, css3, form, switch, animation, :target, pseudo-class" />
         <meta name="author" content="Gigabyte Developers Incorporated" />
@@ -53,7 +53,7 @@ if (isset($_GET['username']) === true && empty($_GET['username']) === false) {
 					<a href="index3.html" class="current-demo">Demo 3</a>
 				</nav> -->
             </header>
-            <section>				
+            <section>
                 <div id="container_demo" >
                     <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
                     <a class="hiddenanchor" id="toregister"></a>
@@ -79,13 +79,13 @@ if (isset($_GET['username']) === true && empty($_GET['username']) === false) {
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> 
+<!--[if (gt IE 9)|!(IE)]><!-->
 <html lang="en" class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="UTF-8" />
         <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
         <title>Gigabyte Developers Incorporated | Profile</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Official User Profile Page of Gigabyte Developers Incorporated" />
         <meta name="keywords" content="php, ajax, javascript, jquery, aspx, python, html5, css3, form, switch, animation, :target, pseudo-class" />
         <meta name="author" content="Gigabyte Developers Incorporated" />
@@ -99,7 +99,7 @@ if (isset($_GET['username']) === true && empty($_GET['username']) === false) {
             <header>
                 <a href="../index.php"><h1>Gigabyte Developers Incorporated </h1></a>
             </header>
-            <section>				
+            <section>
                 <div id="container_demo" >
                     <a class="hiddenanchor" id="toregister"></a>
                     <a class="hiddenanchor" id="tologin"></a>
@@ -113,5 +113,5 @@ if (isset($_GET['username']) === true && empty($_GET['username']) === false) {
 <?php
 	}
 }
- 
+
 include 'includes/overall/overallfooter.php'; ?>
