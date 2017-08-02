@@ -1,6 +1,6 @@
 <?php
 session_start();
-error_reporting(0);
+//error_reporting(0);
 require 'database/connect.php';
 require 'functions/general.php';
 require 'functions/users.php';
@@ -15,7 +15,7 @@ if (logged_in() === true) {
 		header('Location: index');
 		exit();
 	}
-	if ($current_file === 'changepassword' && $current_file !== 'logout' && $user_data['password_recover'] == 1) {
+	if ($current_file !== 'changepassword.php' && $current_file !== 'logout.php' && $user_data['password_recover'] == 1) {
 		header('Location: changepassword?force');
 		exit();
 	}

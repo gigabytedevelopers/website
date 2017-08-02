@@ -1,7 +1,6 @@
 <?php
 include 'core/init.php';
 protect_page();
-admin_protect();
 ?>
 <!DOCTYPE html>
 <html lang="en" class="no-js"> <!--<![endif]-->
@@ -9,23 +8,21 @@ admin_protect();
         <meta charset="UTF-8" />
         <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
         <title>Gigabyte Developers Incorporated | No Access</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Official User Page of Gigabyte Developers Incorporated" />
         <meta name="keywords" content="php, ajax, javascript, jquery, aspx, python, html5, css3, form, switch, animation, :target, pseudo-class" />
         <meta name="author" content="Gigabyte Developers Incorporated" />
         <meta name="theme-color" content="#028fcc">
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/style3.css" />
-		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
 		<link rel="shortcut icon" href="images/gigaicon.ico">
     </head>
     <body>
-	<?php include_once("includes/googleanalyticstracking.php") ?>
         <div class="container">
             <header>
                 <a href="index"><h1>Gigabyte Developers Incorporated </h1></a>
             </header>
-            <section>				
+            <section>
                 <div id="container_demo" >
                     <a class="hiddenanchor" id="toregister"></a>
                     <a class="hiddenanchor" id="tologin"></a>
@@ -57,16 +54,16 @@ if (isset($_GET['success']) === true && empty($_GET['success']) === true) {
 	?>
 	<form action="" method="post">
 		<ul>
-			<p> 
-               <label for="subject" class="uname" data-icon="S">Subject</label>
+			<p>
+               <label for="subject">Subject</label>
                <input id="subject" name="subject" required="required" type="text" placeholder="Subject" />
             </p>
 			<li>
-				<label for="body" class="uname" data-icon="e" > Body </label>
+				<label for="body"> Body </label>
 				<textarea id="email" name="body" required="required" type="text" placeholder="Body"></textarea>
 			</li>
-			<p class="recover buttons"> 
-                <input type="submit" value="Send" /> 
+			<p class="recover buttons">
+                <input type="submit" value="Send" />
 			</p>
 		</ul>
 	</form>

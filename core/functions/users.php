@@ -1,23 +1,28 @@
 <?php
+function mysqli_result($res, $row, $field=0) {
+	$res->data_seek($row);
+	$datarow = $res->fetch_array();
+	return $datarow[$field];
+}
 function change_profile_image($user_id, $file_temp, $file_extn) {
 	$file_path = 'user/images/profile/' . substr(md5(time()), 0, 10) . '.' . $file_extn;
 	move_uploaded_file($file_temp, $file_path);
-	mysql_query("UPDATE `users` SET `profile` = '" . mysql_real_escape_string($file_path) . "' WHERE `user_id` = " . (int)$user_id);
+	mysqli_query($GLOBALS["___mysqli_ston"], "UPDATE `users` SET `profile` = '" . ((isset($GLOBALS["___mysqli_ston"]) && is_object($GLOBALS["___mysqli_ston"])) ? mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $file_path) : ((trigger_error("[GigabyteDevelopers:Error-522] Fix the mysql_escape_string() call! This code does not work.", E_USER_ERROR)) ? "" : "")) . "' WHERE `user_id` = " . (int)$user_id);
 }
 function mail_users($subject, $body) {
-	$query = mysql_query("SELECT `email`, `first_name` FROM `users` WHERE `allow_email` = 1");
-	while (($row = mysql_fetch_assoc($query)) !== false) {
+	$query = mysqli_query($GLOBALS["___mysqli_ston"], "SELECT `email`, `first_name` FROM `users` WHERE `allow_email` = 1");
+	while (($row = mysqli_fetch_assoc($query)) == true) {
 		mail($row['email'], $subject, "Hello " . $row['first_name'] . ",\n\n" . $body);
 	}
 }
 function has_access($user_id, $type) {
 	$user_id 	= (int)$user_id;
 	$type 		= (int)$type;
-	return (mysql_result(mysql_query("SELECT COUNT(`user_id`) FROM `users` WHERE `user_id` = $user_id AND `type` = $type"), 0) == 1) ? true : false;
+	return (mysqli_result(mysqli_query($GLOBALS["___mysqli_ston"], "SELECT COUNT(`user_id`) FROM `users` WHERE `user_id` = $user_id AND `type` = $type"),  0) == 1) ? true : false;
 }
 function is_admin($user_id) {
 	$user_id = (int)$user_id;
-	return (mysql_result(mysql_query("SELECT COUNT(`user_id`) FROM `users` WHERE `user_id` = $user_id AND `type` = 1"), 0) == 1) ? true : false;
+	return (mysqli_result(mysqli_query($GLOBALS["___mysqli_ston"], "SELECT COUNT(`user_id`) FROM `users` WHERE `user_id` = $user_id AND `type` = 1"),  0) == 1) ? true : false;
 }
 function recover($mode, $email) {
 	$mode 		= sanitize($mode);
@@ -33,7 +38,7 @@ function recover($mode, $email) {
 		// recover password
 		update_user($user_data['user_id'], array('password_recover' => '1'));
 		// email generated password to user
-		email($email, 'Your password recovery', "Hello " . $user_data['first_name'] . ",\n\nYour new password is: " . $generated_password . "\n\n- Gigabyte Developers Incorporated");
+		mail($email, 'Your password recovery', "Hello " . $user_data['first_name'] . ",\n\nYour new password is: " . $generated_password . "\n\n- Gigabyte Developers Incorporated");
 	}
 }
 function update_user($user_id, $update_data) {
@@ -43,14 +48,14 @@ function update_user($user_id, $update_data) {
 	foreach($update_data as $field=>$data) {
 		$update[] = '`' . $field . '` = \'' . $data . '\'';
 	}
-	mysql_query("UPDATE `users` SET " . implode(', ', $update) . " WHERE `user_id` = $user_id");
+	mysqli_query($GLOBALS["___mysqli_ston"], "UPDATE `users` SET " . implode(', ', $update) . " WHERE `user_id` = $user_id");
 }
 function activate($email, $email_code) {
-	$email = mysql_real_escape_string($email);
-	$email_code = mysql_real_escape_string($email_code);
-	if (mysql_result(mysql_query("SELECT COUNT(`user_id`) FROM `users` WHERE `email` = '$email' AND `email_code` = '$email_code' AND `active` = 0"), 0) == 1) {
+	$email = ((isset($GLOBALS["___mysqli_ston"]) && is_object($GLOBALS["___mysqli_ston"])) ? mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $email) : ((trigger_error("[GigabyteDevelopers:Error-522] Fix the mysql_escape_string() call! This code does not work.", E_USER_ERROR)) ? "" : ""));
+	$email_code = ((isset($GLOBALS["___mysqli_ston"]) && is_object($GLOBALS["___mysqli_ston"])) ? mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $email_code) : ((trigger_error("[GigabyteDevelopers:Error-522] Fix the mysql_escape_string() call! This code does not work.", E_USER_ERROR)) ? "" : ""));
+	if (mysqli_result(mysqli_query($GLOBALS["___mysqli_ston"], "SELECT COUNT(`user_id`) FROM `users` WHERE `email` = '$email' AND `email_code` = '$email_code' AND `active` = 0"),  0) == 1) {
 		//queary to update user active status
-		mysql_query("UPDATE `users` SET `active` =1 WHERE `email` = '$email'");
+		mysqli_query($GLOBALS["___mysqli_ston"], "UPDATE `users` SET `active` =1 WHERE `email` = '$email'");
 		return true;
 	} else {
 		return false;
@@ -59,18 +64,18 @@ function activate($email, $email_code) {
 function change_password($user_id, $password) {
 	$user_id = (int)$user_id;
 	$password = md5($password);
-	mysql_query("UPDATE `users` SET `password` = '$password', `password_recover` = 0 WHERE `user_id` = $user_id");
+	mysqli_query($GLOBALS["___mysqli_ston"], "UPDATE `users` SET `password` = '$password', `password_recover` = 0 WHERE `user_id` = $user_id");
 }
 function register_user($register_data) {
 	array_walk($register_data, 'array_sanitize');
 	$register_data['password'] = md5($register_data['password']);
 	$fields = '`' . implode('`, `', array_keys($register_data)) . '`';
 	$data = '\'' . implode('\', \'', $register_data) . '\'';
-	mysql_query("INSERT INTO `users` ($fields) VALUES ($data)");
+	mysqli_query($GLOBALS["___mysqli_ston"], "INSERT INTO `users` ($fields) VALUES ($data)");
 	mail($register_data['email'], 'Confirm Your Account Registration', "Hello " . $register_data['last_name'] .' ' . $register_data['first_name'] . ",\n\nYou need to confirm/activate your account registration to Gigabyte Developers Incorporated by following the link below:\n\nhttp://gigabytedevelopersinc.com/activate?email=" . $register_data['email'] . "&email_code=" . $register_data['email_code'] . "\n\nThanks for registering on Gigabyte Developers Incorporated\n\n- Gigabyte Developers Incorporated");
 }
 function user_count() {
-	return mysql_result(mysql_query("SELECT COUNT(`user_id`) FROM `users` WHERE `active` = 1"), 0);
+	return mysqli_result(mysqli_query($GLOBALS["___mysqli_ston"], "SELECT COUNT(`user_id`) FROM `users` WHERE `active` = 1"),  0);
 }
 function user_data($user_id) {
 	$data = array();
@@ -80,7 +85,7 @@ function user_data($user_id) {
 	if ($func_num_args > 1) {
 		unset($func_get_args[0]);
 		$fields = '`' . implode('`, `', $func_get_args) . '`';
-		$data = mysql_fetch_assoc(mysql_query("SELECT $fields FROM `users` WHERE `user_id` = $user_id"));
+		$data = mysqli_fetch_assoc(mysqli_query($GLOBALS["___mysqli_ston"], "SELECT $fields FROM `users` WHERE `user_id` = $user_id"));
 		return $data;
 	}
 }
@@ -89,28 +94,28 @@ function logged_in() {
 }
 function user_exists($username) {
 	$username = sanitize($username);
-	return (mysql_result(mysql_query("SELECT COUNT(`user_id`) FROM `users` WHERE `username` = '$username'"), 0) == 1) ? true : false;
+	return (mysqli_result(mysqli_query($GLOBALS["___mysqli_ston"], "SELECT COUNT(`user_id`) FROM `users` WHERE `username` = '$username'"),  0) == 1) ? true : false;
 }
 function email_exists($email) {
 	$email = sanitize($email);
-	return (mysql_result(mysql_query("SELECT COUNT(`user_id`) FROM `users` WHERE `email` = '$email'"), 0) == 1) ? true : false;
+	return (mysqli_result(mysqli_query($GLOBALS["___mysqli_ston"], "SELECT COUNT(`user_id`) FROM `users` WHERE `email` = '$email'"),  0) == 1) ? true : false;
 }
 function user_active($username) {
 	$username = sanitize($username);
-	return (mysql_result(mysql_query("SELECT COUNT(`user_id`) FROM `users` WHERE `username` = '$username' AND `active` = 1"), 0) == 1) ? true : false;
+	return (mysqli_result(mysqli_query($GLOBALS["___mysqli_ston"], "SELECT COUNT(`user_id`) FROM `users` WHERE `username` = '$username' AND `active` = 1"),  0) == 1) ? true : false;
 }
 function user_id_from_username($username) {
 	$username = sanitize($username);
-	return mysql_result(mysql_query("SELECT `user_id` FROM `users` WHERE `username` = '$username'"), 0, 'user_id');
+	return mysqli_result(mysqli_query($GLOBALS["___mysqli_ston"], "SELECT `user_id` FROM `users` WHERE `username` = '$username'"),  0,  'user_id');
 }
 function user_id_from_email($email) {
 	$email = sanitize($email);
-	return mysql_result(mysql_query("SELECT `user_id` FROM `users` WHERE `email` = '$email'"), 0, 'user_id');
+	return mysqli_result(mysqli_query($GLOBALS["___mysqli_ston"], "SELECT `user_id` FROM `users` WHERE `email` = '$email'"),  0,  'user_id');
 }
 function login($username, $password) {
 	$user_id = user_id_from_username($username);
 	$username = sanitize($username);
 	$password = md5($password);
-	return (mysql_result(mysql_query("SELECT COUNT(`user_id`) FROM `users` WHERE `username` = '$username' AND `password` = '$password'"), 0) == 1) ? $user_id : false;
+	return (mysqli_result(mysqli_query($GLOBALS["___mysqli_ston"], "SELECT COUNT(`user_id`) FROM `users` WHERE `username` = '$username' AND `password` = '$password'"),  0) == 1) ? $user_id : false;
 }
 ?>

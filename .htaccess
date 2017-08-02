@@ -1,18 +1,18 @@
 RewriteEngine On
+# RewriteCond %{REQUEST_URI} !^/moved.php$ [NC]
+# RewriteRule ^(.*)$ /moved.php [R=301,L]
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ $1.php [NC,L]
-
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
 # BEGIN Compress text files
 <ifModule mod_deflate.c>
-  <filesMatch "\.(css|js|x?html?|txt|php)$">
+  <filesMatch "\.(css|js|x?html?|php)$">
     SetOutputFilter DEFLATE
   </filesMatch>
 </ifModule>
 # END Compress text files
-
 # BEGIN Expire headers
 <ifModule mod_expires.c>
   ExpiresActive On
@@ -30,7 +30,12 @@ RewriteRule ^(.*)$ $1.php [NC,L]
   ExpiresByType application/xhtml+xml "access plus 600 seconds"
 </ifModule>
 # END Expire headers
-
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule .* 404.php [L]
+</IfModule>
 # BEGIN Cache-Control Headers
 <ifModule mod_headers.c>
   <filesMatch "\.(ico|jpeg|png|gif|swf)$">
@@ -47,12 +52,10 @@ RewriteRule ^(.*)$ $1.php [NC,L]
   </filesMatch>
 </ifModule>
 # END Cache-Control Headers
-
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault "access plus 1 year"
 </IfModule>
-
 <IfModule mod_headers.c>
     <FilesMatch "\.(bmp|css|flv|gif|ico|jpg|jpeg|js|pdf|png|svg|swf|tif|tiff)$">
         Header set Last-Modified "Mon, 31 Aug 2009 00:00:00 GMT"

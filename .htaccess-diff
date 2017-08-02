@@ -1,4 +1,5 @@
 redirectMatch 301 ^(.*)$ http://www.gigabytedevelopersinc.com
+redirectMatch 404 ^(.*)$ /404.php
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f

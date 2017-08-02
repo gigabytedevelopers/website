@@ -1,1 +1,284 @@
-function Validator(e){return this.formobj=document.forms[e],this.formobj?(this.formobj.onsubmit?(this.formobj.old_onsubmit=this.formobj.onsubmit,this.formobj.onsubmit=null):this.formobj.old_onsubmit=null,this.formobj._sfm_form_name=e,this.formobj.onsubmit=form_submit_handler,this.addValidation=add_validation,this.setAddnlValidationFunction=set_addnl_vfunction,this.clearAllValidations=clear_all_validations,this.disable_validations=!1,document.error_disp_handler=new sfm_ErrorDisplayHandler,this.EnableOnPageErrorDisplay=validator_enable_OPED,this.EnableOnPageErrorDisplaySingleBox=validator_enable_OPED_SB,this.show_errors_together=!0,this.EnableMsgsTogether=sfm_enable_show_msgs_together,document.set_focus_onerror=!0,void(this.EnableFocusOnError=sfm_validator_enable_focus)):void alert("Error: couldnot get Form object "+e)}function sfm_validator_enable_focus(e){document.set_focus_onerror=e}function set_addnl_vfunction(e){this.formobj.addnlvalidation=e}function sfm_set_focus(e){document.set_focus_onerror&&e.focus()}function sfm_enable_show_msgs_together(){this.show_errors_together=!0,this.formobj.show_errors_together=!0}function clear_all_validations(){for(var e=0;e<this.formobj.elements.length;e++)this.formobj.elements[e].validationset=null}function form_submit_handler(){var bRet=!0;document.error_disp_handler.clear_msgs();for(var itr=0;itr<this.elements.length&&(this.elements[itr].validationset&&!this.elements[itr].validationset.validate()&&(bRet=!1),bRet||this.show_errors_together);itr++);return this.addnlvalidation&&(str=" var ret = "+this.addnlvalidation+"()",eval(str),ret||(bRet=!1)),bRet?!0:(document.error_disp_handler.FinalShowMsg(),!1)}function add_validation(e,r,t){var a=null;if(arguments.length>3&&(a=arguments[3]),!this.formobj)return void alert("Error: The form object is not set properly");var s=this.formobj[e];return s.length&&isNaN(s.selectedIndex)&&(s=s[0]),s?(s.validationset||(s.validationset=new ValidationSet(s,this.show_errors_together)),s.validationset.add(r,t,a),void(s.validatorobj=this)):void alert("Error: Couldnot get the input object named: "+e)}function validator_enable_OPED(){document.error_disp_handler.EnableOnPageDisplay(!1)}function validator_enable_OPED_SB(){document.error_disp_handler.EnableOnPageDisplay(!0)}function sfm_ErrorDisplayHandler(){this.msgdisplay=new AlertMsgDisplayer,this.EnableOnPageDisplay=edh_EnableOnPageDisplay,this.ShowMsg=edh_ShowMsg,this.FinalShowMsg=edh_FinalShowMsg,this.all_msgs=new Array,this.clear_msgs=edh_clear_msgs}function edh_clear_msgs(){this.msgdisplay.clearmsg(this.all_msgs),this.all_msgs=new Array}function edh_FinalShowMsg(){this.msgdisplay.showmsg(this.all_msgs)}function edh_EnableOnPageDisplay(e){this.msgdisplay=1==e?new SingleBoxErrorDisplay:new DivMsgDisplayer}function edh_ShowMsg(e,r){var t=new Array;t.input_element=r,t.msg=e,this.all_msgs.push(t)}function AlertMsgDisplayer(){this.showmsg=alert_showmsg,this.clearmsg=alert_clearmsg}function alert_clearmsg(){}function alert_showmsg(e){for(var r="",t=null,a=0;a<e.length;a++)null==t&&(t=e[a].input_element),r+=e[a].msg+"\n";alert(r),null!=t&&sfm_set_focus(t)}function sfm_show_error_msg(e,r){document.error_disp_handler.ShowMsg(e,r)}function SingleBoxErrorDisplay(){this.showmsg=sb_div_showmsg,this.clearmsg=sb_div_clearmsg}function sb_div_clearmsg(e){var r=form_error_div_name(e);show_div_msg(r,"")}function sb_div_showmsg(e){for(var r="<ul>\n",t=0;t<e.length;t++)r+="<li>"+e[t].msg+"</li>\n";r+="</ul>";var a=form_error_div_name(e);show_div_msg(a,r)}function form_error_div_name(e){var r=null;for(var t in e)if(r=e[t].input_element)break;var a="";return r&&(a=r.form._sfm_form_name+"_errorloc"),a}function DivMsgDisplayer(){this.showmsg=div_showmsg,this.clearmsg=div_clearmsg}function div_clearmsg(e){for(var r in e){var t=element_div_name(e[r].input_element);show_div_msg(t,"")}}function element_div_name(e){var r=e.form._sfm_form_name+"_"+e.name+"_errorloc";return r=r.replace(/[\[\]]/gi,"")}function div_showmsg(e){var t=null;for(var a in e){null==t&&(t=e[a].input_element);var s=element_div_name(e[a].input_element);show_div_msg(s,e[a].msg)}null!=t&&sfm_set_focus(t)}function show_div_msg(e,r){if(e.length<=0)return!1;if(document.layers){if(divlayer=document.layers[e],!divlayer)return;divlayer.document.open(),divlayer.document.write(r),divlayer.document.close()}else if(document.all){if(divlayer=document.all[e],!divlayer)return;divlayer.innerHTML=r}else if(document.getElementById){if(divlayer=document.getElementById(e),!divlayer)return;divlayer.innerHTML=r}divlayer.style.visibility="visible"}function ValidationDesc(e,r,t,a){this.desc=r,this.error=t,this.itemobj=e,this.condition=a,this.validate=vdesc_validate}function vdesc_validate(){return null==this.condition||eval(this.condition)?validateInput(this.desc,this.itemobj,this.error)?!0:(this.itemobj.validatorobj.disable_validations=!0,sfm_set_focus(this.itemobj),!1):!0}function ValidationSet(e,r){this.vSet=new Array,this.add=add_validationdesc,this.validate=vset_validate,this.itemobj=e,this.msgs_together=r}function add_validationdesc(e,r,t){this.vSet[this.vSet.length]=new ValidationDesc(this.itemobj,e,r,t)}function vset_validate(){for(var e=!0,r=0;r<this.vSet.length&&(e=e&&this.vSet[r].validate(),e||this.msgs_together);r++);return e}function validateEmail(e){var r=e.match("^(.+)@(.+)$");if(null==r)return!1;if(null!=r[1]){var t=/^\"?[\w-_\.]*\"?$/;if(null==r[1].match(t))return!1}if(null!=r[2]){var a=/^[\w-\.]*\.[A-Za-z]{2,4}$/;if(null==r[2].match(a)){var s=/^\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\]$/;if(null==r[2].match(s))return!1}return!0}return!1}function IsCheckSelected(e,r){var t=!1,a=e.form.elements[e.name];if(a.length){for(var s=-1,n=0;n<a.length;n++)if(a[n].value==r){s=n;break}s>=0&&"1"==a[s].checked&&(t=!0)}else"1"==e.checked&&(t=!0);return t}function TestDontSelectChk(e,r,t){var a=!0;return a=IsCheckSelected(e,r)?!1:!0,0==a&&(t&&0!=t.length||(t="Can't Proceed as you selected "+e.name),sfm_show_error_msg(t,e)),a}function TestShouldSelectChk(e,r,t){var a=!0;return a=IsCheckSelected(e,r)?!0:!1,0==a&&(t&&0!=t.length||(t="You should select "+e.name),sfm_show_error_msg(t,e)),a}function TestRequiredInput(objValue,strError){var ret=!0,val=objValue.value;return val=val.replace(/^\s+|\s+$/g,""),0==eval(val.length)&&(strError&&0!=strError.length||(strError=objValue.name+" : Required Field"),sfm_show_error_msg(strError,objValue),ret=!1),ret}function TestMaxLen(objValue,strMaxLen,strError){var ret=!0;return eval(objValue.value.length)>eval(strMaxLen)&&(strError&&0!=strError.length||(strError=objValue.name+" : "+strMaxLen+" characters maximum "),sfm_show_error_msg(strError,objValue),ret=!1),ret}function TestMinLen(objValue,strMinLen,strError){var ret=!0;return eval(objValue.value.length)<eval(strMinLen)&&(strError&&0!=strError.length||(strError=objValue.name+" : "+strMinLen+" characters minimum  "),sfm_show_error_msg(strError,objValue),ret=!1),ret}function TestInputType(e,r,t,a){var s=!0,n=e.value.search(r);return e.value.length>0&&n>=0&&(t&&0!=t.length||(t=a),sfm_show_error_msg(t,e),s=!1),s}function TestEmail(e,r){var t=!0;return e.value.length>0&&!validateEmail(e.value)&&(r&&0!=r.length||(r=e.name+": Enter a valid Email address "),sfm_show_error_msg(r,e),t=!1),t}function TestLessThan(objValue,strLessThan,strError){var ret=!0;return isNaN(objValue.value)?(sfm_show_error_msg(objValue.name+": Should be a number ",objValue),ret=!1):eval(objValue.value)>=eval(strLessThan)&&(strError&&0!=strError.length||(strError=objValue.name+" : value should be less than "+strLessThan),sfm_show_error_msg(strError,objValue),ret=!1),ret}function TestGreaterThan(objValue,strGreaterThan,strError){var ret=!0;return isNaN(objValue.value)?(sfm_show_error_msg(objValue.name+": Should be a number ",objValue),ret=!1):eval(objValue.value)<=eval(strGreaterThan)&&(strError&&0!=strError.length||(strError=objValue.name+" : value should be greater than "+strGreaterThan),sfm_show_error_msg(strError,objValue),ret=!1),ret}function TestRegExp(e,r,t){var a=!0;return e.value.length>0&&!e.value.match(r)&&(t&&0!=t.length||(t=e.name+": Invalid characters found "),sfm_show_error_msg(t,e),a=!1),a}function TestDontSelect(objValue,dont_sel_index,strError){var ret=!0;return null==objValue.selectedIndex&&(sfm_show_error_msg("ERROR: dontselect command for non-select Item"),ret=!1),objValue.selectedIndex==eval(dont_sel_index)&&(strError&&0!=strError.length||(strError=objValue.name+": Please Select one option "),sfm_show_error_msg(strError,objValue),ret=!1),ret}function TestSelectOneRadio(e,r){for(var t=e.form.elements[e.name],a=!1,s=0;s<t.length;s++)if(t[s].checked){a=!0;break}return 0==a&&(r&&0!=r.length||(r="Please select one option from "+e.name),sfm_show_error_msg(r,e)),a}function validateInput(e,r,t){var a=!0,s=e.search("="),n="",l="";switch(s>=0?(n=e.substring(0,s),l=e.substr(s+1)):n=e,n){case"req":case"required":a=TestRequiredInput(r,t);break;case"maxlength":case"maxlen":a=TestMaxLen(r,l,t);break;case"minlength":case"minlen":a=TestMinLen(r,l,t);break;case"alnum":case"alphanumeric":a=TestInputType(r,"[^A-Za-z0-9]",t,r.name+": Only alpha-numeric characters allowed ");break;case"alnum_s":case"alphanumeric_space":a=TestInputType(r,"[^A-Za-z0-9\\s]",t,r.name+": Only alpha-numeric characters and space allowed ");break;case"num":case"numeric":a=TestInputType(r,"[^0-9]",t,r.name+": Only digits allowed ");break;case"dec":case"decimal":a=TestInputType(r,"[^0-9.]",t,r.name+": Only numbers allowed ");break;case"alphabetic":case"alpha":a=TestInputType(r,"[^A-Za-z]",t,r.name+": Only alphabetic characters allowed ");break;case"alphabetic_space":case"alpha_s":a=TestInputType(r,"[^A-Za-z\\s]",t,r.name+": Only alphabetic characters and space allowed ");break;case"email":a=TestEmail(r,t);break;case"lt":case"lessthan":a=TestLessThan(r,l,t);break;case"gt":case"greaterthan":a=TestGreaterThan(r,l,t);break;case"regexp":a=TestRegExp(r,l,t);break;case"dontselect":a=TestDontSelect(r,l,t);break;case"dontselectchk":a=TestDontSelectChk(r,l,t);break;case"shouldselchk":a=TestShouldSelectChk(r,l,t);break;case"selone_radio":a=TestSelectOneRadio(r,t)}return a}function VWZ_IsListItemSelected(e,r){for(var t=0;t<e.options.length;t++)if(1==e.options[t].selected&&e.options[t].value==r)return!0;return!1}function VWZ_IsChecked(e,r){if(e.length){for(var t=0;t<e.length;t++)if("1"==e[t].checked&&e[t].value==r)return!0}else if("1"==e.checked)return!0;return!1}
+function Validator(frmname)
+{this.formobj=document.forms[frmname];if(!this.formobj)
+{alert("Error: couldnot get Form object "+frmname);return;}
+if(this.formobj.onsubmit)
+{this.formobj.old_onsubmit=this.formobj.onsubmit;this.formobj.onsubmit=null;}
+else
+{this.formobj.old_onsubmit=null;}
+this.formobj._sfm_form_name=frmname;this.formobj.onsubmit=form_submit_handler;this.addValidation=add_validation;this.setAddnlValidationFunction=set_addnl_vfunction;this.clearAllValidations=clear_all_validations;this.disable_validations=false; document.error_disp_handler=new sfm_ErrorDisplayHandler();this.EnableOnPageErrorDisplay=validator_enable_OPED;this.EnableOnPageErrorDisplaySingleBox=validator_enable_OPED_SB;this.show_errors_together=true;this.EnableMsgsTogether=sfm_enable_show_msgs_together;document.set_focus_onerror=true;this.EnableFocusOnError=sfm_validator_enable_focus;}
+function sfm_validator_enable_focus(enable)
+{document.set_focus_onerror=enable;}
+function set_addnl_vfunction(functionname)
+{this.formobj.addnlvalidation=functionname;}
+function sfm_set_focus(objInput)
+{if(document.set_focus_onerror)
+{objInput.focus();}}
+function sfm_enable_show_msgs_together()
+{this.show_errors_together=true;this.formobj.show_errors_together=true;}
+function clear_all_validations()
+{for(var itr=0;itr<this.formobj.elements.length;itr++)
+{this.formobj.elements[itr].validationset=null;}}
+function form_submit_handler()
+{var bRet=true;document.error_disp_handler.clear_msgs();for(var itr=0;itr<this.elements.length;itr++)
+{if(this.elements[itr].validationset&&!this.elements[itr].validationset.validate())
+{bRet=false;}
+if(!bRet&&!this.show_errors_together)
+{break;}}
+if(this.addnlvalidation)
+{str=" var ret = "+this.addnlvalidation+"()";eval(str);if(!ret)
+{bRet=false;}}
+if(!bRet)
+{document.error_disp_handler.FinalShowMsg();return false;}
+return true;}
+function add_validation(itemname,descriptor,errstr)
+{var condition=null;if(arguments.length>3)
+{condition=arguments[3];}
+if(!this.formobj)
+{alert("Error: The form object is not set properly");return;} 
+var itemobj=this.formobj[itemname];if(itemobj.length&&isNaN(itemobj.selectedIndex))
+{itemobj=itemobj[0];}
+if(!itemobj)
+{alert("Error: Couldnot get the input object named: "+itemname);return;}
+if(!itemobj.validationset)
+{itemobj.validationset=new ValidationSet(itemobj,this.show_errors_together);}
+itemobj.validationset.add(descriptor,errstr,condition);itemobj.validatorobj=this;}
+function validator_enable_OPED()
+{document.error_disp_handler.EnableOnPageDisplay(false);}
+function validator_enable_OPED_SB()
+{document.error_disp_handler.EnableOnPageDisplay(true);}
+function sfm_ErrorDisplayHandler()
+{this.msgdisplay=new AlertMsgDisplayer();this.EnableOnPageDisplay=edh_EnableOnPageDisplay;this.ShowMsg=edh_ShowMsg;this.FinalShowMsg=edh_FinalShowMsg;this.all_msgs=new Array();this.clear_msgs=edh_clear_msgs;}
+function edh_clear_msgs()
+{this.msgdisplay.clearmsg(this.all_msgs);this.all_msgs=new Array();}
+function edh_FinalShowMsg()
+{this.msgdisplay.showmsg(this.all_msgs);}
+function edh_EnableOnPageDisplay(single_box)
+{if(true==single_box)
+{this.msgdisplay=new SingleBoxErrorDisplay();}
+else
+{this.msgdisplay=new DivMsgDisplayer();}}
+function edh_ShowMsg(msg,input_element)
+{var objmsg=new Array();objmsg["input_element"]=input_element;objmsg["msg"]=msg;this.all_msgs.push(objmsg);}
+function AlertMsgDisplayer()
+{this.showmsg=alert_showmsg;this.clearmsg=alert_clearmsg;}
+function alert_clearmsg(msgs)
+{}
+function alert_showmsg(msgs)
+{var whole_msg="";var first_elmnt=null;for(var m=0;m<msgs.length;m++)
+{if(null==first_elmnt)
+{first_elmnt=msgs[m]["input_element"];}
+whole_msg+=msgs[m]["msg"]+"\n";}
+alert(whole_msg);if(null!=first_elmnt)
+{sfm_set_focus(first_elmnt);}}
+function sfm_show_error_msg(msg,input_elmt)
+{document.error_disp_handler.ShowMsg(msg,input_elmt);}
+function SingleBoxErrorDisplay()
+{this.showmsg=sb_div_showmsg;this.clearmsg=sb_div_clearmsg;}
+function sb_div_clearmsg(msgs)
+{var divname=form_error_div_name(msgs);show_div_msg(divname,"");}
+function sb_div_showmsg(msgs)
+{var whole_msg="<ul>\n";for(var m=0;m<msgs.length;m++)
+{whole_msg+="<li>"+msgs[m]["msg"]+"</li>\n";}
+whole_msg+="</ul>";var divname=form_error_div_name(msgs);show_div_msg(divname,whole_msg);}
+function form_error_div_name(msgs)
+{var input_element=null;for(var m in msgs)
+{input_element=msgs[m]["input_element"];if(input_element){break;}}
+var divname="";if(input_element)
+{divname=input_element.form._sfm_form_name+"_errorloc";}
+return divname;}
+function DivMsgDisplayer()
+{this.showmsg=div_showmsg;this.clearmsg=div_clearmsg;}
+function div_clearmsg(msgs)
+{for(var m in msgs)
+{var divname=element_div_name(msgs[m]["input_element"]);show_div_msg(divname,"");}}
+function element_div_name(input_element)
+{var divname=input_element.form._sfm_form_name+"_"+
+input_element.name+"_errorloc";divname=divname.replace(/[\[\]]/gi,"");return divname;}
+function div_showmsg(msgs)
+{var whole_msg;var first_elmnt=null;for(var m in msgs)
+{if(null==first_elmnt)
+{first_elmnt=msgs[m]["input_element"];}
+var divname=element_div_name(msgs[m]["input_element"]);show_div_msg(divname,msgs[m]["msg"]);}
+if(null!=first_elmnt)
+{sfm_set_focus(first_elmnt);}}
+function show_div_msg(divname,msgstring)
+{if(divname.length<=0)return false;if(document.layers)
+{divlayer=document.layers[divname];if(!divlayer){return;}
+divlayer.document.open();divlayer.document.write(msgstring);divlayer.document.close();}
+else
+if(document.all)
+{divlayer=document.all[divname];if(!divlayer){return;}
+divlayer.innerHTML=msgstring;}
+else
+if(document.getElementById)
+{divlayer=document.getElementById(divname);if(!divlayer){return;}
+divlayer.innerHTML=msgstring;}
+divlayer.style.visibility="visible";}
+function ValidationDesc(inputitem,desc,error,condition)
+{this.desc=desc;this.error=error;this.itemobj=inputitem;this.condition=condition;this.validate=vdesc_validate;}
+function vdesc_validate()
+{if(this.condition!=null)
+{if(!eval(this.condition))
+{return true;}}
+if(!validateInput(this.desc,this.itemobj,this.error))
+{this.itemobj.validatorobj.disable_validations=true;sfm_set_focus(this.itemobj);return false;}
+return true;}
+function ValidationSet(inputitem,msgs_together)
+{this.vSet=new Array();this.add=add_validationdesc;this.validate=vset_validate;this.itemobj=inputitem;this.msgs_together=msgs_together;}
+function add_validationdesc(desc,error,condition)
+{this.vSet[this.vSet.length]=new ValidationDesc(this.itemobj,desc,error,condition);}
+function vset_validate()
+{var bRet=true;for(var itr=0;itr<this.vSet.length;itr++)
+{bRet=bRet&&this.vSet[itr].validate();if(!bRet&&!this.msgs_together)
+{break;}}
+return bRet;}
+function validateEmail(email)
+{var splitted=email.match("^(.+)@(.+)$");if(splitted==null)return false;if(splitted[1]!=null)
+{var regexp_user=/^\"?[\w-_\.]*\"?$/;if(splitted[1].match(regexp_user)==null)return false;}
+if(splitted[2]!=null)
+{var regexp_domain=/^[\w-\.]*\.[A-Za-z]{2,4}$/;if(splitted[2].match(regexp_domain)==null)
+{var regexp_ip=/^\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\]$/;if(splitted[2].match(regexp_ip)==null)return false;} 
+return true;}
+return false;}
+function IsCheckSelected(objValue,chkValue)
+{var selected=false;var objcheck=objValue.form.elements[objValue.name];if(objcheck.length)
+{var idxchk=-1;for(var c=0;c<objcheck.length;c++)
+{if(objcheck[c].value==chkValue)
+{idxchk=c;break;}
+} 
+if(idxchk>=0)
+{if(objcheck[idxchk].checked=="1")
+{selected=true;}}
+}
+else
+{if(objValue.checked=="1")
+{selected=true;}
+} 
+return selected;}
+function TestDontSelectChk(objValue,chkValue,strError)
+{var pass=true;pass=IsCheckSelected(objValue,chkValue)?false:true;if(pass==false)
+{if(!strError||strError.length==0)
+{strError="Can't Proceed as you selected "+objValue.name;} 
+sfm_show_error_msg(strError,objValue);}
+return pass;}
+function TestShouldSelectChk(objValue,chkValue,strError)
+{var pass=true;pass=IsCheckSelected(objValue,chkValue)?true:false;if(pass==false)
+{if(!strError||strError.length==0)
+{strError="You should select "+objValue.name;} 
+sfm_show_error_msg(strError,objValue);}
+return pass;}
+function TestRequiredInput(objValue,strError)
+{var ret=true;var val=objValue.value;val=val.replace(/^\s+|\s+$/g,""); if(eval(val.length)==0)
+{if(!strError||strError.length==0)
+{strError=objValue.name+" : Required Field";} 
+sfm_show_error_msg(strError,objValue);ret=false;}
+return ret;}
+function TestMaxLen(objValue,strMaxLen,strError)
+{var ret=true;if(eval(objValue.value.length)>eval(strMaxLen))
+{if(!strError||strError.length==0)
+{strError=objValue.name+" : "+strMaxLen+" characters maximum ";} 
+sfm_show_error_msg(strError,objValue);ret=false;}
+return ret;}
+function TestMinLen(objValue,strMinLen,strError)
+{var ret=true;if(eval(objValue.value.length)<eval(strMinLen))
+{if(!strError||strError.length==0)
+{strError=objValue.name+" : "+strMinLen+" characters minimum  ";} 
+sfm_show_error_msg(strError,objValue);ret=false;}
+return ret;}
+function TestInputType(objValue,strRegExp,strError,strDefaultError)
+{var ret=true;var charpos=objValue.value.search(strRegExp);if(objValue.value.length>0&&charpos>=0)
+{if(!strError||strError.length==0)
+{strError=strDefaultError;} 
+sfm_show_error_msg(strError,objValue);ret=false;} 
+return ret;}
+function TestEmail(objValue,strError)
+{var ret=true;if(objValue.value.length>0&&!validateEmail(objValue.value))
+{if(!strError||strError.length==0)
+{strError=objValue.name+": Enter a valid Email address ";} 
+sfm_show_error_msg(strError,objValue);ret=false;}
+return ret;}
+function TestLessThan(objValue,strLessThan,strError)
+{var ret=true;if(isNaN(objValue.value))
+{sfm_show_error_msg(objValue.name+": Should be a number ",objValue);ret=false;} 
+else
+if(eval(objValue.value)>=eval(strLessThan))
+{if(!strError||strError.length==0)
+{strError=objValue.name+" : value should be less than "+strLessThan;} 
+sfm_show_error_msg(strError,objValue);ret=false;}
+return ret;}
+function TestGreaterThan(objValue,strGreaterThan,strError)
+{var ret=true;if(isNaN(objValue.value))
+{sfm_show_error_msg(objValue.name+": Should be a number ",objValue);ret=false;} 
+else
+if(eval(objValue.value)<=eval(strGreaterThan))
+{if(!strError||strError.length==0)
+{strError=objValue.name+" : value should be greater than "+strGreaterThan;} 
+sfm_show_error_msg(strError,objValue);ret=false;}
+return ret;}
+function TestRegExp(objValue,strRegExp,strError)
+{var ret=true;if(objValue.value.length>0&&!objValue.value.match(strRegExp))
+{if(!strError||strError.length==0)
+{strError=objValue.name+": Invalid characters found ";} 
+sfm_show_error_msg(strError,objValue);ret=false;}
+return ret;}
+function TestDontSelect(objValue,dont_sel_index,strError)
+{var ret=true;if(objValue.selectedIndex==null)
+{sfm_show_error_msg("ERROR: dontselect command for non-select Item");ret=false;}
+if(objValue.selectedIndex==eval(dont_sel_index))
+{if(!strError||strError.length==0)
+{strError=objValue.name+": Please Select one option ";} 
+sfm_show_error_msg(strError,objValue);ret=false;}
+return ret;}
+function TestSelectOneRadio(objValue,strError)
+{var objradio=objValue.form.elements[objValue.name];var one_selected=false;for(var r=0;r<objradio.length;r++)
+{if(objradio[r].checked)
+{one_selected=true;break;}}
+if(false==one_selected)
+{if(!strError||strError.length==0)
+{strError="Please select one option from "+objValue.name;}
+sfm_show_error_msg(strError,objValue);}
+return one_selected;}
+function validateInput(strValidateStr,objValue,strError)
+{var ret=true;var epos=strValidateStr.search("=");var command="";var cmdvalue="";if(epos>=0)
+{command=strValidateStr.substring(0,epos);cmdvalue=strValidateStr.substr(epos+1);}
+else
+{command=strValidateStr;}
+switch(command)
+{case"req":case"required":{ret=TestRequiredInput(objValue,strError)
+break;} 
+case"maxlength":case"maxlen":{ret=TestMaxLen(objValue,cmdvalue,strError)
+break;} 
+case"minlength":case"minlen":{ret=TestMinLen(objValue,cmdvalue,strError)
+break;} 
+case"alnum":case"alphanumeric":{ret=TestInputType(objValue,"[^A-Za-z0-9]",strError,objValue.name+": Only alpha-numeric characters allowed ");break;}
+case"alnum_s":case"alphanumeric_space":{ret=TestInputType(objValue,"[^A-Za-z0-9\\s]",strError,objValue.name+": Only alpha-numeric characters and space allowed ");break;}
+case"num":case"numeric":{ret=TestInputType(objValue,"[^0-9]",strError,objValue.name+": Only digits allowed ");break;}
+case"dec":case"decimal":{ret=TestInputType(objValue,"[^0-9\.]",strError,objValue.name+": Only numbers allowed ");break;}
+case"alphabetic":case"alpha":{ret=TestInputType(objValue,"[^A-Za-z]",strError,objValue.name+": Only alphabetic characters allowed ");break;}
+case"alphabetic_space":case"alpha_s":{ret=TestInputType(objValue,"[^A-Za-z\\s]",strError,objValue.name+": Only alphabetic characters and space allowed ");break;}
+case"email":{ret=TestEmail(objValue,strError);break;}
+case"lt":case"lessthan":{ret=TestLessThan(objValue,cmdvalue,strError);break;}
+case"gt":case"greaterthan":{ret=TestGreaterThan(objValue,cmdvalue,strError);break;} 
+case"regexp":{ret=TestRegExp(objValue,cmdvalue,strError);break;}
+case"dontselect":{ret=TestDontSelect(objValue,cmdvalue,strError)
+break;}
+case"dontselectchk":{ret=TestDontSelectChk(objValue,cmdvalue,strError)
+break;}
+case"shouldselchk":{ret=TestShouldSelectChk(objValue,cmdvalue,strError)
+break;}
+case"selone_radio":{ret=TestSelectOneRadio(objValue,strError);break;}} 
+return ret;}
+function VWZ_IsListItemSelected(listname,value)
+{for(var i=0;i<listname.options.length;i++)
+{if(listname.options[i].selected==true&&listname.options[i].value==value)
+{return true;}}
+return false;}
+function VWZ_IsChecked(objcheck,value)
+{if(objcheck.length)
+{for(var c=0;c<objcheck.length;c++)
+{if(objcheck[c].checked=="1"&&objcheck[c].value==value)
+{return true;}}}
+else
+{if(objcheck.checked=="1")
+{return true;}}
+return false;}

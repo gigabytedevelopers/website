@@ -19,7 +19,6 @@ logged_in();
 		<link rel="shortcut icon" href="images/gigaicon.ico">
     </head>
     <body>
-	<?php include_once("includes/googleanalyticstracking.php") ?>
         <div class="container">
             <header>
                 <a href="index"><h1>Gigabyte Developers Incorporated <span>Account Activation</span></h1></a>

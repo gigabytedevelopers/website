@@ -17,7 +17,6 @@ global $session_user_id;
         <meta name="theme-color" content="#028fcc">
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/style3.css" />
-		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
 		<link rel="shortcut icon" href="images/gigaicon.ico">
     </head>
     <body>
@@ -49,13 +48,13 @@ if (isset($_POST['search_name'])) {
 	$search_name = $_POST['search_name'];
 	if (!empty($search_name)) {
 		if (strlen($search_name)>=1) {
-			$query = "SELECT `username`, `first_name`, `last_name`, `email`, `profile` FROM `users` WHERE `username` LIKE '%".mysql_real_escape_string($search_name)."%'";
-			$query_run = mysql_query($query);
-			$query_num_rows = mysql_num_rows($query_run);
+			$query = "SELECT `username`, `first_name`, `last_name`, `email`, `profile` FROM `users` WHERE `username` LIKE '%".((isset($GLOBALS["___mysqli_ston"]) && is_object($GLOBALS["___mysqli_ston"])) ? mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $search_name) : ((trigger_error("[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.", E_USER_ERROR)) ? "" : ""))."%'";
+			$query_run = mysqli_query($GLOBALS["___mysqli_ston"], $query);
+			$query_num_rows = mysqli_num_rows($query_run);
 			if ($query_num_rows>=1) {
 				echo $query_num_rows.' results found:<br>';
-				while ($query_row = mysql_fetch_assoc($query_run)) {
-					echo '<img src="', $query_row ['profile'], '" alt="">' . ' '?><a href="user/<?php echo $query_row['username']; ?>"><?php echo $query_row['first_name'] . ' ' , $query_row['last_name'].  ''?></a><?php  ''?> (<?php echo $query_row['username']?>)<br/> <?php '' . '<br>';?><?php 
+				while ($query_row = mysqli_fetch_assoc($query_run)) {
+					echo '<img src="', $query_row ['profile'], '" alt="Profile Picture">' . ' '?><a href="user/<?php echo $query_row['username']; ?>"><?php echo $query_row['first_name'] . ' ' , $query_row['last_name'].  ''?></a><?php  ''?> (<?php echo $query_row['username']?>)<br/> <?php '' . '<br>';?><?php 
 				}
 			} else {
 				echo 'Sorry! Your search results no matches!';

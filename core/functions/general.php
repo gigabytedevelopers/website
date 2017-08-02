@@ -25,10 +25,10 @@ function admin_protect() {
 	}
 }
 function array_sanitize(&$item) {
-	$item = htmlentities(strip_tags(mysql_real_escape_string($item)));
+	$item = htmlentities(strip_tags(((isset($GLOBALS["___mysqli_ston"]) && is_object($GLOBALS["___mysqli_ston"])) ? mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $item) : ((trigger_error("[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.", E_USER_ERROR)) ? "" : ""))));
 }
 function sanitize($data) {
-	return htmlentities(strip_tags(mysql_real_escape_string($data)));
+	return htmlentities(strip_tags(((isset($GLOBALS["___mysqli_ston"]) && is_object($GLOBALS["___mysqli_ston"])) ? mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $data) : ((trigger_error("[MySQLConverterToo] Fix the mysql_escape_string() call! This code does not work.", E_USER_ERROR)) ? "" : ""))));
 }
 function output_errors($errors) {
 	return '<ul><li>' . implode('</li><li>', $errors). '</li></ul>';

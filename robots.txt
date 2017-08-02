@@ -2,7 +2,7 @@ User-Agent: *
 
 Allow: /assets/
 
-Allow: /contactcss/
+Allow: /fonts/
 
 Allow: /css/
 
