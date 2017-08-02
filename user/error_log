@@ -1,0 +1,1 @@
+[25-Mar-2017 17:05:39 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/gigabyte/public_html/user/core/database/connect.php on line 3

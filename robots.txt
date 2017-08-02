@@ -1,0 +1,25 @@
+User-Agent: *
+
+Allow: /assets/
+
+Allow: /fonts/
+
+Allow: /css/
+
+Allow: /images/
+
+Allow: /user/
+
+Allow: /index.php
+
+Allow: /mobile.php
+
+Allow: /loggedin.php
+
+Allow: /loggedinonmobile.php
+
+Allow: /login.php
+
+Allow: /register.php
+
+Allow: /contact.php

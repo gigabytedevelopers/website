@@ -7,7 +7,7 @@
 					<a href="index3.html" class="current-demo">Demo 3</a>
 				</nav> -->
             </header>
-            <section>
+            <section>				
                 <div id="container_demo" >
                     <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
                     <a class="hiddenanchor" id="toregister"></a>
