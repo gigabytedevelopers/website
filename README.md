@@ -5,6 +5,9 @@ Open-Source <a href="http://gigabytedevelopersinc.com">Gigabyte Developers Inco
 [![DUB](https://img.shields.io/badge/downloads-1k%2Fweek-green.svg)]()
 [![DUB](https://img.shields.io/badge/Powered%20by-PHP-blue.svg)]()
 
+![Gigabyte-Developers](https://raw.githubusercontent.com/gigabytedevelopers/website/master/banner1.png)
+![Gigabyte-Developers](https://raw.githubusercontent.com/gigabytedevelopers/website/master/banner2.png)
+
 <h1><strong>About The Developer</strong></h1>
 <a href="http://facebook.com/austin.nwokoma.9" target="_blank"><img src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" alt="" width="50px"/></a>
 <a href="http://instagram.com/emmanwokoma" target="_blank"><img src="https://image.flaticon.com/icons/png/128/174/174855.png" alt="" width="50px"/></a>
