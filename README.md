@@ -8,7 +8,7 @@ Open-Source <a href="http://gigabytedevelopersinc.com">Gigabyte Developers Inco
 ![Gigabyte-Developers](https://raw.githubusercontent.com/gigabytedevelopers/website/master/banner1.png)
 ![Gigabyte-Developers](https://raw.githubusercontent.com/gigabytedevelopers/website/master/banner2.png)
 
-<h1><strong>About The Developer</strong></h1>
+<h1><strong>About The CEO and Co-Founders</strong></h1>
 <a href="http://facebook.com/austin.nwokoma.9" target="_blank"><img src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png" alt="" width="50px"/></a>
 <a href="http://instagram.com/emmanwokoma" target="_blank"><img src="https://image.flaticon.com/icons/png/128/174/174855.png" alt="" width="50px"/></a>
 <a href="http://twitter.com/enwokoma" target="_blank"><img src="http://icons.iconarchive.com/icons/graphicloads/rounded-social-media/512/twitter-icon.png" alt="" width="50px"/></a>
