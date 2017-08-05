@@ -21,3 +21,5 @@ Open-Source <a href="http://gigabytedevelopersinc.com">Gigabyte Developers Inco
 <a href="http://twitter.com/gigabytedevsinc" target="_blank"><img src="http://icons.iconarchive.com/icons/graphicloads/rounded-social-media/512/twitter-icon.png" alt="" width="50px"/></a>
 <a href="http://linkedin.com/in/gigabytedevelopersinc" target="_blank"><img src="http://www.iconsdb.com/icons/preview/caribbean-blue/linkedin-6-xxl.png" alt="" width="50px"/></a>
 <a href="https://plus.google.com/u/0/+GigabyteDevelopers" target="_blank"><img src="http://donnaloustevens.com/wp-content/themes/donnaloustevens/images/google%20plus.png" alt="" width="50px"/></a>
+
+![Gigabyte-Developers](https://raw.githubusercontent.com/gigabytedevelopers/website/master/banner3.png)
