@@ -11,8 +11,9 @@ global $session_user_id;
 <?php include_once("includes/googleanalyticstracking.php") ?>
 	<div id="fb-root"></div>
 <noscript>
-	<p><div class="fa fa-warning" style="font-size: 20px; display: block; color: red; text-align: center;">Awww! Snap! Looks like you don't have JavaScript enabled. Please enable JavaScript in your browser, and then reload this page.</div></p>
-	<p><a href="index-noJS" style="font-size: 20px; display: block; color: green; text-align: center;">Click Here to view our non-JS compatible version.</a></p>
+    <marquee direction="left" scrollamount="10"><p><div class="fa fa-warning" style="font-size: 20px; display: block; color: red; text-align: center;">Awww! Snap! Looks like you don't have JavaScript enabled. Please enable JavaScript in your browser, and then reload this page.</div></p></marquee>
+    <p><a href="index-noJS" style="font-size: 20px; display: block; color: green; text-align: center;">Click Here to view our non-JS compatible version.</a></p>
+    <!-- <marquee direction="left" scrollamount="9">Hello</marquee> -->
     <style>#ip-container{display:none}</style>
 </noscript>
   <?php include 'includes/preloader.php'; ?><!--PreLoader-->
