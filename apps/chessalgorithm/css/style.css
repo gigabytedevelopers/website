@@ -1,0 +1,33 @@
+table {
+   table-layout: fixed;
+   border-collapse: collapse;
+}
+
+td {
+   width: 34px;
+   height: 34px;
+   font-size: 26px;
+   text-align: center;
+   vertical-align: center;
+}
+
+tr:nth-child(odd) td:nth-child(odd) {
+   background-color: #EEE; 
+}
+
+tr:nth-child(even) td:nth-child(even) {
+   background-color: #EEE; 
+}
+
+tr:nth-child(odd) td:nth-child(even) {
+   background-color: #090; 
+}
+
+tr:nth-child(even) td:nth-child(odd) {
+   background-color: #090; 
+}
+
+button {
+    width: 130px;
+    height: 40px;
+}

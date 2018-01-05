@@ -31,7 +31,7 @@ $to = "gigabytedevelopers@gmail.com";//<== update the email address
 $from = "Reply-To: $visitor_email";
 $headers .= "\r\n Reply-To: $visitor_email \r\n";
 //Send the email!
-mail($to,$email_subject,$email_body,$from);
+mail($to, $email_subject, $email_body, "From: Gigabyte Developers " . $visitor_email);
 //done. redirect to thank-you page.
 header('Location: bat/thank-you.html');
 

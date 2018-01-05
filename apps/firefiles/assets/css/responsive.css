@@ -1,0 +1,198 @@
+
+
+/*
+Author: XpeedStudio
+Author URI: http://themeforest.net/user/XpeedStudio/portfolio
+*/
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 15px;
+    }
+	
+	.home-content h1 {
+    font-size:32px;
+	}
+	.video-content h1 {
+    font-size: 38px;
+	}
+    
+
+}
+
+/* Portrait tablets and small desktops */
+@media  (max-width: 991px) {
+    html {
+        font-size: 90%;
+    }
+   .img-overlay {
+    height: 83%;
+   }
+   .gallery-item {
+	margin-bottom:40px;
+	}
+	.navbar-header{
+	margin-bottom:50px;	
+	}
+	.nav>li>a {
+    
+    padding: 10px 12px;
+	}
+	
+	.price-category.basic {
+    margin-left:0px;
+	}
+	.price-category.advance {
+    margin-right:0px;
+	}
+
+
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    html {
+        font-size: 80%;
+    }
+	
+	.download-content h1 {
+    font-size: 40px;
+	}
+	.testimonial-img{
+	margin:0 0 20px 0;
+	}
+	.video-content h1 {
+    font-size: 26px;
+	}
+	.home-content h1 {
+    font-size: 33px;
+	}
+	.img-overlay {
+    height: 91%;
+   }
+   .navbar-default .navbar-toggle {
+    border:0;
+    background: #4bcaff;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+	}
+	
+	.navbar-default .navbar-toggle:hover{
+	border:0;
+    background:#14a0da;
+	}
+	
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    border:0;
+	}
+	
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border:0;
+	}
+	.gallery:hover  .gallery-icon{
+	bottom:50%;
+	left:43%;
+	}
+	
+	
+	
+
+}
+
+
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    html {
+        font-size: 65%;
+    }
+	
+	.home{
+	  background: url(../images/header-bg-mobile.png) no-repeat top;
+	  background-size: cover;
+	  -moz-background-size: cover;
+	  -webkit-background-size: cover;
+	  -o-background-size: cover;
+	  min-height:700px;
+	  width: 100%;
+	  overflow: hidden;
+	}
+	
+	.home-content h1 {
+    font-size:20px;
+	}
+	
+	.download-content h1 {
+    font-size: 18px;
+	}
+	.download-content button {
+    margin-top: 12px;
+    margin-left: -26px;
+	}
+   .heading-content h3 {
+    font-size: 23px;
+	}
+	.heading-content h5 {
+    font-size: 12px;
+	}
+	.btn-default {
+	margin-bottom:20px;
+	}
+	.price-category.professional h4 {
+    font-size: 20px;
+	}
+	.img-overlay {
+    height: 87%;
+   }
+   .gallery:hover  .gallery-icon{
+	bottom:50%;
+	left:40%;
+	}
+	.carousel-indicators {
+    left: 200px;
+	}
+	.video-content h1 {
+    font-size: 17px;
+	}
+   
+
+}
+
+
+
+@media (max-width: 320px) {
+
+
+    html {
+        font-size: 60.5%;
+    }
+	
+	.carousel-indicators li {
+    width: 45px;
+    
+}
+
+.carousel-indicators .active {
+    width: 45px;
+}
+.img-overlay {
+    height: 80%;
+   }
+   
+   .gallery:hover  .gallery-icon{
+	bottom:50%;
+	left:33%;
+	}
+	.carousel-indicators {
+    left: 130px;
+	}
+	.home-content h1 {
+    font-size:19px;
+	}
+	.video-content h1 {
+    font-size: 16px;
+	}
+
+}
+

@@ -3,6 +3,7 @@
         <?php include 'includes/head.php'; ?><!--/#HEAD-->
     <body>
 		<!--<div class='preloader'><div class='loaded'>&nbsp;</div></div>-->
+		<?php include_once("../../includes/googleanalyticstracking.php") ?>
         <?php include 'includes/header.php'; ?><!--/#NavBar Header Section-->
         <?php include 'includes/header_section.php'; ?><!--/#Main Header Section-->
         <?php include 'includes/works_section.php'; ?><!--/#Features-->

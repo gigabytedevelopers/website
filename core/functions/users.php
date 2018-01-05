@@ -9,10 +9,12 @@ function change_profile_image($user_id, $file_temp, $file_extn) {
 	move_uploaded_file($file_temp, $file_path);
 	mysqli_query($GLOBALS["___mysqli_ston"], "UPDATE `users` SET `profile` = '" . ((isset($GLOBALS["___mysqli_ston"]) && is_object($GLOBALS["___mysqli_ston"])) ? mysqli_real_escape_string($GLOBALS["___mysqli_ston"], $file_path) : ((trigger_error("[GigabyteDevelopers:Error-522] Fix the mysql_escape_string() call! This code does not work.", E_USER_ERROR)) ? "" : "")) . "' WHERE `user_id` = " . (int)$user_id);
 }
-function mail_users($subject, $body) {
+function mail_users($subject, $body, $from) {
+	$from = "gigabytedevelopers@gmail.com";
+	$headers .= "\r\n Reply-To: gigabytedevelopers@gmail.com \r\n";
 	$query = mysqli_query($GLOBALS["___mysqli_ston"], "SELECT `email`, `first_name` FROM `users` WHERE `allow_email` = 1");
 	while (($row = mysqli_fetch_assoc($query)) == true) {
-		mail($row['email'], $subject, "Hello " . $row['first_name'] . ",\n\n" . $body);
+		mail($row['email'], $subject, "Hello " . $row['first_name'] . ",\n\n" . $body, "From: Gigabyte Developers " . $from);
 	}
 }
 function has_access($user_id, $type) {

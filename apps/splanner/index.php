@@ -25,6 +25,7 @@
 </head>
 
 <body>
+<?php include_once("../../includes/googleanalyticstracking.php") ?>
 
     <a href="#header" id="back-to-top" class="top"><i class="fa fa-chevron-up"></i></a>
     <!-- HHHHHHHHHHHHHHHHHH        Preloader          HHHHHHHHHHHHHHHH -->

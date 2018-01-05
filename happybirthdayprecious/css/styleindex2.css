@@ -1,0 +1,42 @@
+/* Created by Hasan Amr Soliman */
+
+body {
+    background-color: #FAEFD9;
+    font-family: Caflisch Script Pro, cursive;
+	width: 100%;
+}
+
+img {
+    width : 95px;
+    height : 95px;
+    animation : spin 2s linear infinite;
+}
+
+@keyframes spin { 100% { transform : rotate(360deg); } }
+
+#main {
+    background-color: #C1C8FE;
+    height: 274px;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 7px 8px 4px 0px #888888;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-right: 20px;
+}
+@media screen and (max-width:480px) {
+    #main {
+    min-height: 400px;
+	}
+}
+
+#d {
+    position:absolute; 
+    bottom:0; 
+    right:0;
+}
+
+p {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
