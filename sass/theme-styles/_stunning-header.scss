@@ -1,0 +1,412 @@
+/*------------- #STUNNING-HEADER --------------*/
+
+
+.crumina-stunning-header {
+  position: relative;
+  background-size: cover;
+}
+
+.stunning-header-title {
+  display: inline-block;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.category-link {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.stunning-header-content {
+  position: relative;
+  z-index: 15;
+  padding: 55px 0;
+  float: left;
+  width: 100%;
+
+  & > * {
+    & + * {
+      margin-top: 40px;
+
+      &:last-child:not(.breadcrumbs-wrap) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+.breadcrumbs {
+  padding: 0;
+}
+
+.breadcrumbs-wrap > * + .breadcrumbs {
+  margin-left: 10px;
+}
+
+.breadcrumbs-item {
+  display: inline-block;
+  margin-bottom: 0;
+
+  a {
+    margin-right: 6px;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &.active {
+    span {
+      font-weight: $h-font-weight;
+      color: $primary-color;
+    }
+  }
+
+  .utouch-icon {
+    margin-right: 6px;
+    fill: #d1e8f6;
+    height: 6px;
+    width: 6px;
+  }
+
+  &:last-child {
+    .utouch-icon {
+      display: none;
+    }
+  }
+}
+
+.breadcrumbs--rounded {
+    overflow: hidden;
+    padding: 10px 30px;
+    background-color: $white-color;
+    border-radius: 30px;
+    box-shadow: 0 0 50px 0 rgba(137,168,199, 0.25);
+    display: inline-block;
+}
+
+.breadcrumbs--bordered {
+  border: solid 2px rgba(255,255,255,.1);
+  border-radius: 30px;
+  padding: 6px 30px;
+
+  .breadcrumbs-item a {
+    color: $primary-color;
+  }
+
+  .breadcrumbs-item.active span {
+    color: $white-color;
+  }
+
+}
+
+.breadcrumbs--semitransparent {
+  .breadcrumbs-item a, .utouch-icon {
+    font-size: 14px;
+    opacity: .7;
+    color: $white-color;
+    width: 14px;
+    height: 14px;
+  }
+
+  .breadcrumbs-item a:hover {
+    opacity: 1;
+  }
+
+  .breadcrumbs-item.active span {
+    color: $white-color;
+  }
+}
+
+.breadcrumbs-wrap {
+  z-index: 19;
+
+  &.with-border {
+    padding: 10px 0;
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 60px;
+  }
+
+  & + .crumina-heading {
+    margin-top: 20px;
+  }
+}
+
+.stunning-header--breadcrumbs-bottom-left {
+  .breadcrumbs-wrap {
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+  }
+}
+
+.stunning-header--breadcrumbs-bottom-center {
+  .breadcrumbs-wrap {
+    margin-bottom: 60px;
+    margin-top: auto;
+  }
+}
+
+.crumina-stunning-header--small {
+  .stunning-header-content {
+    padding: 30px 0;
+  }
+}
+
+.stunning-header--breadcrumbs-top {
+  .stunning-header-content {
+    padding: 0;
+  }
+
+  .breadcrumbs-item a {
+    font-size: 14px;
+  }
+}
+
+.stunning-header--content-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stunning-header--content-left-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .stunning-header-content {
+    padding-bottom: 80px;
+    max-width: 700px;
+  }
+}
+
+.stunning-header--content-padding100 {
+  .stunning-header-content {
+    padding: 100px 0;
+  }
+}
+
+.stunning-header--min560 {
+  min-height: 560px;
+}
+
+.stunning-header--min620 {
+  min-height: 620px;
+}
+
+.stunning-header--min640 {
+  min-height: 640px;
+}
+
+.icon-text-item {
+  .text {
+    font-weight: $h-font-weight;
+  }
+
+  .utouch-icon {
+    margin-right: 20px;
+    font-size: 26px;
+    height: 26px;
+    width: 26px;
+  }
+}
+
+
+
+/*------------- #Any colors background --------------*/
+
+
+.stunning-bg-clouds {
+  background-image: url("../img/stunning-bg.jpg");
+}
+
+.stunning-bg-1 {
+  background-image: url("../img/stunning-bg1.jpg");
+}
+
+.stunning-bg-2 {
+  background-image: url("../img/stunning-bg2.jpg");
+}
+
+.stunning-bg-3 {
+  background-image: url("../img/stunning-bg3.jpg");
+}
+
+.stunning-bg-4 {
+  background-image: url("../img/stunning-bg4.jpg");
+}
+
+.stunning-bg-5 {
+  background-image: url("../img/stunning-bg5.jpg");
+}
+
+.overlay--dark {
+  background-color: rgba(18, 25, 33, .8);
+}
+
+.overlay--yellow {
+  background-color: rgba(248, 145, 1, .5);
+}
+
+.overlay--red {
+  background-color: rgba(255, 49, 51, .5);
+}
+
+.overlay--blue {
+  background-color: rgba(0, 130, 215, .5);
+}
+
+.overlay--blue-dark {
+  background-color: rgba(0, 131, 255, .8);
+}
+
+.overlay--green {
+  background-color: rgba(1, 162, 160, .5);
+}
+
+.custom-color *:not(.btn):not(.breadcrumbs-item):not(.category-link):not(.breadcrumbs-custom) {
+    color: inherit !important;
+    fill: inherit !important;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.author-prof {
+  font-weight: $h-font-weight;
+}
+
+.author-name {
+  margin: 0;
+  line-height: 1;
+}
+
+.author-info {
+  text-align: left;
+}
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 1024px) {
+  .stunning-header-content .inline-items > .inline-items + .inline-items {
+    margin-left: 20px;
+  }
+
+  .stunning-header--content-inline {
+    .stunning-header-title {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+
+  .stunning-header-content .inline-items .btn.f-right {
+    float: none;
+    margin-left: 0;
+  }
+
+  .stunning-header--content-inline {
+    .stunning-header-title {
+      width: auto;
+    }
+  }
+
+  .stunning-header-content .inline-items > .inline-items {
+    display: block;
+    margin-bottom: 20px;
+
+    & + .inline-items {
+      margin-left: 0;
+    }
+  }
+
+  .stunning-header-content {
+    padding: 30px 0;
+  }
+
+  .stunning-header-title {
+    display: block;
+  }
+
+  .stunning-header--breadcrumbs-bottom-left {
+    .breadcrumbs-wrap {
+      position: relative;
+      left: auto;
+      bottom: auto;
+      transform: none;
+    }
+  }
+
+  .breadcrumbs-wrap, .author-block, .icon-text-item  {
+    position: relative;
+
+    &.inline-items > * {
+      display: inline-block;
+
+      & + * {
+        margin-top: auto;
+      }
+    }
+  }
+
+  .inline-items > * {
+    display: block;
+
+    & + * {
+      margin-top: 20px;
+    }
+  }
+
+  .stunning-header--content-padding100 .stunning-header-content {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .stunning-header--breadcrumbs-bottom-left {
+    .breadcrumbs-wrap {
+      position: relative;
+      left: auto;
+      bottom: auto;
+      margin-top: 20px;
+      transform: none;
+
+      & > * {
+        display: block;
+        margin: 0 auto;
+
+        & + * {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .stunning-header--content-center {
+    .stunning-header-content {
+      padding-bottom: 80px;
+    }
+
+    .breadcrumbs-wrap {
+      margin-top: 20px;
+
+      & > * {
+        display: block;
+        margin: 0 auto;
+
+        & + * {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

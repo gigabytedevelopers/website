@@ -1,0 +1,600 @@
+/*------------- #GLOBAL STYLES --------------*/
+
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body{
+  position: relative;
+  height: 100%;
+}
+
+body{
+  background: $body-bg;
+  color: $body-font-color;
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  font-weight: $body-font-weight;
+  line-height: $base-line-height;
+  letter-spacing: $body-letter-spacing;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+blockquote {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 20px;
+}
+
+table {
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #777;
+  text-align: left;
+}
+th {
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > tbody > tr > td,
+table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+table, th, td {
+  border: 1px solid #ddd;
+}
+table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+table > caption + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > th,
+table > thead:first-child > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+
+table > tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+table table {
+  background-color: #fff;
+}
+
+table col[class*="col-"] {
+  position: static;
+  display:table-column;
+  float: none;
+}
+table td[class*="col-"],
+table th[class*="col-"] {
+  position: static;
+  display:table-cell;
+  float: none;
+}
+table > thead > tr > td.active,
+table > tbody > tr > td.active,
+table > tfoot > tr > td.active,
+table > thead > tr > th.active,
+table > tbody > tr > th.active,
+table > tfoot > tr > th.active,
+table > thead > tr.active > td,
+table > tbody > tr.active > td,
+table > tfoot > tr.active > td,
+table > thead > tr.active > th,
+table > tbody > tr.active > th,
+table > tfoot > tr.active > th {
+  background-color: #f5f5f5;
+}
+
+table > thead > tr > td.success,
+table > tbody > tr > td.success,
+table > tfoot > tr > td.success,
+table > thead > tr > th.success,
+table > tbody > tr > th.success,
+table > tfoot > tr > th.success,
+table > thead > tr.success > td,
+table > tbody > tr.success > td,
+table > tfoot > tr.success > td,
+table > thead > tr.success > th,
+table > tbody > tr.success > th,
+table > tfoot > tr.success > th {
+  background-color: #dff0d8;
+}
+
+table > thead > tr > td.info,
+table > tbody > tr > td.info,
+table > tfoot > tr > td.info,
+table > thead > tr > th.info,
+table > tbody > tr > th.info,
+table > tfoot > tr > th.info,
+table > thead > tr.info > td,
+table > tbody > tr.info > td,
+table > tfoot > tr.info > td,
+table > thead > tr.info > th,
+table > tbody > tr.info > th,
+table > tfoot > tr.info > th {
+  background-color: #d9edf7;
+}
+
+table > thead > tr > td.warning,
+table > tbody > tr > td.warning,
+table > tfoot > tr > td.warning,
+table > thead > tr > th.warning,
+table > tbody > tr > th.warning,
+table > tfoot > tr > th.warning,
+table > thead > tr.warning > td,
+table > tbody > tr.warning > td,
+table > tfoot > tr.warning > td,
+table > thead > tr.warning > th,
+table > tbody > tr.warning > th,
+table > tfoot > tr.warning > th {
+  background-color: #fcf8e3;
+}
+
+table > thead > tr > td.danger,
+table > tbody > tr > td.danger,
+table > tfoot > tr > td.danger,
+table > thead > tr > th.danger,
+table > tbody > tr > th.danger,
+table > tfoot > tr > th.danger,
+table > thead > tr.danger > td,
+table > tbody > tr.danger > td,
+table > tfoot > tr.danger > td,
+table > thead > tr.danger > th,
+table > tbody > tr.danger > th,
+table > tfoot > tr.danger > th {
+  background-color: #f2dede;
+}
+
+a {
+  text-decoration: none;
+  color: $global-link-color;
+  transition: all 0.15s linear;
+}
+
+p {
+  font-size: $p-font-size;
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
+}
+
+figure {
+  margin: 0;
+  max-width: 100%;
+}
+
+// Make select elements 100% width by default
+select {
+  width: 100%;
+  border: 1px solid $body-font-color;
+  appearance:none;
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+}
+
+
+// Make sure textarea takes on height automatically
+textarea { height: auto; min-height: 50px; }
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+  color: $body-font-color;
+}
+
+textarea:-moz-placeholder,
+input:-moz-placeholder {
+  color: $body-font-color;
+}
+
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder{
+  color: $body-font-color;
+}
+
+input, textarea {
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  &:invalid {
+    border: 1px solid #ff00004d;
+  }
+
+  &:-moz-submit-invalid {
+    box-shadow: none;
+  }
+
+  &.wpcf7-form-control {
+    width: 100%;
+  }
+}
+
+/*------------- #Styles for list --------------*/
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list {
+  color: $heading-color;
+  overflow: hidden;
+  margin-left: 30px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 0.35em;
+    font-size: 1em;
+    overflow: hidden;
+    clear: both;
+    transition: all .3s ease;
+    font-weight: 700;
+
+    @media (max-width: 640px) {
+      font-size: .8em;
+    }
+
+    a, li {
+      color: inherit;
+      display: block;
+      overflow: hidden;
+    }
+
+    i, .utouch-icon {
+      margin-right: 20px;
+      margin-top: 7px;
+      font-size: 12px;
+      float: left;
+      height: 1em;
+      width: 1em;
+    }
+  }
+
+  &.with-padding {
+    padding-left: 60px;
+  }
+
+}
+
+.list--standard {
+  i, .utouch-icon {
+    color: $green;
+    fill: $green;
+  }
+
+  a:hover {
+    color: $green;
+    fill: $green;
+  }
+}
+
+.list--breez {
+
+  li i, li .utouch-icon {
+    color: $breez;
+    fill: $breez;
+    height: 32px;
+    width: 32px;
+    margin-top: 0;
+  }
+
+  li a {
+    color: $breez;
+  }
+}
+
+.list--breez-custom {
+
+  li i, li .utouch-icon {
+    color: $breezCustom;
+    fill: $breezCustom;
+    height: 32px;
+    width: 32px;
+    margin-top: 0;
+  }
+
+  li a {
+    color: $breezCustom;
+  }
+}
+
+.list--primary {
+  i, .utouch-icon {
+    color: $primary-color;
+    fill: $primary-color;
+  }
+
+  a:hover {
+    color: $primary-color;
+    fill: $primary-color;
+  }
+}
+
+
+
+ol {
+  counter-reset: list1;
+  padding-left: 20px;
+  margin: 0;
+
+  li {
+    list-style: none;
+    margin-bottom: 18px;
+    font-size: 18px;
+    transition: all .3s ease;
+    position: relative;
+    padding-left: 30px;
+
+    a {
+      display: inline-block;
+    }
+  }
+
+  &.list {
+    margin-left: 0;
+  }
+
+} /* Init counter */
+
+ol li:before {
+  position:absolute;
+  counter-increment: list1; /* Add "1" */
+  content: counter(list1, decimal-leading-zero) " "; /* Show count */
+  color: $heading-color;
+  display: inline-block;
+  left: 0;
+}
+
+ol ol {
+  counter-reset: list2;
+  margin: 10px 0;
+  padding-left: 0;
+}
+
+ol ol li {
+  padding-left: 40px;
+}
+
+ol ol li:before {
+  counter-increment: list2;
+  content: counter(list1) "." counter(list2) ". ";
+}
+
+ol ul ol {
+  counter-reset: list1;
+
+  li:before {
+    counter-increment: list1; /* Add "1" */
+    content: counter(list1, decimal-leading-zero) " "; /* Show count */
+  }
+
+}
+
+blockquote {
+  p {
+    margin: 0;
+  }
+}
+
+p {
+  margin: 0 0 1.5em 0;
+}
+
+table {
+  margin: 1.5em 0;
+}
+
+ul ul,
+ol ul,
+ul ol {
+  margin: 10px 0;
+  padding-left: 0;
+}
+
+ul ol li::before {
+  position: absolute;
+  counter-increment: list1;
+  content: counter(list1, decimal-leading-zero) " ";
+  color: #2f2c2c;
+  display: inline-block;
+  font-size: 18px;
+  left: 0;
+}
+
+ul ol ul li::before {
+  content: "\f0da";
+  position: absolute;
+  left: 0;
+  transition: all .3s ease;
+  font-family: "FontAwesome";
+  counter-increment: none;
+  font-size: 12px;
+}
+
+ol ul ol li:before {
+  counter-increment: list1; /* Add "1" */
+  content: counter(list1, decimal-leading-zero) " "; /* Show count */
+  color: $heading-color;
+  display: inline-block;
+  position:absolute;
+  list-style: none;
+  font-size: 18px;
+  left: 0;
+}
+
+ol ol ol {
+  counter-reset: list3;
+}
+
+ol ol ol li {
+  padding-left: 55px;
+}
+
+ol ol ol li::before {
+  counter-increment: list3;
+  content: counter(list1) "." counter(list1) "." counter(list3) ".";
+}
+
+ul ol li {
+  padding-left: 30px;
+}
+
+
+blockquote {
+  margin: 3em 0;
+  padding: 15px 15px 15px 40px;
+  position: relative;
+
+  @media (max-width: 640px) {
+    padding-left: 50px;
+    margin: 1em 0;
+  }
+
+  h6 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6a87a9;
+
+    span {
+      color: $primary-color;
+      font-weight: 700;
+      display: block;
+    }
+  }
+
+  cite {
+    display: block;
+    color: $body-font-color;
+    font-size: .7em;
+
+    &:before {
+      content: "\2014\00a0";
+      color: $body-font-color;
+    }
+  }
+
+  &:before {
+    content: "";
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    display: block;
+    background: url("../svg/quotes.svg") 50% 50% no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    @media (max-width: 640px) {
+      top: 0;
+    }
+  }
+
+  p {
+    margin: 0 0 20px !important;
+    font-size: 28px;
+    line-height: 1.3em;
+    font-weight: 700;
+
+    @media (max-width: 640px) {
+      font-size: 16px;
+    }
+  }
+}
+
+
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+@media (max-width: 640px) {
+  ol li {
+    font-size: 13px;
+    padding-left: 20px;
+  }
+
+  ol ol li {
+    padding-left: 30px;
+  }
+
+  ol ol ol li {
+    padding-left: 40px;
+  }
+}

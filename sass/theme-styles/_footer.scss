@@ -1,0 +1,86 @@
+/*------------- #FOOTER --------------*/
+
+
+
+.footer {
+  background-image: url("../img/clouds.png");
+  background-color: $black;
+  padding: 120px 0 0;
+  position: relative;
+  box-shadow: 10px 0 30px 0 rgba(18, 25, 33, 0.4);
+
+  .widget-title {
+	color: $white-color;
+    margin-bottom: 30px;
+  }
+
+  .w-contacts .btn {
+    margin: 30px 0;
+  }
+
+  &.js-fixed-footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+    -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+    transition-timing-function: cubic-bezier(0, 0, 0, 1);
+
+    @media (max-width: 768px) {
+      position: relative;
+    }
+  }
+}
+
+.sub-footer {
+  background-color: $white-color;
+  padding: 35px 0;
+  text-align: center;
+  position: relative;
+  margin-top: 120px;
+
+  span {
+    font-size: 14px;
+    margin-bottom: 1px;
+    color: $icon-color;
+    display: block;
+  }
+
+  a {
+    color: $body-font-color;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .sub-footer__link {
+    color: $primary-color;
+    font-weight: $h-font-weight;
+  }
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  -webkit-margin-bottom-collapse: separate;
+}
+
+.block-footer-height {
+  position: relative;
+  dth: 100%;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

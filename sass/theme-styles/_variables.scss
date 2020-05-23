@@ -1,0 +1,81 @@
+/*------------- #VARIABLES --------------*/
+
+
+// We use these as default colors throughout
+
+$primary-color: #0083ff !default;
+$secondary-color: #273f5b !default;
+$heading-color: $secondary-color !default;
+$global-link-color: $secondary-color !default;
+
+
+$white-color: #fff !default;
+$border-color: #dbe3ec !default;
+
+
+$h1-fontsize: 48px !default;
+$h2-fontsize: 38px !default;
+$h3-fontsize: 36px !default;
+$h4-fontsize: 32px !default;
+$h5-fontsize: 24px !default;
+$h6-fontsize: 18px !default;
+$h-font-weight: 700 !default;
+
+$heading-font-family: 'Nunito', Arial, 'Helvetica Neue', Helvetica, sans-serif, !default;
+$p-font-size: 16px !default;
+
+$h-letter-spacing: .02em;
+
+// We use these to control various global styles
+
+$body-bg: #fff !default;
+$body-font-size: 16px !default;
+$body-font-color: #4b5d73 !default;
+$body-font-family: 'Nunito', Arial, 'Helvetica Neue', Helvetica, serif, sans-serif, !default;
+$body-font-weight: 400 !default;
+$body-letter-spacing: 0.02em !default;
+$base-line-height: 1.6 !default;
+
+$weight-black: 900 !default;
+
+
+$icon-color: #6987ab !default;
+
+$green: #01a23c !default;
+$green-light: #61b131 !default;
+$red: #ff3133 !default;
+$black: #121921 !default;
+$orange: #EF6517 !default;
+$grey: #738CAA !default;
+$grey-light: #ecf4fc !default;
+$orange-light: #F89101 !default;
+$yellow: #FECF39 !default;
+$lime: #9FC31A !default;
+$blue: #0082d7 !default;
+$blue-light: #98d5ff !default;
+$blue-lighteen: #ecf5fe !default;
+$yellow-light: #ffff00 !default;
+$breez: #00ffff !default;
+$breezCustom: #0083ff !default;
+$lime-light: #00ff00 !default;
+$peach: #f4b3a9 !default;
+$violet: #bb26f0 !default;
+$rose: #e81d51 !default;
+
+
+$bg-primary: $primary-color;
+$bg-secondary: $secondary-color;
+
+
+
+// Variables for switcher
+$toggle-enabled-bg: #86d993;
+$toggle-enabled-color: #FFFFFF;
+$toggle-enabled-tab-bg: #FFFFFF;
+
+$toggle-disabled-bg: #de474e;
+$toggle-disabled-color: #FFFFFF;
+$toggle-disabled-tab-bg: #FFFFFF;
+
+
+

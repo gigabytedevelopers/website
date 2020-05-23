@@ -1,0 +1,299 @@
+/*------------- #TOP-BAR --------------*/
+
+
+.top-bar {
+  background-color: $white-color;
+  padding: 13px 0;
+  font-size: 13px;
+  color: $heading-color;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, .3);
+  position: relative;
+  z-index: 30;
+  transition: all .3s ease;
+
+  &.open {
+    transform: translate(-50%, -3%);
+    z-index: 9999;
+  }
+
+  .top-bar-contact {
+    float: left;
+  }
+
+  .world {
+    width: 30px;
+  }
+
+  .nice-select {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px 0 0;
+    background-color: transparent;
+    font-size: 13px;
+    margin-bottom: 0;
+    color: $primary-color;
+    width: auto;
+    min-width: 110px;
+    box-shadow: none;
+    position: unset;
+
+    .option {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 12px;
+    }
+
+    &:after {
+      height: 6px;
+      width: 6px;
+      margin-top: -4px;
+    }
+
+    &:focus {
+      box-shadow: none;
+      background-color: transparent;
+    }
+  }
+
+  .contact-item {
+    padding: 0 30px;
+    position: relative;
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: bottom;
+
+    .utouch-icon {
+      height: 15px;
+      width: 15px;
+      fill: $icon-color;
+      margin-right: 15px;
+      position: relative;
+      top: 2px;
+    }
+
+    .world {
+      display: inline-block;
+      vertical-align: middle;
+      width: 30px;
+      height: 25px;
+      top: auto;
+    }
+
+    &.language-switcher {
+      padding-left: 0;
+      padding-right: 10px;
+      margin-right: 50px;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      padding-right: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: '.';
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      font-size: 50px;
+      line-height: 1;
+      color: $body-font-color;
+    }
+  }
+
+  a {
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  span {
+    color: $icon-color;
+  }
+
+  .follow_us {
+    float: right;
+    top: 4px;
+    position: relative;
+  }
+
+  .socials {
+    display: inline-block;
+    margin: 0 0 0 10px;
+
+    img {
+      width: 16px;
+      height: auto;
+    }
+
+    a {
+      border: none;
+    }
+
+    .social__item {
+      margin-left: 10px;
+    }
+  }
+}
+
+.top-bar-close {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  display: none;
+  border: none;
+
+  .utouch-icon {
+    fill: $icon-color;
+    width: 15px;
+    height: 15px;
+
+    &:hover {
+      fill: $primary-color;
+    }
+  }
+}
+
+.top-bar-dark {
+  background-color: #151414;
+  color: #5f7288;
+
+  a {
+    color: #5f7288;
+  }
+
+  .contact-item .utouch-icon {
+    fill: #5f7288;
+  }
+
+  .nice-select .list {
+    background-color: #151414;
+    border: none;
+    box-shadow: 0 5px 40px rgba(255, 255, 255, .3);
+    color: #5f7288;
+  }
+
+  .nice-select .option.selected.focus {
+    background-color: transparent;
+
+    &:hover {
+      background-color: #424444;
+    }
+  }
+
+  .nice-select::after {
+    border-bottom: 2px solid #5f7288;
+    border-right: 2px solid #5f7288;
+  }
+
+  .nice-select .option:hover {
+    background-color: #424444;
+  }
+}
+
+.top-bar-link {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 0 0 10px 10px;
+  background-color: $blue-lighteen;
+  text-align: center;
+  padding: 0 16px;
+  z-index: 50;
+  box-shadow: 10px 0 30px 0 rgba(0, 131, 255, 0.4);
+  border: 1px solid $border-color;
+
+  .utouch-icon {
+    height: 15px;
+    width: 15px;
+    fill: $icon-color;
+    transform: rotate(180deg);
+    transition: all .3s ease;
+  }
+
+  &:hover {
+    .utouch-icon {
+      fill: $primary-color;
+    }
+  }
+}
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 1200px) {
+  .top-bar {
+    & > .container {
+      min-width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  .top-bar .contact-item:first-child {
+    margin-right: 0;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .top-bar {
+    width: 320px;
+    transform: translate(-50%, -103%);
+    position: absolute;
+    left: 50%;
+    border-radius: 0 0 10px 10px;
+    padding: 40px 0 30px;
+    text-align: center;
+    box-shadow: 10px 0 30px 0 rgba(0, 131, 255, 0.4);
+
+    & > .container {
+      min-width: unset;
+      width: auto;
+    }
+
+    .top-bar-contact {
+      float: none;
+    }
+
+    .nice-select {
+      float: none;
+      min-width: 160px;
+    }
+
+    .contact-item {
+      padding: 0;
+      margin-bottom: 15px;
+      float: none;
+      display: block;
+
+      &:first-child {
+        padding: 0;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+
+    .follow_us {
+      float: none;
+    }
+  }
+
+  .top-bar-close {
+    display: block;
+  }
+}

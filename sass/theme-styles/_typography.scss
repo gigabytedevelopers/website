@@ -1,0 +1,273 @@
+
+/*------------- #TYPOGRAPHY --------------*/
+
+
+h1, .h1 {
+  font-size: $h1-fontsize;
+  font-weight: $h-font-weight;
+  color: $heading-color;
+  font-family: $heading-font-family;
+  margin:  .5em 0;
+  line-height: 1em;
+  letter-spacing: $h-letter-spacing;
+
+  a {
+    color: inherit;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 2em;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1.8em;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.6em;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 1.5em;
+  }
+}
+
+h2, .h2 {
+  margin:  .5em 0;
+  font-size: $h2-fontsize;
+  line-height: 1.3em;
+  font-weight: $h-font-weight;
+  color: $heading-color;
+  font-family: $heading-font-family;
+  letter-spacing: $h-letter-spacing;
+
+   a {
+    color: inherit;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 1.9em;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1.7em;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.5em;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 1.3em;
+  }
+}
+
+h3, .h3 {
+  margin:  .5em 0;
+  font-size: $h3-fontsize;
+  line-height: 1.3em;
+  font-weight: $h-font-weight;
+  color: $heading-color;
+  font-family: $heading-font-family;
+  letter-spacing: $h-letter-spacing;
+
+  a {
+    color: inherit;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 1.8em;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1.6em;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.4em;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 1.2em;
+  }
+}
+
+h4, .h4 {
+  margin:  .5em 0;
+  font-size: $h4-fontsize;
+  line-height: 1.3em;
+  font-weight: $h-font-weight;
+  color: $heading-color;
+  font-family: $heading-font-family;
+  letter-spacing: $h-letter-spacing;
+
+  a {
+    color: inherit;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 1.7em;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1.5em;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.3em;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 1.1em;
+  }
+}
+
+h5, .h5 {
+  margin:  .5em 0;
+  font-size: $h5-fontsize;
+  line-height: 1.3em;
+  font-weight: $h-font-weight;
+  color: $heading-color;
+  font-family: $heading-font-family;
+  letter-spacing: $h-letter-spacing;
+
+  a {
+    color: inherit;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 1.6em;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1.4em;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2em;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 1em;
+  }
+}
+
+h6, .h6 {
+  margin:  .5em 0;
+  font-size: $h6-fontsize;
+  line-height: 1.3em;
+  font-weight: $h-font-weight;
+  color: $heading-color;
+  font-family: $heading-font-family;
+  letter-spacing: $h-letter-spacing;
+
+  a {
+    color: inherit;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 1.4em;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1.2em;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1em;
+  }
+
+  @media (max-width: 360px) {
+    font-size: .9em;
+  }
+
+}
+
+
+/*------------- #Styles for First-Letter --------------*/
+
+.first-letter--dark-round span:first-of-type {
+   display: block;
+   position: relative;
+   width: 70px;
+   height: 70px;
+   background-color: #2f2c2c;
+   border-radius: 50%;
+   float: left;
+   margin-right: 20px;
+   line-height: 70px;
+   font-size: 30px;
+   color: #fff;
+   text-align: center;
+ }
+
+.first-letter--squared span:first-of-type {
+  display: block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  float: left;
+  margin-right: 20px;
+  line-height: 70px;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  background-color: $primary-color;
+}
+
+.first-letter--dark span:first-of-type {
+
+  margin-right: 20px;
+  font-size: 48px;
+  line-height: 48px;
+  color: $heading-color;
+  float: left;
+}
+
+.first-letter--primary span:first-of-type {
+  color: $primary-color;
+  margin-right: 20px;
+  font-size: 48px;
+  line-height: 48px;
+  float: left;
+}
+
+/*------------- #Styles for Text Selection --------------*/
+
+/*Selection dark*/
+
+.selection--dark::-moz-selection{background: $heading-color; color: $body-font-color;}
+.selection--dark::selection{background: $heading-color; color: $body-font-color;}
+
+/*Selection primary*/
+
+.selection--primary::-moz-selection{color: $white-color;}
+.selection--primary::selection{color: $white-color;}
+
+/*Selection gray*/
+
+.selection--gray::-moz-selection{background: #e1e1e1; color: $heading-color;}
+.selection--gray::selection{background: #e1e1e1; color: $heading-color;}
+
+
+dl {
+  margin-bottom: 24px;
+}
+
+dl dt {
+  margin-bottom: 5px;
+  color: #777;
+  font-weight: bold;
+}
+
+dl dd {
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+abbr {
+  border-bottom: 1px dotted;
+  cursor: help;
+  border-color: $body-font-color;
+}

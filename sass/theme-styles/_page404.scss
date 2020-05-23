@@ -1,0 +1,144 @@
+/*------------- #PAGE404 --------------*/
+
+
+.page404 {
+  display: flex;
+  min-height: 100vh;
+
+  .col-8 {
+	width: 12.5%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  }
+
+  .error {
+	font-size: 50px;
+	color: $white-color;
+	transform: rotate(-90deg);
+	text-transform: uppercase;
+  }
+
+  .number {
+	font-size: 300px;
+	color: $white-color;
+	margin-left: -50px;
+	font-weight: 900;
+  }
+
+  .sub-footer {
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background-color: transparent;
+	padding: 0;
+	width: 95%;
+
+	span {
+	  color: $white-color;
+	}
+
+	.sub-footer__link {
+	  color: $white-color;
+	}
+
+	a {
+	  color: $white-color;
+	}
+
+  }
+
+  .site-logo {
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	transform: translate(-50%, 0);
+  }
+}
+
+.logo--center {
+  text-align: center;
+  color: $white-color;
+
+  img {
+	float: none;
+	margin-right: 0;
+  }
+
+  .logo-title {
+	color: inherit;
+  }
+
+  .logo-text {
+	float: none;
+  }
+}
+
+.page404-content {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  width: 95%;
+
+  & > * {
+	color: $white-color;
+	line-height: 1;
+  }
+
+  .title {
+	font-size: 42px;
+	margin-bottom: 20px;
+  }
+
+  .sub-title {
+	font-size: 22px;
+  }
+
+  a {
+	text-decoration: underline;
+  }
+}
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 1024px) {
+  .page404 .number {
+	font-size: 150px;
+	margin-left: -20px;
+  }
+
+  .page404 .error {
+	font-size: 40px;
+  }
+
+  .page404-content .title {
+	display: none;
+  }
+
+  .page404 .sub-footer {
+	bottom: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page404 .number {
+	font-size: 100px;
+	margin-left: -10px;
+  }
+
+  .page404 .error {
+	font-size: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .page404 .number {
+	font-size: 80px;
+  }
+}
