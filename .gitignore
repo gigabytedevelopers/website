@@ -1,0 +1,25 @@
+# Integrated Website Files
+# Local config files
+.well-known
+.json
+
+# Generated files
+bin/
+gen/
+out/
+
+# Log Files
+*.log
+
+# User email contents
+email.csv
+
+# Jetbrains PhpStorm
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+# Comment next line if keeping position of elements in Navigation Editor is relevant
+.idea/navEditor.xml
