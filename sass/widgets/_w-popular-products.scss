@@ -1,0 +1,29 @@
+/*------------- #W-POPULAR-PRODUCTS --------------*/
+
+
+.w-popular-products {
+  .product-item-thumb img {
+	box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .swiper-container {
+	padding-bottom: 50px;
+  }
+
+  .product-item {
+	padding: 0;
+
+	&:hover {
+	  background: transparent;
+	}
+  }
+
+  .square-colored::before {
+	display: none;
+  }
+
+  .product-item-thumb {
+	margin-bottom: 40px;
+  }
+}
+

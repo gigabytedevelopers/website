@@ -1,0 +1,55 @@
+/*------------- #W-AUTHOR --------------*/
+
+
+.w-author {
+  margin-top: 60px;
+
+  .testimonial-img-author {
+	width: 120px;
+	height: 120px;
+	margin-top: -100px;
+	position: relative;
+	overflow: visible;
+	margin-bottom: 35px;
+
+	img {
+	  border-radius: 100%;
+	  overflow: hidden;
+	  box-shadow: 10px 0 30px rgba(18,25,33,0.15);
+	}
+
+	.socials {
+	  position: absolute;
+	  left: 100%;
+	  bottom: 5px;
+	  margin: 0;
+	  width: 100%;
+
+	  .social__item {
+		margin-left: 10px;
+	  }
+	}
+  }
+
+  .btn {
+	margin-top: 10px;
+  }
+
+  .title {
+	margin-bottom: 20px;
+	display: block;
+  }
+}
+
+
+
+/*================= Responsive Mode ============*/
+
+
+
+@media (max-width: 460px) {
+  .w-author .testimonial-img-author .socials {
+	position: relative;
+	left: auto;
+  }
+}

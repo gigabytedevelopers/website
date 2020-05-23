@@ -1,0 +1,24 @@
+/*------------- #W-LATEST-MEMBERS --------------*/
+
+
+.members-list {
+  margin: 35px 0;
+
+	a {
+	  width: 60px;
+	  height: 60px;
+	  border-radius: 100%;
+	  box-shadow: 10px 0 30px rgba(18,25,33,0.15);
+	  overflow: hidden;
+	  display: block;
+	}
+
+  li {
+	display: inline-block;
+	margin-right: 8px;
+
+	&:last-child {
+	  margin-right: 0;
+	}
+  }
+}

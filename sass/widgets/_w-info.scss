@@ -1,0 +1,49 @@
+/*------------- #W-INFO --------------*/
+
+
+.w-info {
+  .logo-title, .logo-sub-title {
+	display: inline-block;
+  }
+
+  .site-logo {
+	margin-bottom: 30px;
+  }
+
+  p {
+	margin-bottom: 40px;
+  }
+
+  .logo-title {
+	margin-right: 20px;
+	color: $primary-color;
+	font-size: 45px;
+  }
+
+  .logo-sub-title {
+	color: #a1b7d2;
+  }
+
+  .learn-more {
+	color: $white-color;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: $h-font-weight;
+
+	&:hover {
+	  color: $primary-color;
+	}
+  }
+}
+
+.widget-title {
+	margin-bottom: 20px;
+}
+
+/*================= Responsive Mode ============*/
+
+@media (max-width: 640px) {
+  .w-info .learn-more {
+	font-size: 12px;
+  }
+}

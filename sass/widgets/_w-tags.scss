@@ -1,0 +1,55 @@
+/*------------- #W-TAGS --------------*/
+
+
+.w-tags {
+  overflow: hidden;
+
+  .tags-list {
+	margin-left: -10px;
+	margin-bottom: -12px;
+	float: left;
+
+	li {
+	  margin-left: 10px;
+	  margin-bottom: 12px;
+	  float: left;
+	}
+  }
+
+  a {
+	padding: 12px 14px;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: $h-font-weight;
+	border: 2px solid #d6dfeb;
+	border-radius: 50px;
+	transition: all .3s ease;
+	color: $icon-color;
+	display: block;
+	line-height: 1;
+
+	&:hover {
+	  background-color: $primary-color;
+	  color: $white-color;
+	  border-color: $primary-color;
+	  box-shadow: 10px 0 30px rgba(0,131,255,0.3);
+	}
+  }
+}
+
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 1024px) {
+  .w-tags a {
+	padding: 10px 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .w-tags a {
+	font-size: 11px;
+  }
+}

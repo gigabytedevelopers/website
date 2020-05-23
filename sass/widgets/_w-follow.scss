@@ -1,0 +1,34 @@
+/*------------- #W-FOLLOW --------------*/
+
+
+
+.w-follow {
+	ul li {
+	  display: inline-block;
+	  margin-right: 10px;
+	  vertical-align: middle;
+	  line-height: 1;
+	  font-weight: $h-font-weight;
+	}
+
+  ul li a {
+	display: inline-block;
+  }
+
+  .utouch-icon {
+	color: $icon-color;
+	fill: $icon-color;
+	height: 14px;
+	width: 14px;
+
+	&:hover {
+	  color: $primary-color;
+	  fill: $primary-color;
+	}
+  }
+}
+
+svg.utouch-icon {
+  transition: all .3s ease;
+  width: 32px;
+}

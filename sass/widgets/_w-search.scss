@@ -1,0 +1,31 @@
+/*------------- #W-SEARCH --------------*/
+
+
+
+.w-search {
+
+  input {
+	border-radius: 10px;
+	padding-left: 60px;
+  }
+
+  .utouch-icon {
+	height: 24px;
+	width: 42px;
+	top: 13px;
+	padding-right: 0;
+	border-right: none;
+	fill: #d0d9e4;
+	left: 15px;
+  }
+
+  .with-icon .utouch-icon {
+	right: 15px;
+  }
+}
+
+.widget.w-search {
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
