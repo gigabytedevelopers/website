@@ -1,0 +1,78 @@
+/*------------- #REVIEWS --------------*/
+
+
+.reviews-thumb {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  float: left;
+  margin-right: 30px;
+  box-shadow: 10px 0 30px 0 rgba(81,116,141, .2);
+  overflow: hidden;
+}
+
+.reviews-content {
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.author-rait-wrap {
+  & > * {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+
+	& + * {
+	  margin-left: 20px;
+	}
+  }
+}
+
+.reviews-item-name {
+  color: $primary-color;
+}
+
+.crumina-reviews-item {
+  .title {
+	font-size: 16px;
+	margin-bottom: 17px;
+  }
+
+  .author-rait-wrap {
+	margin-bottom: 20px;
+  }
+}
+
+.reviews-list {
+  & > li {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #dbe3ec;
+
+	&:last-child {
+	  margin-bottom: 0;
+	  padding-bottom: 0;
+	  border-bottom: none;
+	}
+  }
+}
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 560px) {
+  .reviews-thumb {
+	float: none;
+  }
+}
+
+@media (max-width: 460px) {
+  .reviews-item-name {
+	display: block;
+  }
+
+  .rait-stars {
+	margin-left: 0;
+  }
+}

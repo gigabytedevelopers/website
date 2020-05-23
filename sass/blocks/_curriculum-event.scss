@@ -1,0 +1,148 @@
+/*------------- #CURRICULUM-EVENT --------------*/
+
+
+.curriculum-event {
+  border-radius: 10px;
+  box-shadow: 10px 0 10px 0 rgba(18,25,33, 0.2);
+  border-bottom: 5px solid;
+  overflow: hidden;
+
+  .icon-text-item {
+	color: $icon-color;
+	margin-bottom: 20px;
+
+	.utouch-icon {
+	  fill: $blue-light;
+	}
+  }
+
+  .author-prof,
+  .author-name {
+	color: $white-color;
+  }
+
+  &.event-big {
+	.category-link {
+	  top: 60px;
+	  left: 60px;
+	}
+
+	.curriculum-event-thumb  .curriculum-event-content {
+	  bottom: 60px;
+	  left: 60px;
+	  right: 60px;
+	  padding: 0;
+	}
+
+	.clock {
+	  margin-top: 50px;
+	}
+
+	.curriculum-event-content {
+	  padding: 60px;
+	}
+  }
+}
+
+.curriculum-event-wrap {
+  .curriculum-event {
+	margin-bottom: 40px;
+  }
+}
+
+.curriculum-event-thumb {
+  position: relative;
+
+  img {
+	display: block;
+	width: 100%;
+  }
+
+  .category-link {
+	font-weight: $h-font-weight;
+	font-size: 14px;
+	text-transform: uppercase;
+	position: absolute;
+	top: 35px;
+	left: 40px;
+	z-index: 1;
+  }
+
+  .curriculum-event-content {
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+	right: 40px;
+	z-index: 1;
+	transition: all .3s ease;
+	padding: 0;
+
+	.title {
+	  color: $white-color;
+	  margin-bottom: 10px;
+	}
+
+	.text {
+	  color: $white-color;
+
+	  &.color.utouch-icon {
+		color: $icon-color;
+	  }
+	}
+
+	.clock	.text {
+	  color: $blue-light;
+	  font-weight: $h-font-weight;
+	  font-size: 12px;
+	  text-transform: uppercase;
+	}
+
+
+  }
+
+}
+
+.curriculum-event-content {
+  padding: 40px;
+
+  .title {
+	line-height: 1.3;
+	display: block;
+  }
+}
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 990px) {
+  .curriculum-event-thumb .curriculum-event-content,
+  .curriculum-event.event-big .curriculum-event-thumb .curriculum-event-content {
+	bottom: 15px;
+	left: 15px;
+	width: 90%;
+  }
+
+  .curriculum-event-content,
+  .curriculum-event.event-big .curriculum-event-content {
+	padding: 20px;
+  }
+
+  .curriculum-event .category-link,
+  .curriculum-event.event-big .category-link {
+	top: 15px;
+	left: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .curriculum-event {
+	.clock {
+	  margin-top: 10px;
+	}
+
+	.timer {
+	  font-size: 14px;
+	}
+  }
+}

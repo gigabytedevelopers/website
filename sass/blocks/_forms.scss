@@ -1,0 +1,127 @@
+/*------------- #FORMS --------------*/
+
+
+
+input, textarea, select, .nice-select {
+  padding: 13px 40px;
+  border: 1px solid transparent;
+  transition: all .3s ease;
+  font-size: 16px;
+  color: $secondary-color;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  background-color: $white-color;
+  box-shadow: 0 0 30px 0 rgba(18, 25, 33, 0.15);
+  width: 100%;
+  outline: none;
+
+  &:focus {
+	-webkit-box-shadow: 5px 0 40px 0 rgba(0, 88, 171, 0.25);
+	box-shadow: 5px 0 40px 0 rgba(0, 88, 171, 0.25);
+	color: $primary-color;
+  }
+}
+
+::-webkit-input-placeholder {color:#839dbc;}
+::-moz-placeholder          {color:#839dbc;}/* Firefox 19+ */
+:-moz-placeholder           {color:#839dbc;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#839dbc;}
+
+textarea {
+  min-height: 200px;
+  border-radius: 30px;
+}
+
+.with-icon {
+  position: relative;
+
+  input, textarea, select {
+	padding-left: 70px;
+
+	&:focus + .utouch-icon {
+	  fill: $primary-color;
+	}
+  }
+
+  .utouch-icon {
+	position: absolute;
+	left: 20px;
+	top: 18px;
+	height: 16px;
+	fill: $icon-color;
+	border-right: 1px solid $border-color;
+	padding-right: 17px;
+	z-index: 1;
+	transition: all .3s ease;
+  }
+
+  &.icon-right {
+
+	input, textarea, select {
+	  padding-left: 40px;
+	  padding-right: 70px;
+	}
+
+	.utouch-icon {
+	  left: auto;
+	  right: 20px;
+	  padding-right: 0;
+	  border-right: none;
+	}
+  }
+}
+
+.form-inline {
+  position: relative;
+
+  input {
+	padding: 17px 200px 18px 40px;
+	margin-bottom: 0;
+	box-shadow: 0 0 30px 0 rgba(18, 25, 33, 0.15) !important;
+  }
+
+  .btn {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+  }
+}
+
+
+.items-with-border {
+
+  input, textarea, select, .nice-select {
+	border: 2px solid #d9e4ef;
+	background-color: transparent;
+	box-shadow: none;
+
+	&:focus {
+	  box-shadow: 5px 0 30px 0 rgba(18, 25, 33, 0.1);
+	  color: $primary-color;
+	  border-color: transparent;
+	}
+  }
+}
+
+.contact-form {
+  .btn {
+	margin-top: 5px;
+  }
+}
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 768px) {
+  .form-inline .btn {
+	position: relative;
+	right: auto;
+	top: auto;
+	margin-top: 20px;
+  }
+
+  .form-inline input {
+	padding-right: 40px;
+  }
+}

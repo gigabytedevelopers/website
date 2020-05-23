@@ -1,0 +1,535 @@
+/*------------- #BUTTONS --------------*/
+
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  padding: 18px 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $white-color;
+  font-weight: $weight-black;
+  border-radius: 50px;
+  position: relative;
+  transition: all .3s ease;
+  text-align: center;
+  line-height: 1;
+
+ & + .btn {
+    margin-left: 30px;
+  }
+}
+
+.btn--with-icon {
+  text-transform: none;
+  text-align: left;
+  fill: $white-color;
+
+  & > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .utouch-icon {
+    margin-right: 14px;
+    font-size: 26px;
+    height: 26px;
+  }
+
+  .text {
+    overflow: hidden;
+  }
+
+  span {
+    display: block;
+  }
+
+  .sup-title {
+    font-size: 10px;
+    opacity: .7;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+}
+
+.btn-small {
+  padding: 14px 28px;
+  font-size: 12px;
+}
+
+.btn-x-small {
+  padding: 8px 20px;
+  font-size: 12px;
+
+  .utouch-icon {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.btn--large {
+  padding: 23px 50px;
+}
+
+.btn-more {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.btn-border {
+  border: 2px solid;
+  background-color: transparent;
+
+  &.btn {
+    padding: 16px 50px;
+  }
+
+  &.btn-small {
+    padding: 12px 26px;
+  }
+
+  &.btn--large {
+    padding: 21px 50px;
+  }
+
+  &.btn--with-shadow {
+    &:after {
+      box-shadow: 5px 0 15px 0 rgba(0, 131, 255, 0.3);
+    }
+  }
+}
+
+.btn--icon-right {
+  .utouch-icon {
+    float: right;
+    margin-right: 0;
+    margin-left: 4px;
+    font-size: 26px;
+    height: 26px;
+  }
+
+  .text {
+    overflow: hidden;
+    margin-top: 8px;
+  }
+}
+
+.btn--round {
+  border-radius: 100%;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  fill: $white-color;
+  position: relative;
+
+  .utouch-icon {
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+
+
+/*------------- #Color-scheme for buttons --------------*/
+
+
+div:hover > .btn-reverse-bg-green {
+  background-color: $green-light;
+  color: $white-color;
+
+  .utouch-icon {
+    fill: $white-color;
+  }
+}
+
+
+.c-white {
+  color: $white-color;
+}
+
+
+.c-black {
+  color: $black;
+}
+
+.c-primary {
+  color: $primary-color;
+  fill: $primary-color;
+}
+
+.c-secondary {
+  color: $secondary-color;
+  fill: $secondary-color;
+}
+
+.c-gray {
+  color: $grey;
+  fill: $grey;
+}
+
+.c-green {
+  color: $green;
+  fill: $green;
+}
+
+.c-orange {
+  color: $orange;
+  fill: $orange;
+}
+
+.c-orange-light {
+  color: $orange-light;
+  fill: $orange-light;
+}
+
+.c-red {
+  color: $red;
+  fill: $red;
+}
+
+.c-yellow {
+  color: $yellow;
+  fill: $yellow;
+}
+
+.c-lime {
+  color: $lime;
+  fill: $lime;
+}
+
+.c-breez {
+  color: $breez;
+}
+
+.c-lime-light {
+  color: $lime-light;
+  fill: $lime-light;
+}
+
+.c-peach {
+  color: $peach;
+  fill: $peach;
+}
+
+.c-semitransparent-white {
+  color: rgba(255, 255, 255, .5);
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-rose {
+  background-color: $rose;
+}
+
+.bg-violet {
+  background-color: $violet;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-yellow {
+  background-color: $yellow;
+}
+
+.bg-blue-light {
+  background-color: $blue-light;
+}
+
+.bg-blue-lighteen {
+  background-color: $blue-lighteen;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.bg-orange-light {
+  background-color: $orange-light;
+}
+
+.bg-red {
+  background-color: $red;
+}
+
+.bg-green {
+  background-color: $green;
+}
+
+.bg-pamaranch {
+  background-color: #f18d01;
+}
+
+.btn--with-shadow {
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+
+.btn--transparent {
+  background-color: transparent;
+  color: $icon-color;
+  fill: $icon-color;
+}
+
+.btn--primary {
+  background-color: $bg-primary;
+
+  &.btn--with-shadow {
+    &:after {
+      box-shadow: 10px 0 30px 0 rgba(0,131,255, 0.5);
+    }
+  }
+}
+
+.btn--secondary {
+  background-color: $bg-secondary;
+
+  &.btn--with-shadow {
+    &:after {
+      box-shadow: 10px 0 30px 0 rgba(39,63,91, 0.5);
+    }
+  }
+}
+
+.btn--green {
+  background-color: $green;
+
+  &.btn--with-shadow {
+    &:after {
+      box-shadow: 10px 0 30px 0 rgba(1,162,60, 0.5);
+    }
+  }
+}
+
+.btn--green-light {
+  background-color: $green-light;
+
+  &.btn--with-shadow {
+    &:after {
+      box-shadow: 10px 0 30px 0 rgba(97,177,49, 0.5);
+    }
+  }
+}
+
+.btn--black {
+  background-color: $black;
+
+  &.btn--with-shadow {
+    &:after {
+      box-shadow: 10px 0 30px 0 rgba(18,25,33, 0.5);
+    }
+  }
+}
+
+.btn--orange {
+  background-color: $orange;
+
+  &.btn--with-shadow {
+    &:after {
+      box-shadow: 10px 0 30px 0 rgba(239,101,23, 0.5);
+    }
+  }
+}
+
+.btn--orange-light {
+  background-color: $orange-light;
+
+  &.btn--with-shadow {
+    &:after {
+      box-shadow: 10px 0 30px 0 rgba(248,145,1, 0.5);
+    }
+  }
+}
+
+.btn--red {
+  background-color: $red;
+
+  &.btn--with-shadow {
+    &:after {
+      box-shadow: 10px 0 30px 0 rgba(255,49,51, 0.5);
+    }
+  }
+}
+
+.btn--grey {
+  background-color: $grey;
+
+  &.btn--with-shadow {
+    &:after {
+      box-shadow: 10px 0 30px 0 rgba(115,140,170, 0.5);
+    }
+  }
+}
+
+.btn--grey-light {
+  background-color: $grey-light;
+  color: $icon-color;
+
+  .utouch-icon {
+    fill: $icon-color;
+  }
+
+  &.btn--with-shadow {
+    &:after {
+      box-shadow: 10px 0 30px 0 rgba(236,244,252, 0.5);
+    }
+  }
+}
+
+.btn--yellow {
+  background-color: $yellow;
+
+  &.btn--with-shadow {
+    &:after {
+      box-shadow: 10px 0 30px 0 rgba(254,207,57, 0.5);
+    }
+  }
+}
+
+.btn--lime {
+  background-color: $lime;
+
+  &.btn--with-shadow {
+    &:after {
+      box-shadow: 10px 0 30px 0 rgba(159,195,26, 0.5);
+    }
+  }
+}
+
+.btn-market {
+  background-color: $black;
+  text-transform: none;
+  text-align: left;
+  fill: $white-color;
+  padding: 13px 26px;
+
+  .utouch-icon {
+    margin-right: 5px;
+    height: 26px;
+    width: 26px;
+  }
+
+  > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .text {
+    overflow: hidden;
+  }
+
+  span {
+    display: block;
+  }
+
+  .sup-title {
+    font-size: 10px;
+    opacity: .7;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  &:after {
+    box-shadow: 10px 0 15px 0 rgba(18,25,33, 0.3);
+  }
+}
+
+
+
+/*------------- #Button back-to-top --------------*/
+
+
+.back-to-top {
+  position: absolute;
+  z-index: 20;
+  width: 60px;
+  height: 60px;
+  line-height: 77px;
+  display: block;
+  fill: $white-color;
+  stroke: inherit;
+  transition: all .3s ease;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+  box-shadow: 10px 0 30px 0 rgba(0,130,215, 0.4);
+  border-radius: 100%;
+  background-color: $primary-color;
+  text-align: center;
+
+  &.hidden {
+    opacity: 0;
+  }
+
+  .utouch-icon {
+    fill: $white-color;
+    height: 28px;
+    width: 28px;
+  }
+}
+
+
+/*================= Responsive Mode ============*/
+
+@media (max-width: 1024px) {
+  .btn + .btn {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 15px 35px;
+    font-size: 13px;
+  }
+
+  .btn--round {
+    padding: 0;
+  }
+
+  .btn-small {
+    padding: 14px 25px;
+  }
+}
+
+@media (max-width: 460px) {
+  .btn {
+    font-size: 10px;
+  }
+}

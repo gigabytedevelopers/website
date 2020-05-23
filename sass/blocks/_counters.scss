@@ -1,0 +1,68 @@
+/*------------- #COUNTERS --------------*/
+
+
+
+.counters {
+  z-index: 2;
+  overflow: hidden;
+  position: relative;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+}
+
+.crumina-counter-item {
+
+  .counter-numbers {
+    font-size: 46px;
+    line-height: 1;
+    font-weight: $h-font-weight;
+    margin-bottom: 20px;
+  }
+
+  .counter-title {
+    color: $white-color;
+    margin: 0;
+    line-height: 1.1;
+    font-weight: $h-font-weight;
+  }
+
+  .units {
+    display: inline-block;
+  }
+}
+
+.counter-item-colored {
+  text-align: center;
+
+  .counter-numbers {
+    margin-bottom: 15px;
+  }
+
+  .counter-title {
+    color: $heading-color;
+  }
+}
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 1200px) {
+  .counters {
+    display: block;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .crumina-counter-item {
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .crumina-counter-item .counter-numbers {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,513 @@
+// FORM RESETS ----------------- https://github.com/necolas/normalize.css/ ---------------------------------------------
+
+.typeahead__container {
+    padding-bottom: 10px;
+
+
+    /**
+     * Restore the font weight unset by the previous rule.
+     */
+
+    optgroup {
+        font-weight: bold;
+    }
+
+    /**
+     * Show the overflow in IE.
+     * 1. Show the overflow in Edge.
+     */
+
+    button,
+    input { /* 1 */
+        overflow: visible;
+    }
+
+    /**
+     * Remove the inheritance of text transform in Edge, Firefox, and IE.
+     * 1. Remove the inheritance of text transform in Firefox.
+     */
+
+    button,
+    select { /* 1 */
+        text-transform: none;
+    }
+
+    /**
+     * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+     *    controls in Android 4.
+     * 2. Correct the inability to style clickable types in iOS and Safari.
+     */
+
+    button,
+    html [type="button"], /* 1 */
+    [type="reset"],
+    [type="submit"] {
+        -webkit-appearance: button; /* 2 */
+    }
+
+    /**
+     * Remove the inner border and padding in Firefox.
+     */
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+    }
+
+    /**
+     * Restore the focus styles unset by the previous rule.
+     */
+
+    button:-moz-focusring,
+    [type="button"]:-moz-focusring,
+    [type="reset"]:-moz-focusring,
+    [type="submit"]:-moz-focusring {
+        outline: 1px dotted ButtonText;
+    }
+
+    /**
+     * Change the border, margin, and padding in all browsers (opinionated).
+     */
+
+    fieldset {
+        border: 1px solid #c0c0c0;
+        margin: 0 2px;
+        padding: 0.35em 0.625em 0.75em;
+    }
+
+    /**
+     * 1. Correct the text wrapping in Edge and IE.
+     * 2. Correct the color inheritance from `fieldset` elements in IE.
+     * 3. Remove the padding so developers are not caught out when they zero out
+     *    `fieldset` elements in all browsers.
+     */
+
+    legend {
+        box-sizing: border-box; /* 1 */
+        color: inherit; /* 2 */
+        display: table; /* 1 */
+        max-width: 100%; /* 1 */
+        padding: 0; /* 3 */
+        white-space: normal; /* 1 */
+    }
+
+    /**
+     * Remove the default vertical scrollbar in IE.
+     */
+
+    textarea {
+        overflow: auto;
+    }
+
+    /**
+     * 1. Add the correct box sizing in IE 10-.
+     * 2. Remove the padding in IE 10-.
+     */
+
+    [type="checkbox"],
+    [type="radio"] {
+        box-sizing: border-box; /* 1 */
+        padding: 0; /* 2 */
+    }
+
+    /**
+     * Correct the cursor style of increment and decrement buttons in Chrome.
+     */
+
+    [type="number"]::-webkit-inner-spin-button,
+    [type="number"]::-webkit-outer-spin-button {
+        height: auto;
+    }
+
+    /**
+     * 1. Correct the odd appearance in Chrome and Safari.
+     * 2. Correct the outline style in Safari.
+     */
+
+    [type="search"] {
+        -webkit-appearance: textfield; /* 1 */
+        outline-offset: -2px; /* 2 */
+        margin-bottom: 0;
+        box-shadow: none;
+        border-bottom: 4px solid #5c6c7a;
+        border-radius: 0;
+    }
+
+    /**
+     * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+     */
+
+    [type="search"]::-webkit-search-cancel-button,
+    [type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+
+    /**
+     * Correct the text style of placeholders in Chrome, Edge, and Safari.
+     */
+
+    ::-webkit-input-placeholder {
+        color: inherit;
+        opacity: 0.54;
+    }
+
+    /**
+     * 1. Correct the inability to style clickable types in iOS and Safari.
+     * 2. Change font properties to `inherit` in Safari.
+     */
+
+    ::-webkit-file-upload-button {
+        -webkit-appearance: button; /* 1 */
+        font: inherit; /* 2 */
+    }
+
+            [type="submit"] {
+        background-color: transparent;
+        padding: 0;
+
+        .utouch-icon {
+            width: 26px;
+            height: 26px;
+            fill: $icon-color;
+            transform: rotateY(-180deg);
+        }
+    }
+
+    .close {
+        padding: 0;
+        background-color: transparent;
+        position: absolute;
+        right: 0;
+        top: 25px;
+        cursor: pointer;
+        z-index: 5;
+
+        .utouch-icon {
+            width: 20px;
+            height: 20px;
+            fill: $icon-color;
+        }
+    }
+
+    input {
+        font-size: 20px;
+        &:focus {
+            border-color: $primary-color;
+            color: $white-color;
+
+            & + .typeahead__button .utouch-icon {
+                fill: $primary-color;
+            }
+        }
+    }
+}
+
+
+// TYPEAHEAD -----------------------------------------------------------------------------------------------------------
+
+.typeahead__ {
+    &container {
+        position: relative;
+    }
+
+    &container * {
+        box-sizing: border-box;
+        outline: 0;
+    }
+
+    &query {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+    }
+
+    &filter {
+        position: relative;
+        button {
+            min-width: 100%;
+            white-space: nowrap;
+            &:after {
+                display: inline-block;
+                margin-left: 4px;
+                width: 0;
+                height: 0;
+                vertical-align: -2px;
+                content: "";
+                border: 4px solid;
+                border-right-color: transparent;
+                border-bottom-color: transparent;
+                border-left-color: transparent;
+            }
+        }
+    }
+
+    &field {
+        font-size: 0;
+        position: relative;
+        display: table;
+        border-collapse: collapse;
+        width: 100%;
+        > * {
+            display: table-cell;
+            vertical-align: top;
+        }
+    }
+
+    &button {
+        position: absolute;
+        left: 0;
+        top: 20px;
+    }
+
+    &field {
+        // #193 If applied to input, it overrides the placeholder color on IE10/11
+        input {
+            display: block;
+            width: 100%;
+            background: transparent;
+            transition: all ease-in-out .15s;
+            appearance: none;
+            box-sizing: border-box; // Bootstrap 4 override
+        }
+    }
+
+    &field input[type="search"],
+    &field input[type="search"]::-webkit-search-cancel-button {
+        // #174 Add standard `cancel button` option instead of browser's implementation
+        appearance: none;
+    }
+    // IE10+
+    &field input[type="search"]::-ms-clear {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    &container.hint .typeahead__field input {
+        background: transparent;
+    }
+
+    &container.hint .typeahead__field input:last-child,
+    &hint {
+        background: #fff;
+    }
+
+    &container button {
+        display: inline-block;
+        margin-bottom: 0;
+        text-align: center;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-color: #fff;
+    }
+
+    &container {
+        input.disabled,
+        input[disabled],
+        button.disabled,
+        button[disabled] {
+            cursor: not-allowed;
+            pointer-events: none;
+            opacity: 0.65;
+            box-shadow: none;
+            background-color: #fff;
+        }
+    }
+
+    &filter,
+    &button {
+        z-index: 1;
+        button {
+            margin-left: -1px;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            z-index: 1001;
+            button {
+                &:focus,
+                &:active {
+                    z-index: 1001;
+                }
+            }
+        }
+    }
+
+    &filter + &button {
+        button {
+            margin-left: -2px;
+        }
+    }
+
+    &container.filter .typeahead__filter {
+        z-index: 1001;
+    }
+
+    &list,
+    &dropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+        min-width: 160px;
+        margin: 2px 0 0;
+        list-style: none;
+        text-align: left;
+        background-clip: padding-box;
+    }
+
+    &result.detached .typeahead__list {
+        position: relative;
+        z-index: 1041;
+        top: initial;
+        left: initial;
+    }
+
+    &dropdown {
+        right: 0;
+        left: initial;
+        z-index: 1001;
+    }
+
+    &list > li {
+        position: relative;
+        padding: 10px 60px;
+        border-radius: 5px;
+        display: block;
+
+        &:hover {
+            background-color: #232b32;
+
+            & > a {
+                color: $white-color;
+            }
+        }
+
+        &:first-child {
+            border-top: none;
+        }
+    }
+
+    &list > li,
+    &dropdown > li {
+        > a {
+            display: block;
+            clear: both;
+            color: #5c6c7a;
+            text-decoration: none;
+        }
+
+    }
+
+    &list.empty {
+        > li > a {
+            cursor: default;
+        }
+        > li > a:hover,
+        > li > a:focus,
+        > li.active > a {
+            background-color: transparent;
+        }
+    }
+
+    &list > li.typeahead__group {
+        font-weight: bold;
+
+        &:first-child {
+
+        }
+        > a,
+        > a:hover,
+        > a:focus,
+        &.active > a {
+            cursor: default;
+        }
+    }
+
+
+    &container {
+        &.result .typeahead__list,
+        &.filter .typeahead__dropdown,
+        &.hint .typeahead__hint,
+        &.backdrop + .typeahead__backdrop {
+            display: block !important;
+        }
+        .typeahead__list,
+        .typeahead__dropdown,
+        .typeahead__hint,
+        + .typeahead__backdrop {
+            display: none !important;
+        }
+    }
+
+    &container.loading .typeahead__query {
+        &:before,
+        &:after {
+            transition: all 0s linear, opacity 0.2s ease;
+            position: absolute;
+            z-index: 3;
+            content: '';
+            top: 50%;
+            right: .55em;
+            box-sizing: border-box;
+            border-radius: 500rem;
+            border-style: solid;
+            border-width: .1em;
+        }
+
+        &:before {
+            border-color: rgba(0, 0, 0, 0.35);
+        }
+
+        &:after {
+            animation: button-spin 0.6s linear;
+            animation-iteration-count: infinite;
+            border-color: #fff transparent transparent;
+            box-shadow: 0 0 0 1px transparent;
+        }
+
+        @keyframes button-spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+
+/*================= Responsive Mode ============*/
+
+@media (max-width: 768px) {
+    .typeahead__container input {
+        font-size: 14px;
+    }
+
+    .typeahead__container [type="submit"] .utouch-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .typeahead__container .close .utouch-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .typeahead__container [type="search"] {
+        padding-bottom: 10px;
+    }
+
+    .typeahead__container .close {
+        top: 22px;
+    }
+}

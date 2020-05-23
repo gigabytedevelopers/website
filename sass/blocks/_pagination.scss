@@ -1,0 +1,78 @@
+/*------------- #PAGINATION --------------*/
+
+
+
+.swiper-pagination {
+  position: absolute;
+  transition: all .3s ease;
+  align-items: center;
+  z-index: 5;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%, 0) !important;
+  width: 90%;
+
+  .swiper-pagination-bullet {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: #a1b7d2;
+	margin: auto 5px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all .3s ease;
+
+	&.swiper-pagination-bullet-active {
+	  width: 20px;
+	  background-color: $primary-color;
+	  transition: all .3s ease;
+	  border-radius: 10px;
+	}
+  }
+
+  &.top-right {
+	left: auto;
+	bottom: auto;
+	right: 0;
+	top: 0;
+	transform: translate(0);
+  }
+
+  &.bottom-left {
+	left: 0;
+	bottom: 0;
+	transform: translate(0) !important;
+	top: auto;
+  }
+
+  &.right-bottom {
+	right: 100px;
+	bottom: -50px;
+	top: auto;
+	transform: translate(0);
+  }
+
+  &.pagination-white {
+	.swiper-pagination-bullet {
+	  background-color: $white-color;
+
+	  &.swiper-pagination-bullet-active {
+		background-color: $primary-color;
+	  }
+	}
+  }
+}
+
+.pagination-bottom {
+  padding-bottom: 80px;
+}
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 1024px) {
+.swiper-pagination.bottom-left {
+	bottom: 20px;
+  }
+}

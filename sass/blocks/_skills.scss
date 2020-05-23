@@ -1,0 +1,64 @@
+/*------------- #SKILLS --------------*/
+
+.skills-item {
+  margin-bottom: 20px;
+}
+
+.skills-item-meter-active {
+  position: absolute;
+  height: 8px;
+  display: inline-block;
+  border-radius: 5px;
+  bottom: 0;
+  left: 0;
+  transition: all .2s ease;
+
+  &.skills-animate {
+    animation: skills-animated 1.2s ease-out;
+  }
+
+  &.skills-animate-opacity {
+    animation: skills-animated-opacity .2s ease-out;
+  }
+}
+
+.skills-item-meter {
+  padding: 0 5px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(#dce8f6,.9);
+  position: relative;
+  height: 8px;
+
+  &.bg-border-color {
+    background-color: $border-color;
+  }
+}
+
+.skills-item-title {
+  font-weight: 700;
+  color: $heading-color;
+}
+
+
+.skills-item-count {
+  float: right;
+  font-weight: 700;
+  color: $icon-color;
+}
+
+.skills-item-info {
+  margin-bottom: 5px;
+}
+
+@keyframes skills-animated {
+  0% {
+    width: 0;
+  }
+}
+
+@keyframes skills-animated-opacity {
+  100% {
+    opacity: 1;
+  }
+}

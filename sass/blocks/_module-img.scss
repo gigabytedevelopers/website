@@ -1,0 +1,28 @@
+/*------------- #MODULE-IMG--------------*/
+
+
+
+.crumina-module-img-bottom {
+  display: flex;
+  align-items: flex-end;
+}
+
+.img-bottom {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+/*================= Responsive Mode ============*/
+
+@media (max-width: 1199px) {
+  .crumina-module-img-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 1024px) {
+  .crumina-module-img-bottom {
+    display: block;
+  }
+}

@@ -1,0 +1,35 @@
+/*------------- #RAITING-DETAILS --------------*/
+
+
+.overall-rating {
+  font-size: 90px;
+  margin: 0;
+}
+
+.raiting-details {
+  text-align: center;
+
+  .title {
+	font-size: 16px;
+  }
+
+  p {
+	font-size: 14px;
+	font-weight: 300;
+  }
+
+  .skills {
+	text-align: left;
+	margin-top: 60px;
+  }
+}
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 560px) {
+  .overall-rating {
+	font-size: 50px;
+  }
+}

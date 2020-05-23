@@ -1,0 +1,169 @@
+/*------------- #SKEW-ROWS --------------*/
+
+
+
+.section-bg-skew {
+  position: relative;
+  background-size: cover;
+
+  & > .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &:before, &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    left: 0;
+  }
+
+  &:before {
+    top: -1px;
+    background-image: url("../svg/02-triangle.svg");
+    height: 170px;
+  }
+
+  &:after {
+    bottom: 0;
+    background-image: url("../svg/01-triangle.svg");
+    height: 170px;
+  }
+}
+
+
+/*------------- #Rounded-ROWS --------------*/
+
+
+.section-bg-rounded {
+  position: relative;
+  background-size: cover;
+
+  & > .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &:before, &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+  }
+
+  &:before {
+    top: 0;
+    left: 0;
+  }
+
+  &:after {
+    bottom: 0;
+    left: 0;
+  }
+
+  &:first-of-type {
+    &:before {
+      display: none;
+    }
+  }
+
+  &:last-of-type {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.bg-rounded-style1 {
+  &:before {
+    background-image: url("../svg/01-wave-rotate-180.svg");
+    height: 220px;
+  }
+
+  &:after {
+    background-image: url("../svg/01-wave.svg");
+    height: 220px;
+  }
+}
+
+.bg-rounded-style2 {
+  &:before {
+    background-image: url("../svg/02-wave.svg");
+    height: 175px;
+  }
+
+  &:after {
+    background-image: url("../svg/03-wave.svg");
+    height: 130px;
+  }
+}
+
+.bg-rounded-style3 {
+  &:before {
+    background-image: url("../svg/04-wave.svg");
+    height: 150px;
+  }
+
+  &:after {
+    background-image: url("../svg/05-wave.svg");
+    height: 150px;
+  }
+}
+
+.bg-rounded-style4 {
+  &:before {
+    background-image: url("../svg/06-wave.svg");
+    height: 120px;
+  }
+
+  &:after {
+    background-image: url("../svg/06-wave-inverted.svg");
+    height: 120px;
+  }
+}
+
+.not-top-element {
+
+  &:before {
+    display: none;
+  }
+}
+
+.not-bottom-element {
+
+  &:after {
+    display: none;
+  }
+}
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 800px) {
+  .bg-skew > * {
+    padding: 0 70px;
+  }
+
+  .bg-skew.medium-padding120 {
+    padding: 60px 0;
+  }
+
+  .bg-skew.pt180 {
+    padding-top: 90px;
+  }
+
+  .bg-skew.pt120 {
+    padding-top: 60px;
+  }
+
+  .negative-margin-bottom80 {
+    margin-bottom: auto;
+  }
+
+  body.skew-rows .bg-skew:last-of-type {
+    margin-bottom: -40px;
+  }
+}

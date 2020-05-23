@@ -1,0 +1,40 @@
+/*------------- #SMARTPHONE-VIDEO --------------*/
+
+
+
+.crumina-smartphone-video {
+  background: url("../img/smartphone1.png") no-repeat;
+  background-size: contain;
+  text-align: center;
+  margin-bottom: 60px;
+
+  .video-thumb {
+	overflow: hidden;
+	padding: 40px 132px;
+
+	img {
+	  border-radius: 20px;
+	}
+  }
+}
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 980px) {
+  .crumina-smartphone-video .video-thumb {
+	padding: 30px 90px;
+  }
+}
+
+@media (max-width: 600px) {
+  .crumina-smartphone-video .video-thumb {
+	padding: 15px 65px;
+  }
+}
+
+@media (max-width: 420px) {
+  .crumina-smartphone-video .video-thumb {
+	padding: 15px 45px;
+  }
+}

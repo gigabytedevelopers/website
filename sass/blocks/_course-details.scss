@@ -1,0 +1,86 @@
+/*------------- #COURSE-DETAILS --------------*/
+
+
+.course-details {
+  border-radius: 10px;
+  box-shadow: 40px 0 100px 0 rgba(18, 25, 33, 0.07);
+  overflow: hidden;
+  background-color: $white-color;
+
+  .post-details-shared {
+	border-top: none;
+	padding: 50px 0;
+	width: 100%;
+	overflow: hidden;
+  }
+
+  .tab-content {
+	padding: 60px;
+  }
+
+  .curriculum-list {
+	margin: 0 -60px;
+	box-shadow: none;
+	border-radius: 0;
+  }
+}
+
+.course-details-control {
+  background-color: $blue-lighteen;
+  padding: 30px 60px 0 60px;
+
+  .tab-control a {
+	text-transform: none;
+	font-size: 18px;
+	color: $icon-color;
+	padding: 0 25px 25px 25px;
+
+	&:after {
+	  height: 4px;
+	  border-radius: 3px 3px 0 0;
+	}
+  }
+}
+
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 1024px) {
+  .course-details-control {
+	padding: 30px 20px 0 20px;
+  }
+
+  .course-details .tab-content {
+	padding: 20px;
+  }
+
+  .course-details-control .tab-control a {
+	padding: 0 10px 25px 10px;
+  }
+}
+
+@media (max-width: 690px) {
+  .course-details-control .tab-control a {
+	font-size: 14px;
+  }
+
+  .course-details-control {
+	.tab-control {
+	  width: 45%;
+
+	  & + .tab-control {
+		margin-left: 0;
+		margin-top: 15px;
+	  }
+	}
+  }
+}
+
+@media (max-width: 360px) {
+  .course-details-control .tab-control a {
+	font-size: 13px;
+	padding: 0 5px 25px 5px;
+  }
+}

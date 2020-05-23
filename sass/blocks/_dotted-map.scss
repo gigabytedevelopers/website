@@ -1,0 +1,51 @@
+/*------------- #DOTTED-MAP --------------*/
+
+
+.dotted-map {
+  position: relative;
+}
+
+.dotted-map-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  .title {
+	font-size: 50px;
+	margin-bottom: 20px;
+
+	span {
+	  font-size: 36px;
+	}
+  }
+}
+
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 768px) {
+  .dotted-map-content .title {
+	font-size: 20px;
+	margin-bottom: 10px;
+  }
+
+  .dotted-map-content .title span {
+	font-size: 22px;
+  }
+
+  .dotted-map-content {
+	width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .dotted-map-content {
+	top: auto;
+	position: relative;
+	transform: translate(-50%, -100%);
+  }
+}

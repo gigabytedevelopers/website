@@ -1,0 +1,169 @@
+/*------------- #SWITCHER --------------*/
+
+.tgl {
+  position: relative;
+  outline: 0;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  margin: 0 0 5px 0;
+
+  // add default box-sizing for this scope
+  &, &:after, &:before,
+  & *, & *:after, & *:before,
+  & + .tgl-btn {
+	box-sizing: border-box;
+	&::selection {
+	  background: none;
+	}
+  }
+
+  span {
+	position: relative;
+	display: block;
+	font-weight: normal;
+	text-align: center;
+	border-radius: 2em;
+	padding: 1.15em 1em;
+	box-shadow: inset 0 2px 0 rgba(0, 0, 0, .2),
+	0 2px 0 rgba(255, 255, 255, 0.7);
+
+	transition: color 0.3s ease,
+	padding 0.3s ease-in-out,
+	background 0.3s ease-in-out;
+
+	&:before {
+	  position: relative;
+	  display: block;
+	  line-height: 1.3em;
+	  padding: 0 0.2em;
+	  font-size: 14px;
+	  text-transform: uppercase;
+	  font-weight: $h-font-weight;
+	  transition: all .3s ease;
+	}
+
+	&:after {
+	  position: absolute;
+	  display: block;
+	  content: '';
+	  border-radius: 2em;
+	  width: 2.8em;
+	  height: 2.8em;
+	  top: 0.35em;
+	  margin-left: -1.45em;
+	  background: $toggle-enabled-tab-bg;
+	  transition: left 0.3s cubic-bezier(.175, .885, .320, 0.97), background 0.3s ease-in-out;
+	}
+  }
+
+  input[type="checkbox"] {
+
+	display: none !important;
+
+	// Off
+	&:not(:checked) {
+	  + span {
+		background: $bg-primary;
+		color: $toggle-disabled-color;
+		padding-left: 3.7em;
+		padding-right: 1.5em;
+		box-shadow: 0 0 5px rgba(0, 131, 255, 0.3);
+
+		&:before {
+		  content: attr(data-off);
+		  color: $toggle-disabled-color;
+		}
+		&:after {
+		  background: $toggle-disabled-tab-bg;
+		  left: 1.7em;
+		}
+	  }
+	}
+
+	// On
+	&:checked {
+	  + span {
+		background: $red;
+		color: $toggle-enabled-color;
+		padding-left: 1.5em;
+		padding-right: 3.7em;
+		box-shadow: 0 0 5px rgba(248, 48, 50, 0.3);
+		&:before {
+		  content: attr(data-on);
+		}
+		&:after {
+		  background: $toggle-enabled-tab-bg;
+		  left: 100%;
+		  margin-left: -3.1em;
+		}
+	  }
+	}
+
+	// Disabled
+	&:disabled, &:disabled + span, &:read-only, &:read-only + span {
+	  cursor: not-allowed;
+	}
+
+  }
+}
+
+
+.tgl-gray {
+  input[type="checkbox"] {
+	&:not(:checked) {
+	  + span {
+		background: lighten(desaturate($toggle-enabled-bg, 100%), 20%);
+		color: darken(desaturate($toggle-disabled-color, 100%), 40%);
+		&:before {
+		  color: darken(desaturate($toggle-disabled-color, 100%), 40%);
+		}
+		&:after {
+		  background: desaturate($toggle-disabled-tab-bg, 100%);
+		}
+	  }
+	}
+  }
+}
+
+.tgl-inline {
+  display: inline-block !important;
+  vertical-align: top;
+
+  &.tgl {
+	font-size: 16px;
+	span {
+	  min-width: 50px;
+	  &:before {
+		line-height: 1.4em;
+		padding-left: 0.4em;
+		padding-right: 0.4em;
+	  }
+	}
+  }
+
+}
+
+.tgl-inline-label {
+  display: inline-block !important;
+  vertical-align: top;
+  line-height: 26px;
+}
+
+.tgl--text-both {
+  input[type="checkbox"]:checked + span::before {
+	left: 140%;
+	color: $red;
+  }
+
+  input[type="checkbox"]:not(:checked) + span::before {
+	left: -140%;
+	color: $primary-color;
+  }
+
+  input[type="checkbox"]:not(:checked) + span,
+  input[type="checkbox"]:checked + span {
+	padding-left: .5em;
+	padding-right: .5em;
+  }
+}

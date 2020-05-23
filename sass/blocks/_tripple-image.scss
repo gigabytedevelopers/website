@@ -1,0 +1,60 @@
+/*------------- #TRIPPLE-IMAGE --------------*/
+
+
+.crumina-tripple-image {
+  text-align: center;
+  position: relative;
+
+  img {
+	display: block;
+	position: relative;
+	border-radius: 10px 10px 0 0;
+	overflow: hidden;
+	box-shadow: 30px 0 100px 0 rgba(0, 0, 0, 0.15);
+	margin: 0 auto;
+	z-index: 2;
+	transition: all 1s ease-in-out;
+	transition-delay: 0s;
+
+	&:first-child {
+	  position: absolute;
+	  bottom: 0;
+	  z-index: 3;
+	  left: 0;
+  }
+
+	&:last-child {
+	  position: absolute;
+	  right: 0;
+	  bottom: 0;
+	  z-index: 1;
+	}
+
+  }
+
+	&:hover {
+
+	  img {
+		&:first-child {
+		  transform: perspective(50em) translateZ(0) rotateY(20deg) rotateX(1deg);
+		}
+
+		&:last-child {
+		  transform: perspective(50em) translateZ(0) translate(0%,0%) rotateY(-20deg) rotateX(-2deg);
+		}
+
+		&:nth-child(2) {
+		  transform: perspective(50em) translateZ(0) translateY(0%) rotateY(0deg) rotateX(4deg);
+		}
+	  }
+	}
+}
+
+
+/*================= Responsive Mode ============*/
+
+@media (max-width: 860px) {
+  .crumina-tripple-image img {
+	max-width: 33%;
+  }
+}

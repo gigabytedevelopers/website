@@ -1,0 +1,83 @@
+/*------------- #SUBSCRIBE-FORM --------------*/
+
+
+
+.crumina-module-subscribe-form {
+  padding: 120px 0;
+}
+
+.subscribe-form {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.subscribe-main-content {
+  background-color: $white-color;
+  border-radius: 10px;
+  box-shadow: 20px 0 60px 0 rgba(0, 0, 0, 0.1);
+  width: calc(100% - 60px);
+  margin-left: 60px;
+  float: left;
+  z-index: 5;
+  position: relative;
+  padding: 70px 10px 100px 100px;
+}
+
+.subscribe-layer {
+  position: absolute;
+  width: calc(100% - 60px);
+  height: 100%;
+  left: 0;
+  top: 60px;
+  background-color: rgba(255,255,255, .3);
+  border-radius: 10px;
+}
+
+.subscribe-img {
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: -1;
+}
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 1450px) {
+  .subscribe-img {
+    width: 40%;
+    right: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .subscribe-img {
+    width: auto;
+    position: relative;
+    transform: none;
+    top: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .subscribe-main-content {
+    padding: 50px 10px;
+    margin-left: 20px;
+    width: calc(100% - 40px);
+  }
+
+  .subscribe-layer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscribe-main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+}

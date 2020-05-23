@@ -1,0 +1,86 @@
+/*------------- #OUR-VIDEO --------------*/
+
+
+.crumina-our-video {
+  overflow: hidden;
+  min-width: 100%;
+  position: relative;
+  text-align: center;
+
+  .cloud {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  .hand {
+    position: relative;
+    margin: -100px auto 0;
+    z-index: 19;
+    display: block;
+  }
+}
+
+.video-thumb {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+  .video-control {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  &.with-border-r {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+
+.with-border-r {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.block-rounded-shadow {
+  .crumina-our-video {
+    margin: 60px -60px;
+  }
+}
+
+.video-with-cloud {
+  .video-thumb {
+    width: auto;
+  }
+}
+
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 1199px) {
+  .block-rounded-shadow {
+    padding: 30px;
+    .crumina-our-video {
+      margin: 60px -30px;
+    }
+  }
+
+  .video-thumb .video-control {
+    width: 30%;
+  }
+}
+

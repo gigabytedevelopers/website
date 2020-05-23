@@ -1,0 +1,166 @@
+/*------------- #PAGINATION-ARROW --------------*/
+
+
+
+.pagination-arrow {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+
+  span {
+	display: block;
+  }
+}
+
+.btn-next-wrap {
+  display: flex;
+  align-items: center;
+
+  .btn-next {
+	&:hover {
+		margin-left: 0;
+		margin-right: 0;
+	}
+  }
+
+  .btn-content {
+	position: relative;
+	text-align: right;
+	margin-right: 35px;
+
+	.btn-content-title {
+	  text-transform: uppercase;
+	  font-size: 11px;
+	  transition: all .3s ease;
+	  font-weight: 700;
+	}
+
+	.btn-content-subtitle {
+	  font-size: 16px;
+	  margin-bottom: 0;
+	  color: $icon-color;
+	  transition: all .3s ease;
+	  font-weight: $h_font-weight;
+	}
+
+  }
+
+  &:hover {
+	margin-right: -2px;
+
+	.btn-content-subtitle {
+	  color: $primary-color;
+	}
+
+	.btn-next {
+	  opacity: 1;
+	}
+
+	.icon-hover {
+	  opacity: 1;
+	}
+
+  }
+}
+
+.btn-prev-wrap {
+  display: flex;
+  align-items: center;
+
+  .btn-prev {
+	margin-right: 35px;
+
+	&:hover {
+	  margin-left: 0;
+	  margin-right: 35px;
+	}
+  }
+
+  .btn-content {
+	position: relative;
+
+	.btn-content-title {
+	  text-transform: uppercase;
+	  font-size: 11px;
+	  transition: all .3s ease;
+	  font-weight: 700;
+	}
+
+	.btn-content-subtitle {
+	  font-size: 16px;
+	  margin-bottom: 0;
+	  color: $icon-color;
+	  transition: all .3s ease;
+	  font-weight: $h_font-weight;
+	}
+
+  }
+
+  &:hover {
+	margin-left: -2px;
+
+	.btn-content-subtitle {
+	  color: $primary-color;
+	}
+
+	.btn-prev {
+	  opacity: 1;
+	}
+
+	.icon-hover {
+	  opacity: 1;
+	}
+
+  }
+}
+
+
+.list-post {
+	.utouch-icon {
+	  width: 32px;
+	  height: 32px;
+	  fill: $icon-color;
+	}
+
+  &:hover .utouch-icon {
+	fill: $primary-color;
+  }
+}
+
+
+
+/*================= Responsive Mode ============*/
+
+@media (max-width: 980px) {
+  .btn-next-wrap .btn-next {
+  	margin-left: 0;
+  	margin-right: 0;
+  }
+
+  .btn-prev-wrap {
+
+	.btn-prev {
+	  margin-left: 0;
+	  margin-right: auto;
+	}
+  }
+
+  .btn-prev-wrap .btn-prev:hover {
+	margin-right: auto;
+  }
+
+  .btn-next-wrap .btn-content {
+	display: none;
+  }
+
+  .btn-prev-wrap .btn-content {
+	display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .pagination-arrow {
+	padding: 30px 0 30px;
+  }
+}
+

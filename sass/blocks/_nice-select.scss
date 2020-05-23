@@ -1,0 +1,135 @@
+/*------------- #styled_selects --------------*/
+
+
+// Style the dropdown
+.nice-select {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  padding: 20px 40px 20px 20px;
+  border-color: transparent;
+  transition: all .3s ease;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  position: relative;
+  background-color: $border-color;
+  color: #ccc;
+
+  &:focus {
+	background-color: $white-color;
+	box-shadow: 17px 0 60px #d3dcdc;
+  }
+
+  &.focus-white:focus {
+	background-color: #fff;
+	-webkit-box-shadow: 25px 20px 20px -15px rgba(0, 0, 0, 0.3);
+	box-shadow: 25px 20px 20px -15px rgba(0, 0, 0, 0.3);
+  }
+
+  // Arrow
+  &:after {
+	border-bottom: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+	content: '';
+	display: block;
+	height: 10px;
+	margin-top: -6px;
+	pointer-events: none;
+	position: absolute;
+	right: 30px;
+	top: 50%;
+	transform-origin: 66% 66%;
+	transform: rotate(45deg);
+	transition: all 0.15s ease-in-out;
+	width: 10px;
+  }
+
+  &.open {
+
+	&:after {
+	  transform: rotate(-135deg);
+	}
+
+	.list {
+	  opacity: 1;
+	  pointer-events: auto;
+	  transform: scale(1) translateY(0);
+	}
+
+  }
+
+  // List and options
+  .list {
+	background-color: #fff;
+	border-radius: 10px;
+	border: 1px solid $border-color;
+	box-shadow: 25px 20px 20px -15px rgba(0, 0, 0, 0.3);
+	box-sizing: border-box;
+	opacity: 0;
+	overflow: hidden;
+	padding: 0;
+	pointer-events: none;
+	position: absolute;
+	top: calc(100% + 10px);
+	left: 0; right: 0;
+	transform-origin: 50% 0;
+	transform: scale(.75) translateY(- 40px / 2);
+	transition: all .2s cubic-bezier(0.5, 0, 0, 1.25), opacity .15s ease-out;
+	z-index: 9;
+	margin-left: 0;
+
+	&:hover .option:not(:hover) {
+	  background-color: transparent !important;
+	}
+  }
+
+  .option {
+	cursor: pointer;
+	font-weight: 400;
+	line-height: 40px - 2;
+	list-style: none;
+	min-height: 40px - 2;
+	outline: none;
+	padding-left: 40px;
+	padding-right: 40px + 20;
+	text-align: center;
+	transition: all 0.2s;
+	margin: 0;
+	font-size: 16px;
+
+	&:hover, &.focus, &.selected.focus {
+	  background-color: $border-color;
+	}
+
+	&:hover {
+	  color: $primary-color;
+	}
+
+	&.selected {
+	  font-weight: bold;
+	}
+
+	&.disabled {
+	  background-color: transparent;
+	  cursor: default;
+
+	  &:hover {
+		color: $body-font-color
+	  }
+	}
+
+  }
+}
+
+// Use display instead of opacity for IE <= 10
+.no-csspointerevents .nice-select {
+
+  .list {
+	display: none;
+  }
+
+  &.open {
+	.list {
+	  display: block;
+	}
+  }
+}

@@ -1,0 +1,108 @@
+/*------------- #CURRICULUM LIST  --------------*/
+
+
+
+.curriculum-list {
+  min-width: 100%;
+  background-color: $white-color;
+  border-radius: 10px;
+  box-shadow: 40px 0 100px 0 rgba(18, 25, 33, 0.07);
+
+  .utouch-icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 30px;
+  }
+
+  li {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 60px;
+	position: relative;
+	transition: all .3s ease;
+	cursor: pointer;
+	border-bottom: 1px solid $border-color;
+
+	&:before {
+	  content: '';
+	  display: block;
+	  height: 100%;
+	  width: 6px;
+	  background-color: $primary-color;
+	  left: 0;
+	  top: 0;
+	  position: absolute;
+	  opacity: 0;
+	  transition: all .3s ease;
+	}
+
+	&:hover {
+	  background-color: $blue-lighteen;
+
+	  &:before {
+		opacity: 1;
+	  }
+
+	  .title {
+		color: $primary-color;
+	  }
+	}
+
+	&:last-child {
+	  border-bottom: none;
+	}
+  }
+
+  .title {
+	font-size: 16px;
+	margin-right: 30px;
+  }
+}
+
+.lection {
+  display: flex;
+  align-items: center;
+  .utouch-icon {
+	fill: $primary-color;
+  }
+}
+
+.lection-time {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+
+  .utouch-icon {
+	fill: $icon-color;
+  }
+}
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 1024px) {
+  .lection-time {
+	margin-left: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .course-details .curriculum-list {
+	margin: 0 -15px;
+  }
+
+  .curriculum-list li {
+	padding: 15px;
+  }
+
+  .lection {
+	flex-direction: column;
+	align-items: flex-start;
+  }
+
+  .course-details .post-details-shared {
+	padding: 15px 0;
+  }
+}

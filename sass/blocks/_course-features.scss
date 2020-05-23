@@ -1,0 +1,50 @@
+/*------------- #COURSE-FEATURES --------------*/
+
+
+.course-features-list {
+
+  li {
+	padding: 15px 0;
+
+	& + li {
+	  border-top: 1px solid $border-color;
+	}
+  }
+
+  .utouch-icon {
+	height: 15px;
+	width: 15px;
+	fill: $primary-color;
+	margin-right: 15px;
+	position: relative;
+	top: 2px;
+  }
+
+  .feature-item {
+	width: 50%;
+	font-weight: $h-font-weight;
+	color: $heading-color;
+	float: left;
+  }
+
+  .value {
+	width: 50%;
+	overflow: hidden;
+  }
+}
+
+
+
+/*================= Responsive Mode ============*/
+
+
+@media (max-width: 480px) {
+  .course-features-list li {
+	padding: 10px 0;
+	font-size: 14px;
+  }
+
+  .course-features-list .utouch-icon {
+	margin-right: 5px;
+  }
+}

@@ -1,0 +1,48 @@
+/*------------- #CRUMINA-DOUBLE-IMAGE --------------*/
+
+
+.crumina-double-image {
+  text-align: center;
+  position: relative;
+
+  img {
+	display: block;
+	border-radius: 10px 10px 0 0;
+	overflow: hidden;
+	box-shadow: 30px 0 100px 0 rgba(0, 0, 0, 0.15);
+	margin: 0 auto;
+	z-index: 2;
+	transition: all .5s ease-in-out;
+
+	&:first-child {
+	  position: relative;
+	  z-index: 2;
+	  transition-delay: 0.25s;
+	  transform: translateZ(0) translate(0%,0%) rotateY(40deg) rotateX(0deg);
+	}
+
+	&:last-child {
+	  box-shadow: none;
+	  position: absolute;
+	  bottom: 0;
+	  max-height: 100%;
+	  z-index: 1;
+	  transition-delay: 0.25s;
+	  transform: translateZ(0) translate(0%,0%) rotateY(0deg) rotateX(0deg);
+	}
+
+  }
+
+  &:hover {
+
+	img {
+	  &:first-child {
+		transform: perspective(50em) translateZ(0) translate(0%,0%) rotateY(-20deg) rotateX(1deg);
+	  }
+
+	  &:last-child {
+		transform: perspective(50em) translateZ(0) translate(-20%, 0%) rotateY(0deg) rotateX(-2deg);
+	  }
+	}
+  }
+}
