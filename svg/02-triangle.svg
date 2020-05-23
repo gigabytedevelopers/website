@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 169">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <title>02-triangle</title>
+  <g id="Rectangle_1" data-name="Rectangle 1" class="cls-1">
+    <g id="Rectangle_1-2" data-name="Rectangle 1">
+      <polygon class="cls-2" points="0 0 0 169 1920 0 0 0" fill="#FFFFFF"/>
+    </g>
+  </g>
+</svg>

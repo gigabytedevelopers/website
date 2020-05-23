@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 108.5">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <title>06-wave-inverted</title>
+  <g id="Rectangle_5" data-name="Rectangle 5" class="cls-1">
+    <g id="Rectangle_5-2" data-name="Rectangle 5">
+      <path fill="#ffffff" class="cls-2" d="M855,44C264.753-62.964,0,61,0,61v48H1920V61S1366.378,136.671,855,44Z" transform="translate(0 -0.5)"/>
+    </g>
+  </g>
+</svg>

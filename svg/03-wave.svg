@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 145.35">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <title>03-wave</title>
+  <g id="Rectangle_2" data-name="Rectangle 2" class="cls-1">
+    <g id="Rectangle_2-2" data-name="Rectangle 2">
+      <path fill="#ffffff" class="cls-2" d="M1182,48C632.292-89.422,0,116,0,116v30H1920V116S1611.973,155.489,1182,48Z" transform="translate(0 -0.65)"/>
+    </g>
+  </g>
+</svg>
