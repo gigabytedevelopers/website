@@ -17,3 +17,6 @@ email.csv
 # Jetbrains PhpStorm
 *.iml
 .idea
+
+# Remove Archives
+.zip
