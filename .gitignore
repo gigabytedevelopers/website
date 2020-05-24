@@ -21,3 +21,4 @@ email.csv
 # Remove Archives
 .zip
 /apps/cometotp/changelog/log/CHANGELOG_SAMPLE.md
+/apps/sonshub/changelog/log/CHANGELOG_SAMPLE.md
