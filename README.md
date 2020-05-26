@@ -1,6 +1,7 @@
 Open-Source <a href="http://gigabytedevelopersinc.com">Gigabyte Developers Incorporated</a> website
 ====================================================================
 
+![Website](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Fgigabytedevelopersinc.com)
 [![DUB](https://img.shields.io/badge/version-3.0-green)]()
 [![DUB](https://img.shields.io/badge/downloads-2k%2Fweek-green.svg)]()
 [![DUB](https://img.shields.io/badge/Powered%20by-PHP-blue.svg)]()
