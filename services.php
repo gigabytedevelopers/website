@@ -95,7 +95,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                     <div class="crumina-module crumina-info-box info-box--classic" data-mh="box--classic">
                         <div class="info-box-image">
-                            <img class="utouch-icon" src="svg-icons/music%20(1).svg" alt="smartphone">
+                            <img class="utouch-icon" src="svg-icons/music1.svg" alt="smartphone">
                         </div>
                         <div class="info-box-content">
                             <h5 class="info-box-title">Multimedia Services</h5>
@@ -107,7 +107,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                     <div class="crumina-module crumina-info-box info-box--classic" data-mh="box--classic">
                         <div class="info-box-image">
-                            <img class="utouch-icon" src="svg-icons/settings%20(4).svg" alt="smartphone">
+                            <img class="utouch-icon" src="svg-icons/settings.svg" alt="smartphone">
                         </div>
                         <div class="info-box-content">
                             <h5 class="info-box-title">Quick Settings</h5>
@@ -131,7 +131,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                     <div class="crumina-module crumina-info-box info-box--classic" data-mh="box--classic">
                         <div class="info-box-image">
-                            <img class="utouch-icon" src="svg-icons/cloud-computing%20(1).svg" alt="alarm">
+                            <img class="utouch-icon" src="svg-icons/cloud-computing1.svg" alt="alarm">
                         </div>
                         <div class="info-box-content">
                             <h5 class="info-box-title">Cloud Integration</h5>
