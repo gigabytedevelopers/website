@@ -4,7 +4,7 @@ website: http://bit.ly/CometOTP_changelog
 
 # CometOTP
 
-## 5.2.2.1 (2020-05-27T11:00:00)
+## 5.2.2.1 (2020-06-04T18:30:00)
 ### New
 - Added new account thumbnails
 - Streamlined account backups
@@ -44,8 +44,8 @@ website: http://bit.ly/CometOTP_changelog
 ### New
 - Added new account thumbnails (*e.g* **HubSpot**)
 - Dynamic validation of manual account information inputs
-- Backup directory is no longer dependent on requesting for filename
-- Added transparency on selected account card when long pressed
+- The backup directory is no longer dependent on requesting for filename
+- We added a transparency on selected account card when long pressed
 - CometOTP can now show the QR Code of every stored account
 - Added option to show an individual timeout bar for each account
 - Added settings options to configure how single or double taps on account card functions
@@ -105,7 +105,7 @@ website: http://bit.ly/CometOTP_changelog
 - Updated look and feel for nicer interface
 
 ### Fix
-- Fixed problem with text display after switching themes
+- We fixed the problem with text display after switching themes
 - Fixed system accessibility settings for the font size of CometOTP
 
 ## 3.0.5 (2018-07-24)
@@ -191,7 +191,7 @@ website: http://bit.ly/CometOTP_changelog
 
 ## 1.3.1 (2018-02-10)
 ### New 
-- Added pattern unlock as part of **Device Credentials** authentication
+- Added support for use of pattern unlock as part of **Device Credentials** authentication
 - Updated account thumbnails and CometOTP launcher icon
 
 ### Improvement
@@ -199,7 +199,7 @@ website: http://bit.ly/CometOTP_changelog
 
 ### Fix
 - Fixed issues with **Fingerprint and Face ID** security authentication
-- Fixed account thumbnails for dark theme (Night Mode)
+- Fixed account thumbnails for the dark theme (Night Mode)
 - Other minor fixes
 
 ## 1.3.0 (2018-02-05)
