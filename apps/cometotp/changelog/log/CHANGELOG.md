@@ -6,14 +6,19 @@ website: http://bit.ly/CometOTP_changelog
 
 ## 5.2.2.1 (2020-05-27T11:00:00)
 ### New
-- Updated app theming
 - Added new account thumbnails
-- Fixed app auto screen rotation
-- Improved display attributes for new accounts
+- Streamlined account backups
+- Performance improvements
+- Minor bug fixes
+
+## 5.2.2.1 (2020-05-27T11:00:00)
+### New
+- Performance improvements
+- Minor bug fixes
 
 ## 5.2.2 (2020-05-22T17:00:00)
 ### New
-- Updated app theming
+- Updated the app theming
 - Added new account thumbnails
 - Fixed app auto screen rotation
 - Improved display attributes for new accounts
