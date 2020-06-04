@@ -8,7 +8,8 @@ website: http://bit.ly/SonsHubMobileChangelog
 ### New
 - Ongoing downloads can now be monitored in the download section
 - Added ability to download multiple files all at once
-- Files can now be downloaded at a speed as high as 100mb/s (strictly dependent on the strength of your network connection)
+- Files can now be downloaded at a speed as high as 100mb/s 
+> This is strictly dependent on the strength your network connection can deliver
 
 ### Fix
 - Major security fixes
@@ -29,7 +30,7 @@ website: http://bit.ly/SonsHubMobileChangelog
 
 ## 1.1.4 (2020-04-24T20:30:00)
 ### Breaking
-- Integrated **StartApp** to 100% support and deliver sonshub mobile with GDPR compliance to our users in the EU
+- Integrated **StartApp** to 100% support and deliver SonsHub Mobile with GDPR compliance to our users in the EU
 
 ### New
 - All new app update experience
@@ -37,7 +38,7 @@ website: http://bit.ly/SonsHubMobileChangelog
 - Completed review of app size
 
 ### Improvement
-- Enjoy sonshub mobile on any level of network connectivity (3G, 4G, pub-WiFi)
+- Enjoy SonsHub Mobile on any level of network connectivity (3G, 4G, pub-WiFi)
 - Migrated cloud resources for faster notification delivery
 - Migrated cloud resources for faster app version update delivery
 - Throttled internal servers to accurately match download speed
@@ -105,13 +106,13 @@ website: http://bit.ly/SonsHubMobileChangelog
 - Introduced Concurrency for downloading (alpha testing phase)
 
 ### Improvement
-- About page now has a new look
+- The about page section now has a new look
 - Lighter app interface
 - Increased downloading speed
 - Click on the arrow bar above the music player to either open or close it
 
 ### Fix
-- Fixed download not showing progress of current download
+- Fixed file downloads not showing progress of current download
 - Fixed Crashes on some devices
 
 ## 1.0.1-patch-003 build 005 (2019-01-18)
