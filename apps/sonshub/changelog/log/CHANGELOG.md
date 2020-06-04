@@ -4,6 +4,16 @@ website: http://bit.ly/SonsHubMobileChangelog
 
 # SonsHub Mobile
 
+## 1.1.5 (2020-06-04T18:00:00)
+### New
+- Ongoing downloads can now be monitored in the download section
+- Added ability to download multiple files all at once
+- Files can now be downloaded at a speed as high as 100mb/s (strictly dependent on the strength of your network connection)
+
+### Fix
+- Major security fixes
+- Major performance improvements
+
 ## 1.1.4-patch-002 (2020-05-18T00:30:00)
 ### Fix
 - Fixed security issues
@@ -19,10 +29,10 @@ website: http://bit.ly/SonsHubMobileChangelog
 
 ## 1.1.4 (2020-04-24T20:30:00)
 ### Breaking
-- Integrated **StartApp** to 100% support and deliver sonshub mobile with GDPR compiliance to our users in the EU
+- Integrated **StartApp** to 100% support and deliver sonshub mobile with GDPR compliance to our users in the EU
 
 ### New
-- Brand new app update experience
+- All new app update experience
 - Now you can pause/resume app updates
 - Completed review of app size
 
