@@ -1,10 +1,12 @@
 {
-  "latestVersion": "1.1.4-patch-002",
-  "latestVersionCode": "13",
+  "latestVersion": "1.1.5",
+  "latestVersionCode": "15",
   "url": "https://gigabytedevelopersinc.com/apps/sonshub/changelog",
   "releaseNotes": [
-    "- Fixed security issues",
+    "- Ongoing downloads can now be monitored in the download section",
+    "- Files can now be downloaded at a speed as high as 100mb/s",
+    "- Added ability to download multiple files all at once",
     "- Major performance improvements",
-    "- Other minor bug fixes"
+    "- Major security fixes"
   ]
 }
