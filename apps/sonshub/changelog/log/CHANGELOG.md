@@ -9,15 +9,17 @@ website: http://bit.ly/SonsHubMobileChangelog
 - SonsHub Mobile just got smarter
 
 ### New
+- Streaming songs is now faster
 - Automatic playing of streaming content
 - Navigation within the app just got smoother
-- Hide streaming player when scrolling down
+- Hide streaming player when scrolling down the app
 - Automatically popup streaming player when music streaming is ready
 
 ### Fix
-- Automatically popup streaming player when music streaming is ready
-- Major security fixes
+- Fixed playback issues on the app
 - Major performance improvements
+- Some other minor bug fixes
+- Major security update
 
 ## 1.1.5 (2020-06-04T18:00:00)
 ### New
