@@ -4,7 +4,14 @@ website: http://bit.ly/CometOTP_changelog
 
 # CometOTP
 
-## 5.2.2.1 (2020-06-04T18:30:00)
+## 5.3.1 (2020-06-12T15:00:00)
+### New
+- New account images
+- Reworked account backup and restore
+- Performance improvement
+- Minor bug fixes
+
+## 5.3.0 (2020-06-04T18:30:00)
 ### New
 - Added new account thumbnails
 - Streamlined account backups
