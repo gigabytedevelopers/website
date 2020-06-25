@@ -4,6 +4,20 @@ website: http://bit.ly/CometOTP_changelog
 
 # CometOTP
 
+## 5.3.2 (2020-06-25T22:00:00)
+### New
+- New account images (thumbnails)
+- Reworked generation of account OTPs
+
+### Improvement
+- Major security improvements
+- Performance improvement
+
+### Fix
+- Major bug fixes
+- Fixed "Invalid QR Code" error
+- Fixed issue where setting-up new account says Invalid QR-Code
+
 ## 5.3.1 (2020-06-12T15:00:00)
 ### New
 - New account images
