@@ -4,7 +4,22 @@ website: http://bit.ly/SonsHubMobileChangelog
 
 # SonsHub Mobile
 
-## 1.1.6 (2020-06-13T108:00:00)
+## 1.1.7 (2020-06-22T20:00:00)
+### New
+- Security updates
+- Major performance improvements
+- Automatic playing of streaming content
+- Navigation within the app just got smoother
+- Hide streaming player when scrolling down the app
+- Automatically popup streaming player when music is ready to play
+
+### Fix
+- Fixed issue with the SonsHub Oflline Music Player plays music together with other apps that produce sound
+- Fixed playback issues on the app
+- Some other minor bug fixes
+- Major security update
+
+## 1.1.6 (2020-06-13T08:00:00)
 ### Breaking
 - SonsHub Mobile just got smarter
 

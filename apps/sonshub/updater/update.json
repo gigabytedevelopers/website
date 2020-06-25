@@ -1,15 +1,16 @@
 {
-  "latestVersion": "1.1.6",
-  "latestVersionCode": "16",
+  "latestVersion": "1.1.7",
+  "latestVersionCode": "17",
   "url": "https://gigabytedevelopersinc.com/apps/sonshub/changelog",
   "releaseNotes": [
-    "- SonsHub Mobile just got smarter",
+    "- Security updates",
+    "- Major performance improvements",
     "- Automatic playing of streaming content",
     "- Navigation within the app just got smoother",
     "- Hide streaming player when scrolling down the app",
-    "- Popup streaming player when music streaming is ready",
+    "- Popup streaming player when music is ready to play",
+    "- Fixed issue with the SonsHub Oflline Music Player plays music together with other apps that produce sound",
     "- Fixed playback issues on the app",
-    "- Major performance improvements",
     "- Some other minor bug fixes",
     "- Major security update"
   ]
