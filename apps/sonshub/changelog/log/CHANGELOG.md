@@ -14,7 +14,7 @@ website: http://bit.ly/SonsHubMobileChangelog
 - Automatically popup streaming player when music is ready to play
 
 ### Fix
-- Fixed issue with the SonsHub Oflline Music Player plays music together with other apps that produce sound
+- Fixed issue with the SonsHub Offline Music Player plays music together with other apps that produce sound
 - Fixed playback issues on the app
 - Some other minor bug fixes
 - Major security update
