@@ -7,13 +7,13 @@
 
     <meta name="google-site-verification" content="RjAgqUgYfT94lQ7oGZqqRI87NeSdR_6fecSUipiGBmg" />
     <meta name="msvalidate.01" content="F39E6D2A441B34A5BCA816D83B967BDF" />
-    <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/gigabytedevelopers/website/master/thumbnail.png" />
+    <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/gigabytedevelopers/Assets/master/website/thumbnail.png" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Gigabyte Developers Incorporated">
     <meta property="og:title" content="Gigabyte Developers - Homepage" />
     <meta property="og:description" content="Official Homepage of Gigabyte Developers Incorporated" />
-    <meta property="og:image" itemprop="image" content="https://raw.githubusercontent.com/gigabytedevelopers/website/master/thumbnail.png" />
-    <meta property="og:image:url" itemprop="image" content="https://raw.githubusercontent.com/gigabytedevelopers/website/master/thumbnail.png" />
+    <meta property="og:image" itemprop="image" content="https://raw.githubusercontent.com/gigabytedevelopers/Assets/master/website/thumbnail.png" />
+    <meta property="og:image:url" itemprop="image" content="https://raw.githubusercontent.com/gigabytedevelopers/Assets/master/website/thumbnail.png" />
     <meta property="og:image:type" content="image/png" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

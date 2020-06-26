@@ -1,0 +1,267 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+ul {
+  margin: 0;
+}
+a {
+  overflow-wrap: break-word;
+  /* https://github.com/postcss/autoprefixer/issues/558 */
+  word-wrap: break-word;
+}
+.mdl-shadow--2dp {
+  z-index: 2;
+}
+.mdl-shadow--3dp {
+  z-index: 3;
+}
+.mdl-shadow--4dp {
+  z-index: 4;
+}
+.mdl-shadow--6dp {
+  z-index: 6;
+}
+.mdl-shadow--8dp {
+  z-index: 8;
+}
+.mdl-shadow--16dp {
+  z-index: 16;
+}
+.mdl-shadow--24dp {
+  z-index: 24;
+}
+.mdi-18px {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+}
+.mdi-24px {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+.mdi-36px {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+}
+.mdi-48px {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+}
+body > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 599px) {
+  body > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+body > div > header {
+  width: 33.33%;
+}
+@media (max-width: 959px) {
+  body > div > header {
+    width: 41.67%;
+  }
+}
+@media (max-width: 599px) {
+  body > div > header {
+    width: 100%;
+  }
+}
+body > div > header .title {
+  padding: 32px 32px 32px 80px;
+}
+@media (max-width: 959px) and (min-width: 599px) {
+  body > div > header .title {
+    padding-left: 56px;
+  }
+}
+body > div > header .title > p {
+  margin-top: 8px;
+}
+body > div > header .about,
+body > div > header .contact,
+body > div > header .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 32px 32px 32px;
+}
+@media (max-width: 959px) and (min-width: 599px) {
+  body > div > header .about,
+  body > div > header .contact,
+  body > div > header .skills {
+    padding-left: 16px;
+  }
+}
+body > div > header .about > div,
+body > div > header .contact > div,
+body > div > header .skills > div {
+  margin-left: 24px;
+}
+@media (max-width: 959px) and (min-width: 599px) {
+  body > div > header .about > div,
+  body > div > header .contact > div,
+  body > div > header .skills > div {
+    margin-left: 16px;
+  }
+}
+body > div > header .about > div > h2,
+body > div > header .contact > div > h2,
+body > div > header .skills > div > h2 {
+  line-height: 24px;
+}
+body > div > header .about > div > p,
+body > div > header .contact > div > p,
+body > div > header .skills > div > p,
+body > div > header .about > div > ul,
+body > div > header .contact > div > ul,
+body > div > header .skills > div > ul {
+  margin-top: 16px;
+}
+body > div > header .about > div > ul,
+body > div > header .contact > div > ul,
+body > div > header .skills > div > ul {
+  list-style-type: none;
+  padding: 0;
+}
+body > div > header .about a,
+body > div > header .contact a,
+body > div > header .skills a {
+  color: white;
+  text-decoration: none;
+}
+body > div > header .about {
+  padding-top: 32px;
+}
+body > div > header .contact > div > ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body > div > header .contact > div > ul > li:not(:first-child) {
+  margin-top: 8px;
+}
+body > div > header .contact > div > ul > li > i {
+  font-size: 18px;
+}
+body > div > header .contact > div > ul > li > a {
+  margin-left: 8px;
+  line-height: 18px;
+}
+body > div > header .skills > div > ul > li:not(:first-child) {
+  margin-top: 12px;
+}
+body > div > header .skills > div > ul > li p:first-child {
+  text-transform: uppercase;
+}
+body > div > header .skills > div > ul > li p:last-child {
+  margin-top: 8px;
+}
+body > div > main {
+  width: 66.67%;
+  padding: 32px 32px 120px 32px;
+}
+@media (max-width: 959px) {
+  body > div > main {
+    width: 58.33%;
+  }
+}
+@media (max-width: 599px) {
+  body > div > main {
+    width: 100%;
+  }
+}
+@media (max-width: 599px) {
+  body > div > main {
+    padding: 16px 16px 88px 16px;
+  }
+}
+body > div > main > section {
+  width: 100% !important;
+  padding: 32px;
+  border-radius: 2px;
+}
+body > div > main > section:not(:first-child) {
+  margin-top: 32px;
+}
+@media (max-width: 599px) {
+  body > div > main > section:not(:first-child) {
+    margin-top: 16px;
+  }
+}
+body > div > main > section > h2 {
+  font-weight: 500 !important;
+}
+body > div > main > section > section {
+  padding-top: 32px;
+}
+body > div > main > section > section a {
+  font-weight: inherit;
+}
+body > div > main > section > section > p {
+  margin-top: 4px;
+  line-height: 1.2 !important;
+}
+body > div > main > section > section > p:first-of-type {
+  margin-top: 12px;
+}
+body > div > main > section > section > p:last-of-type {
+  font-style: italic;
+}
+body > div > main > section > section > p a {
+  color: inherit;
+  text-decoration: none;
+}
+body > div > main > section > section > ul {
+  margin-top: 12px;
+  padding-left: 1em;
+  letter-spacing: normal !important;
+}
+body > a {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed !important;
+  right: 32px;
+  bottom: 32px;
+  /* .mdl-shadow--6dp */
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2) !important;
+  z-index: 6;
+}
+@media (max-width: 599px) {
+  body > a {
+    right: 16px;
+    bottom: 16px;
+  }
+}
+body > a:active {
+  /* .mdl-shadow--12dp */
+  -webkit-box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12) !important;
+          box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12) !important;
+  z-index: 12;
+}
