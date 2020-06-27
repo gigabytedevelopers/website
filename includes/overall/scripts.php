@@ -14,7 +14,7 @@
 <!-- End of HubSpot Embed Code -->
 
 <!-- Start of Async Drift Code -->
-<script>
+<!-- <script>
 "use strict";
 
 !function() {
@@ -39,5 +39,15 @@
 }();
 drift.SNIPPET_VERSION = '0.3.1';
 drift.load('remchpx6n9es');
-</script>
+</script> -->
 <!-- End of Async Drift Code -->
+
+<script>
+  !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+  arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+  d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+  insertBefore(d,q)}(window,document,'script','_gs');
+
+  _gs('GSN-928209-R');
+  _gs('set', 'anonymizeIP', true);
+</script>
