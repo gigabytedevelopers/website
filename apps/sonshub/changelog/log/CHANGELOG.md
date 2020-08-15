@@ -4,6 +4,15 @@ website: http://bit.ly/SonsHubMobileChangelog
 
 # SonsHub Mobile
 
+## 1.1.9 (2020-08-15T16:00:00)
+### New
+- Performance improvements
+- Major security updates
+
+### Fix
+- Fixed download issues on Android 10
+- Minor bug fixes
+
 ## 1.1.8 (2020-06-26T15:00:00)
 ### New
 - Improved streaming experience
