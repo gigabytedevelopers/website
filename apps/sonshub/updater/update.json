@@ -1,12 +1,11 @@
 {
-  "latestVersion": "1.1.8",
-  "latestVersionCode": "18",
+  "latestVersion": "1.1.9",
+  "latestVersionCode": "19",
   "url": "https://gigabytedevelopersinc.com/apps/sonshub/changelog",
   "releaseNotes": [
-    "- Improved streaming experience",
     "- Major performance improvements",
-    "- Fixed playback issues on the app",
+    "- Fixed download issues on Android 10",
     "- Some other minor bug fixes",
-    "- Minor security update"
+    "- Major security update"
   ]
 }
