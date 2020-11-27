@@ -4,6 +4,19 @@ website: http://bit.ly/SonsHubMobileChangelog
 
 # SonsHub Mobile
 
+## 1.2.0 (2020-11-27T16:00:00)
+### New
+- Added playing indicator to songs
+- Major performance improvements
+- Major security updates
+
+### Fix
+- Fixed artist albums not loading in Android 10 and 11
+- Fixed crash on cast expanded controls
+- Fixed wrong total file size for downloads
+- Fixed download issues on Android 11
+- Minor bug fixes
+
 ## 1.1.9 (2020-08-15T16:00:00)
 ### New
 - Performance improvements

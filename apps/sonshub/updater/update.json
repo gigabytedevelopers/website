@@ -1,11 +1,15 @@
 {
-  "latestVersion": "1.1.9",
-  "latestVersionCode": "19",
+  "latestVersion": "1.2.0",
+  "latestVersionCode": "20",
   "url": "https://gigabytedevelopersinc.com/apps/sonshub/changelog",
   "releaseNotes": [
-    "- Major performance improvements",
+    "- Added playing indicator to songs",
     "- Fixed download issues on Android 10",
-    "- Some other minor bug fixes",
-    "- Major security update"
+    "- Fixed crash on cast expanded controls",
+    "- Fixed wrong total file size for downloads",
+    "- Fixed artist albums not loading in Android 10 and 11",
+    "- Major performance improvements",
+    "- Major security update",
+    "- Some other minor bug fixes"
   ]
 }
