@@ -4,6 +4,14 @@ website: http://bit.ly/CometOTP_changelog
 
 # CometOTP
 
+## 5.3.4 (2020-12-19T09:00:00)
+### New
+- New account images (thumbnails)
+
+### Improvement
+- Major security improvements
+- Performance improvement
+
 ## 5.3.3 (2020-11-28T09:00:00)
 ### New
 - New account images (thumbnails)
