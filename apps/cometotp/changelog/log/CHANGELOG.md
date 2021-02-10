@@ -4,6 +4,27 @@ website: http://bit.ly/CometOTP_changelog
 
 # CometOTP
 
+## 5.4.0 (2021-02-11T19:00:00)
+### New
+- Added new feature to hide progress bar
+- Added new unlock progress when authenticating
+- Added progressbar when restoring backups
+- Added option to hide issuer label for all account entries
+
+### Improvement
+- Updated some account thumbnails
+- Improved Android Sync automated task(s)
+- Major security improvements
+- Major performance improvements
+
+## 5.3.5 (2021-01-11T11:45:00)
+### New
+- Added new account thumbnails
+
+### Improvement
+- Minor security improvements
+- Minor performance improvements
+
 ## 5.3.4 (2020-12-19T09:00:00)
 ### New
 - New account images (thumbnails)
