@@ -4,6 +4,12 @@ website: http://bit.ly/SonsHubMobileChangelog
 
 # SonsHub Mobile
 
+## 1.3.1 (2021-03-04T07:30:00)
+### Improvement
+- Major security improvements
+- Major performance improvements
+- Minor bug fixes
+
 ## 1.3.0 (2021-02-12T20:00:00)
 ### New
 - Added multiple batch downloading capability
