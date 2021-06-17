@@ -4,6 +4,25 @@ website: http://bit.ly/SonsHubMobileChangelog
 
 # SonsHub Mobile
 
+## 1.4.0 (2021-06-17T07:30:00)
+### New
+- SonsHub Mobile now available for Android 12 devices
+- SonsHub now uses Scoped Storage
+- SonsHub media folder would now subsequently move to Documents Folder in the device's Internal Storage (Phone Storage)
+- New downloaded content from the SonsHub app would now be accessed in a dedicated SonsHub folder inside the Internal Storage Documents Folder
+- Internal Storage -> Documents -> SonsHub would now be the new directory to access new contents that are downloaded on the SonsHub app
+- Old SonsHub directory (Internal Storage -> SonsHub) has now been discontinued. Previously downloaded SonsHub content can still be accessed in this old directory, but these content(s) would no longer show-up as downloaded content on the download page of the SonsHub app
+
+### Fix
+- Fixed download issue that occurred frequently on Android 11 devices
+- Fixed network irregularities on Android 11 and 12 devices
+- Fixed closing of resources on Android 11 and 12 devices
+- Other major bug fixes
+
+### Improvement
+- Major security improvements
+- Major performance improvements
+
 ## 1.3.1 (2021-03-04T07:30:00)
 ### Improvement
 - Major security improvements
@@ -93,7 +112,7 @@ website: http://bit.ly/SonsHubMobileChangelog
 ### New
 - Ongoing downloads can now be monitored in the download section
 - Added ability to download multiple files all at once
-- Files can now be downloaded at a speed as high as 100mb/s 
+- Files can now be downloaded at a speed as high as 100mb/s
 > This is strictly dependent on the strength your network connection can deliver
 
 ### Fix
@@ -145,7 +164,7 @@ website: http://bit.ly/SonsHubMobileChangelog
 
 ## 1.1.2 (2019-08-18)
 ### Improvement
-- Commenced review of app size... 
+- Commenced review of app size...
 > The app size would be reduced by over 60% in the coming months
 
 ### Fix
@@ -156,7 +175,7 @@ website: http://bit.ly/SonsHubMobileChangelog
 
 ## 1.1.1 (2019-07-12)
 ### Improvement
-- Commenced review of app size... 
+- Commenced review of app size...
 > The app size would be reduced by over 60% in the coming months
 
 ### Fix
@@ -169,7 +188,7 @@ website: http://bit.ly/SonsHubMobileChangelog
 ### Breaking
 - Introduced **SonsHub Music Player**
 
-### New 
+### New
 - Added a whole new downloading experience
 - Play songs offline from SonsHub Mobile
 - Pause, resume or cancel active downloads from the download page
@@ -185,7 +204,7 @@ website: http://bit.ly/SonsHubMobileChangelog
 - Fixed crashes on some devices
 
 ## 1.0.1-patch-004 build 006 (2019-02-03)
-### New 
+### New
 - You can now rate and share SonsHub Mobile directly from inside the app
 - You can now manually check for new app update from the about page
 - Introduced Concurrency for downloading (alpha testing phase)
@@ -211,7 +230,7 @@ website: http://bit.ly/SonsHubMobileChangelog
 - Other minor bug fixes
 
 ## 1.0.1-patch-002 build 004 (2019-01-12)
-### New 
+### New
 - No more sticky downloads above screen on pre-Oreo devices
 - New downloading algorithm
 
@@ -249,7 +268,7 @@ website: http://bit.ly/SonsHubMobileChangelog
 - Other bug fixes
 
 ## 1.0.0 (2019-01-04)
-### Breaking 
+### Breaking
 - SonsHub Mobile has arrived
 - Stream and download your favorite content
 - Get the latest entertainment news
