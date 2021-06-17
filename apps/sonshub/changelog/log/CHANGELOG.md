@@ -4,7 +4,7 @@ website: http://bit.ly/SonsHubMobileChangelog
 
 # SonsHub Mobile
 
-## 1.4.0 (2021-06-17T07:30:00)
+## 1.4.0 (2021-06-16T07:30:00)
 ### New
 - SonsHub Mobile now available for Android 12 devices
 - SonsHub now uses Scoped Storage
