@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Founder and CEO of Gigabyte Developers">
@@ -149,7 +148,8 @@
                 <ul>
                     <li>
                         <p class="mdi mdl-typography--menu menuText">Digital Marketing, Google</p>
-                        <p class="mdl-typography--body-1">Certificate issued by Google (June, 2019)
+                        <p class="mdl-typography--body-1">Certificate issued by Google
+                            <br>(June, 2019)
                             <br>Cert ID: <strong>EL4W2LAV6</strong>
                         </p>
                     </li>
@@ -389,7 +389,7 @@
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Other Open-Source Projects</h3>
                 <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://github.com/enwokoma">https://github.com/enwokoma</a></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
-                    Jan 2017 – Present
+                    Jan, 2017 – Present
                 </p>
                 <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
                     <li>Developed and Open-sourced <a href="https://github.com/enwokoma">other projects and libraries</a></li>
