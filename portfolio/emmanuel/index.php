@@ -250,7 +250,7 @@
             </section>
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">SonsHub Media</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Android Developer</p>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Android Developer <b>(Part-time)</b></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     <strong>Oct 2019 – Present</strong> - Awka, Anambra State. Nigeria
                 </p>
