@@ -64,9 +64,9 @@
             <div>
                 <h2 class="mdl-typography--title">About</h2>
                 <p>Experienced Software Developer with a demonstrated history of working in the Industry, designing and developing software for both individual and business solutions.
-                    <br>Higly skilled in core backend and frontend techologies used in Software Development.
+                    <br>Highly skilled in core backend and frontend technologies used in Software Development.
                     <br>I am also a strong entrepreneurship professional with a Bachelor’s Degree from Nnamdi Azikiwe University and a solid background in project management and customer relations.
-                    <br><em class="mdl-typography--menu mdl-typography--menu-color-contrast menuText">Currently, I am aiming to build a legacy with Technology alongside developing numerous software solutions.</em>
+                    <br><em class="mdl-typography--menu mdl-typography--menu-color-contrast menuText">Currently, I am aiming to build a legacy with technology alongside developing numerous IT solutions.</em>
                 </p>
             </div>
         </section>
@@ -155,42 +155,48 @@
                     </li>
                     <li>
                         <p class="mdi mdl-typography--menu menuText">Analytics, Google</p>
-                        <p class="mdl-typography--body-1">Certificate issued by Google Skillshop (May, 2020)
+                        <p class="mdl-typography--body-1">Certificate issued by Google Skillshop
+                            <br>(May, 2020 - May, 2021)
                             <br>Completion ID:
                             <a href="https://skillshop.exceedlms.com/student/award/49895602" class="certID">49895602</a>
                         </p>
                     </li>
                     <li>
                         <p class="mdi mdl-typography--menu menuText">Ads Search, Google</p>
-                        <p class="mdl-typography--body-1">Certificate issued by Google Skillshop (May, 2020)
+                        <p class="mdl-typography--body-1">Certificate issued by Google Skillshop
+                            <br>(May, 2020 - May, 2021)
                             <br>Completion ID:
                             <a href="https://skillshop.exceedlms.com/student/award/49891218" class="certID">49891218</a>
                         </p>
                     </li>
                     <li>
                         <p class="mdi mdl-typography--menu menuText">Display and Video 360, Google</p>
-                        <p class="mdl-typography--body-1">Certificate issued by Google Skillshop (May, 2020)
+                        <p class="mdl-typography--body-1">Certificate issued by Google Skillshop
+                            <br>(May, 2020 - May, 2021)
                             <br>Completion ID:
                             <a href="https://skillshop.exceedlms.com/student/award/49909629" class="certID">49909629</a>
                         </p>
                     </li>
                     <li>
                         <p class="mdi mdl-typography--menu menuText">Search Ads 360, Google</p>
-                        <p class="mdl-typography--body-1">Certificate issued by Google Skillshop (May, 2020)
+                        <p class="mdl-typography--body-1">Certificate issued by Google Skillshop
+                            <br>(May, 2020 - May, 2021)
                             <br>Completion ID:
                             <a href="https://skillshop.exceedlms.com/student/award/49908705" class="certID">49908705</a>
                         </p>
                     </li>
                     <li>
                         <p class="mdi mdl-typography--menu menuText">Campaign Manager, Google</p>
-                        <p class="mdl-typography--body-1">Certificate issued by Google Skillshop (May, 2020)
+                        <p class="mdl-typography--body-1">Certificate issued by Google Skillshop
+                            <br>(May, 2020 - May, 2021)
                             <br>Completion ID:
                             <a href="https://skillshop.exceedlms.com/student/award/49897032" class="certID">49897032</a>
                         </p>
                     </li>
                     <li>
                         <p class="mdi mdl-typography--menu menuText">Creative Certification, Google</p>
-                        <p class="mdl-typography--body-1">Certificate issued by Google Skillshop (May, 2020)
+                        <p class="mdl-typography--body-1">Certificate issued by Google Skillshop
+                            <br>(May, 2020 - May, 2021)
                             <br>Completion ID:
                             <a href="https://skillshop.exceedlms.com/student/award/49897053" class="certID">49897053</a>
                         </p>
@@ -207,7 +213,7 @@
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Nnamdi Azikiwe University, Awka</h3>
                 <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Bachelor of Science (B.Sc.), Botany</p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
-                    <strong>Dec 2014 – Jul 2018</strong> - Awka, Anambra State. Nigeria
+                    <strong>Dec 2014 – Jul 2019</strong> - Awka, Anambra State. Nigeria
                 </p>
                 <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
                     <!--                <li>Overall GPA: 3.71/4</li>-->
@@ -221,8 +227,15 @@
         <section class="mdl-color--white mdl-shadow--2dp">
             <h2 class="mdl-typography--display-1">Experience</h2>
             <section>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Octofi</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Chief Information Officer &amp; Information Technology Director</p>
+                <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
+                    <strong>Oct 2019 – Present</strong> - Awka, Anambra State. Nigeria
+                </p>
+            </section>
+            <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Gigabyte Developers</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Founder and CEO</p>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Co-Founder and CEO <b>(Part-time)</b></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     <strong>Dec 2015 – Present</strong> - Umuahia, Abia State. Nigeria
                 </p>
@@ -236,15 +249,28 @@
                 </ul>
             </section>
             <section>
-                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Octofi</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Chief Information Officer &amp; Information Technology Director</p>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">SonsHub Media</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Android Developer</p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     <strong>Oct 2019 – Present</strong> - Awka, Anambra State. Nigeria
                 </p>
             </section>
             <section>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Ojalawa</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Chief Technology Officer</p>
+                <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
+                    <strong>Aug 2016 – Dec 2020</strong> - Lagos, Nigeria
+                </p>
+                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
+                    <li>Complete development of the website using Magento</li>
+                    <li>Ongoing development of a mobile application for Android</li>
+                    <li>Developing project concepts and maintaining optimal workflow</li>
+                    <li>Carrying out quality assurance tests to discover errors and optimize usability</li>
+                </ul>
+            </section>
+            <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Shopping Samrat Online Pvt.Ltd.</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Lead Software Developer</p>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Lead Software Developer <b>(Contract)</b></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     <strong>Feb 2016 – July 2019</strong> - Delhi, India
                 </p>
@@ -253,19 +279,6 @@
                     <li>Adapting and adjusting graphic packages from other regions</li>
                     <li>Worked closely with the writer producers and editors</li>
                     <li>Strong creative and conceptual vision and excellence in Typography</li>
-                </ul>
-            </section>
-            <section>
-                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Ojalawa</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Chief Technical Officer</p>
-                <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
-                    <strong>Aug 2016 – Present</strong> - Lagos, Nigeria
-                </p>
-                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
-                    <li>Complete development of the website using Magento</li>
-                    <li>Ongoing development of a mobile application for Android</li>
-                    <li>Developing project concepts and maintaining optimal workflow</li>
-                    <li>Carrying out quality assurance tests to discover errors and optimize usability</li>
                 </ul>
             </section>
             <section>
@@ -325,10 +338,31 @@
                 </ul>
             </section>
             <section>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">The Abia State Judiciary High Court (Probate Division)</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://abiaprobate.com">https://abiaprobate.com</a></p>
+                <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
+                    Feb, 2021 – May, 2021
+                </p>
+                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
+                    <li>Designed and developed the website for the organization</li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">The Straight Child Foundation</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://thestraightchildfoundation.org">https://thestraightchildfoundation.org</a></p>
+                <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
+                    May, 2021 – Jul, 2021
+                </p>
+                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
+                    <li>Designed and developed the website for the organization (NGO)</li>
+                    <li>Implemented both online and offline donation support to receive donations</li>
+                </ul>
+            </section>
+            <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">ISmileBecauseYouSmile</h3>
                 <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://ismilebecauseyousmile.org">https://ismilebecauseyousmile.org</a></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
-                    Aug 2020 – Present
+                    Aug, 2020 – Nov, 2021
                 </p>
                 <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
                     <li>Designed and developed the website for the organization (NGO)</li>
@@ -339,7 +373,7 @@
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Obago Media</h3>
                 <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://obagomedia.com">https://obagomedia.com</a></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
-                    Oct 2020 – Present
+                    Oct, 2020 – Dec, 2021
                 </p>
                 <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
                     <li>Designed and developed the website for the organization</li>
