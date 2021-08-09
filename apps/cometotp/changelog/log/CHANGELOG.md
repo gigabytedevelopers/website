@@ -4,6 +4,14 @@ website: http://bit.ly/CometOTP_changelog
 
 # CometOTP
 
+## 5.5.0 (2021-08-09T18:00:00)
+### New
+- Version 5.4.0 major release
+- New account thumbnails
+- Fixed issue with progressbar when restoring backups 
+- Major security improvements
+- Other major bug fixes
+
 ## 5.4.0 (2021-02-11T19:00:00)
 ### New
 - Added new feature to hide progress bar
