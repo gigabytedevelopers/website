@@ -4,9 +4,20 @@ website: http://bit.ly/CometOTP_changelog
 
 # CometOTP
 
+## 5.6.0 (2021-10-23T10:00:00)
+### New
+- Version 5.6.0 major release
+- Added full MOTP support
+- New account thumbnails
+
+### Improvement
+- Updated some old account thumbnails
+- Major security improvements
+- Major bug fixes
+
 ## 5.5.0 (2021-08-09T18:00:00)
 ### New
-- Version 5.4.0 major release
+- Version 5.5.0 major release
 - New account thumbnails
 - Fixed issue with progressbar when restoring backups 
 - Major security improvements
