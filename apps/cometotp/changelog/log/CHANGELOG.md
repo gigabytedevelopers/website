@@ -4,6 +4,14 @@ website: http://bit.ly/CometOTP_changelog
 
 # CometOTP
 
+## 5.6.1 (2022-02-21T10:00:00)
+### New
+- New account thumbnails
+
+### Improvement
+- Updated some old account thumbnails
+- Minor bug fixes
+
 ## 5.6.0 (2021-10-23T10:00:00)
 ### New
 - Version 5.6.0 major release
