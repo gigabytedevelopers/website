@@ -6,6 +6,8 @@
 <script src="js/velocity.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/form-actions.js"></script>
+<script src="js/paystack.js"></script>
+<script src="js/payment.js"></script>
 <!-- <script type="text/javascript" src="js/maintainscroll.js"></script> -->
 <!-- <script src="//code.jivosite.com/widget/INiXHwF7h4" async></script> -->
 

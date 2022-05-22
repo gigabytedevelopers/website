@@ -22,3 +22,9 @@ email.csv
 *.zip
 /apps/cometotp/changelog/log/CHANGELOG_SAMPLE.md
 /apps/sonshub/changelog/log/CHANGELOG_SAMPLE.md
+
+js/payment.js
+verify.php
+
+/js/payment.js
+/verify.php
