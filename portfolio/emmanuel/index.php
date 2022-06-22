@@ -230,12 +230,12 @@
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Octofi</h3>
                 <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Chief Information Officer &amp; Information Technology Director</p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
-                    <strong>Oct 2019 – Present</strong> - Awka, Anambra State. Nigeria
+                    <strong>Oct 2020 – Present</strong> - Awka, Anambra State. Nigeria
                 </p>
             </section>
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Gigabyte Developers</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Co-Founder and CEO <b>(Part-time)</b></p>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Co-Founder <b>(Part-time)</b></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     <strong>Dec 2015 – Present</strong> - Umuahia, Abia State. Nigeria
                 </p>
@@ -250,16 +250,19 @@
             </section>
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">SonsHub Media</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Android Developer <b>(Part-time)</b></p>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Android Developer <b>(Part-time, Freelance)</b></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
-                    <strong>Oct 2019 – Present</strong> - Awka, Anambra State. Nigeria
+                    <strong>Aug 2018 – Present</strong> - Awka, Anambra State. Nigeria
                 </p>
+                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
+                    <li>Developing and Maintaining the SonsHub Mobile app</li>
+                </ul>
             </section>
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Ojalawa</h3>
                 <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Chief Technology Officer</p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
-                    <strong>Aug 2016 – Dec 2020</strong> - Lagos, Nigeria
+                    <strong>Oct 2017 – Dec 2019</strong> - Lagos, Nigeria
                 </p>
                 <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
                     <li>Complete development of the website using Magento</li>
@@ -272,7 +275,7 @@
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Shopping Samrat Online Pvt.Ltd.</h3>
                 <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Lead Software Developer <b>(Contract)</b></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
-                    <strong>Feb 2016 – July 2019</strong> - Delhi, India
+                    <strong>Feb 2015 – July 2017</strong> - Delhi, India
                 </p>
                 <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
                     <li>Developing of the website using OOP PHP</li>
