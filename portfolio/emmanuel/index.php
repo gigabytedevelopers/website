@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Founder and CEO of Gigabyte Developers">
+    <meta name="description" content="Strong entrepreneurship professional and highly skilled Android Developer.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.png">
     <title>Nwokoma Emmanuel's Portfolio</title>
@@ -14,15 +14,15 @@
     <meta property="og:image:secure_url" content="https://gitlab.com/enwokoma/personal/-/raw/master/personal_thumbnail.png" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Gigabyte Developers Incorporated">
-    <meta property="og:title" content="Nwokoma Emmanuel's Portfolio" />
+    <meta property="og:title" content="Emmanuel Nwokoma's Portfolio" />
     <meta property="og:description" content="Founder and CEO of Gigabyte Developers" />
     <meta property="og:image" itemprop="image" content="https://gitlab.com/enwokoma/personal/-/raw/master/personal_thumbnail.png" />
     <meta property="og:image:url" itemprop="image" content="https://gitlab.com/enwokoma/personal/-/raw/master/personal_thumbnail.png" />
     <meta property="og:image:type" content="image/png" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Founder and CEO of Gigabyte Developers">
-    <meta name="author" content="Nwokoma Emmanuel">
+    <meta name="description" content="Strong entrepreneurship professional and highly skilled Android Developer.">
+    <meta name="author" content="Emmanuel Nwokoma">
     <!--<meta name="theme-color" content="#3F51B5">-->
     <meta name="theme-color" content="#028fcc">
 
