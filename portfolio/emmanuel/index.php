@@ -104,7 +104,7 @@
                     </li>
                     <li>
                         <i class="mdi mdi-twitter mdi-18px"></i>
-                        <a href="https://twitter.com/emmanuelnwokoma">@emmanuelnwokoma</a>
+                        <a href="https://twitter.com/enwokoma">@enwokoma</a>
                     </li>
                     <li>
                         <i class="mdi mdi-linkedin mdi-18px"></i>
