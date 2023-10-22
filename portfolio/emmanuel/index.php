@@ -62,8 +62,8 @@
             <i class="mdi mdi-account mdi-24px"></i>
             <div>
                 <h2 class="mdl-typography--title">About</h2>
-                <p>Android Developer with 5+ years of experience in developing high-quality, user-friendly Android applications with Java and Kotlin programming languages. Highly knowledgeable in object-oriented principles, mobile design patterns, and the Android architecture, as well as Android SDK, Android Studio, APIs and other data sources.
-                    <br>Excellent understanding of Java, Kotlin, alongside Android libraries and frameworks. Proven ability to work independently and in a team environment while communicating effectively.
+                <p>Technical Product Manager with experience in assessing product requirements, management, and developing products from conception to fruition that successfully meet major industry standards.
+                    Ability to determine product specifications, production timelines, and in-depth plans for the product development lifecycle. I am an analytical thinker who works collaboratively to get the job done.
                     <br>I am also a strong entrepreneurship professional with a Bachelor’s Degree from Nnamdi Azikiwe University and a solid background in project management and customer relations.
                     <br><em class="mdl-typography--menu mdl-typography--menu-color-contrast menuText">Currently, I am aiming to build a legacy with technology alongside developing numerous IT solutions.</em>
                 </p>
@@ -104,7 +104,7 @@
                     </li>
                     <li>
                         <i class="mdi mdi-twitter mdi-18px"></i>
-                        <a href="https://twitter.com/enwokoma">@enwokoma</a>
+                        <a href="https://twitter.com/enwokoma">@Enwokoma</a>
                     </li>
                     <li>
                         <i class="mdi mdi-linkedin mdi-18px"></i>
@@ -119,24 +119,24 @@
                 <h2 class="mdl-typography--title">Skills</h2>
                 <ul>
                     <li>
-                        <p class="mdl-typography--menu menuText">Programming Languages</p>
-                        <p class="mdl-typography--body-1">Java, Kotlin, JavaScript, Bash, VB.NET, PHP</p>
-                    </li>
-                    <li>
-                        <p class="mdl-typography--menu menuText menuText">Development Skills</p>
-                        <p class="mdl-typography--body-1">Android Development, Web Development, Cloud Development, Yii, Wordpress, JSON, jQuery, OpenGL, Node.js, GraphQL</p>
+                        <p class="mdl-typography--menu menuText menuText">Working Skills</p>
+                        <p class="mdl-typography--body-1">Product Management, Project Management, User-centered Design, Scrum, Agile, Firebase A/B Testing</p>
                     </li>
                     <li>
                         <p class="mdl-typography--menu menuText">Tools</p>
-                        <p class="mdl-typography--body-1">AWS, XML, Floobits, JSON, Emacs, Git, Android Studio, WebStorm, PyCharm, PHPStorm, Sublime Text, Atom, Powershell, IntelliJ IDEA, Visual Studio, MySQL, MongoDB, PostgreSQL</p>
+                        <p class="mdl-typography--body-1">JIRA, Trello, Confluence, Asana, Kanban, Amplitude, Git, AWS, Floobits</p>
                     </li>
                     <li>
-                        <p class="mdl-typography--menu menuText">System Maintenance</p>
-                        <p class="mdl-typography--body-1">Windows, Linux, Microsoft SQL Server, Unix</p>
+                        <p class="mdl-typography--menu menuText">Programming Languages</p>
+                        <p class="mdl-typography--body-1">Java, Kotlin</p>
+                    </li>
+                    <li>
+                        <p class="mdl-typography--menu menuText">Other Skills</p>
+                        <p class="mdl-typography--body-1">Android Development, Cloud Development, Web Development, SQL, JSON, Wordpress</p>
                     </li>
                     <li>
                         <p class="mdl-typography--menu menuText">Other Skills &amp; Industry Knowledge</p>
-                        <p class="mdl-typography--body-1">Microservices, HTML Scripting, Cryptography, Encryption, SQL Injection, Database Management, Analytics, Multithreading, Data Analysis, Firewalls, Search Engine Optimization (SEO), Leadership, Entrepreneurship, Biotechnology</p>
+                        <p class="mdl-typography--body-1">High Technical Aptitude, IT Management, Communication, Problem-Solving, Analytical Thinking, Strategic Thinking, Android Development, Cloud Development, Microservices, Web Development, SQL, JSON, WordPress, Microservices, Database Management, Analytics, Data Analysis, Search Engine Optimization</p>
                     </li>
                 </ul>
             </div>
@@ -187,10 +187,22 @@
         <section class="mdl-color--white mdl-shadow--2dp">
             <h2 class="mdl-typography--display-1">Experience</h2>
             <section>
-                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Octofi Limited</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Chief Information Officer &amp; Information Technology Director</p>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Paymart.ng</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Technical Product Manager <b>(Part-time)</b></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
-                    <strong>Oct 2020 – Present</strong> - Awka, Anambra State. Nigeria
+                    <strong>Sep 2023 – Present</strong> - Abia State. Nigeria
+                </p>
+                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
+                    <li>Setting a direction for the product and the product’s objectives.</li>
+                    <li>Conducting thorough market research and competitor analysis.</li>
+                    <li>Working closely with designers to create user-friendly interfaces and intuitive workflows.</li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Octofi Limited</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Chief Information Officer &amp; Information Technology Director <b>(Seasonal)</b></p>
+                <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
+                    <strong>Oct 2021 – Present</strong> - Awka, Anambra State. Nigeria
                 </p>
                 <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
                     <li>Managing IT staff and developing department goals.</li>
@@ -204,93 +216,103 @@
                 </ul>
             </section>
             <section>
-                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Gigabyte Developers</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Co-Founder <b>(Part-time)</b></p>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">FynPay</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Technical Product Manager <b>(Remote, Seasonal)</b></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
-                    <strong>Dec 2015 – Present</strong> - Umuahia, Abia State. Nigeria
+                    <strong>Jan 2023 – Jul 2023</strong> - Abia State. Nigeria
                 </p>
                 <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
-                    <li>Managing the development team.</li>
-                    <li>Cooperating with designers to create clean interfaces and simple, intuitive interactions and experiences.</li>
-                    <li>Providing statistical and performance feedback illustrated in charts.</li>
-                    <li>Developing project concepts and maintaining optimal workflow.</li>
-                    <li>Coaching and administering performance reviews for proper skill improvement.</li>
-                    <li>Working with several senior developers to manage large, complex design projects for corporate clients.</li>
-                    <li>Over 100 happy clients in over 6 years.</li>
-                    <li>Working directly with the team and developed several mobile applications on <a href="https://play.google.com/store/apps/dev?id=4617962611760843834">Play Store</a> with over 50k online and 100k offline users</li>
+                    <li>Translated business goals into technical tasks.</li>
+                    <li>Stayed updated on industry trends and emerging technologies.</li>
+                    <li>Collaborated with stakeholders, including business teams, designers, and engineers, to gather and define detailed product requirements.</li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Octofi Limited</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Technical Product Manager <b>(Part-time)</b></p>
+                <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
+                    <strong>Oct 2020 – Aug 2021</strong> - Awka, Anambra State. Nigeria
+                </p>
+                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
+                    <li>Managed IT staff and developing department goals.</li>
+                    <li>Managed the organization's software development needs.</li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Fyngram</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Technical Product Manager <b>(Part-time)</b></p>
+                <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
+                    <strong>Sep 2020 – Mar 2021</strong> - Abia State. Nigeria
+                </p>
+                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
+                    <li>Developed a clear product vision and strategy.</li>
+                    <li>Conducted market research and competitor analysis to identify opportunities.</li>
+                    <li>Created and manage a product roadmap that outlines the features and technical enhancements.</li>
+                    <li>Implemented Agile methodologies to manage the product development process.</li>
                 </ul>
             </section>
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">SonsHub Media</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Android Developer <b>(Remote, Part-time, Freelance)</b></p>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Technical Product Manager and Team Lead <b>(Remote, Seasonal)</b></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
-                    <strong>Jan 2019 – Dec 2021</strong> - Awka, Anambra State. Nigeria
+                    <strong>Jan 2019 – Jan 2021</strong> - FCT, Abuja. Nigeria
                 </p>
                 <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
-                    <li>Developing and Maintaining the SonsHub Mobile app.</li>
-                    <li>Building and leading a team of 6 professionals.</li>
-                    <li>Providing technical leadership to teammates through coaching and mentorship.</li>
-                    <li>Identify and encourage areas for growth and improvement within the team.</li>
-                    <li>Development and continuous maintenance of the company’s mobile application for streaming and
-                        downloading content.
-                    </li>
-                    <li>Prepare reports, manuals and other documentation on the status, operation and maintenance of
-                        the codebase for the mobile application.
-                    </li>
-                    <li>Design, develop, and unit test applications in accordance with established standards.</li>
+                    <li>Built and lead a team of 6 professionals.</li>
+                    <li>Provided technical leadership to the team.</li>
+                    <li>Identified and encourage areas for growth and improvement within the team.</li>
+                    <li>Broke down tasks into smaller, manageable pieces and oversee sprints and iterations.</li>
+                    <li>Prepared reports, manuals and other documentation on the status, operation and maintenance of the codebase for the mobile application.</li>
                 </ul>
             </section>
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Ojalawa</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Software Developer and Chief Technology Officer</p>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Technical Product Manager <b>(Hybrid)</b></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
-                    <strong>Oct 2017 – Dec 2019</strong> - Lagos, Nigeria
+                    <strong>Oct 2017 – Dec 2019</strong> - Lagos State. Nigeria
                 </p>
                 <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
-                    <li>Complete development of the website using Magento.</li>
-                    <li>Development of a native mobile application for Android.</li>
-                    <li>Led a development team for framework designing.</li>
-                    <li>Developing project concepts and maintaining optimal workflow.</li>
-                    <li>Carrying out quality assurance tests to discover errors and optimize usability.</li>
+                    <li>Ensured that the eCommerce platform is built to scale efficiently to handle increasing traffic and transactions.</li>
+                    <li>Addressed performance bottlenecks as they arise.</li>
+                    <li>Kept all parties informed about the progress of the product.</li>
+                    <li>Planned and coordinated product releases, ensuring that features are delivered on time and with the expected quality.</li>
+                    <li>Collaborated with the quality assurance teams to ensure that the product is thoroughly tested and free of bugs and issues.</li>
                 </ul>
             </section>
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">National Root Crops Research Institute</h3>
                 <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Research Intern, Bio-resources</p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
-                    <strong>Mar 2017 – Oct 2017</strong> - Umudike, Abia State. Nigeria
+                    <strong>Mar 2017 – Sep 2017</strong> - Umudike, Abia State. Nigeria
                 </p>
                 <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
                     <li>Worked on several research projects.</li>
-                    <li>Providing statistical and performance data illustrated in charts.</li>
+                    <li>Provided statistical and performance data illustrated in charts.</li>
                     <li>Cooperated with colleagues to develop a thesis on the utility of bio-resources in modern-day biotechnology</li>
                 </ul>
             </section>
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Shopping Samrat Online Pvt.Ltd.</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Lead Web and Android Developer <b>(Remote)</b></p>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Junior Product Manager <b>(Remote)</b></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     <strong>Feb 2015 – July 2017</strong> - New Delhi, Delhi, India
                 </p>
                 <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
-                    <li>Developing of the website using OOP PHP.</li>
-                    <li>Adapting and adjusting graphic packages from other regions.</li>
-                    <li>Worked closely with the writer producers and editors.</li>
-                    <li>Strong creative and conceptual vision and excellence in Typography.</li>
-                    <li>Carry out quality assurance tests to discover errors and optimize usability.</li>
+                    <li>Created technical specifications.</li>
+                    <li>Wrote operational documentation with technical authors.</li>
                 </ul>
             </section>
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Banggood Technology Co.,Ltd</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Junior Software Developer <b>(Remote)</b></p>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Product Manager Intern <b>(Remote, Internship)</b></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     <strong>Jan 2014 – Jan 2015</strong> - Guangzhou County, Gansu, China
                 </p>
                 <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
-                    <li>Server integration and database development for a +10M users/monthly e-commerce platform.</li>
-                    <li>API integrations.</li>
-                    <li>Developing new Android app features for an e-commerce mobile app.</li>
-                    <li>Preparing the documentation.</li>
+                    <li>Collaborated with the Product Manager and cross-functional teams to define and prioritize product features.</li>
+                    <li>Assisted in the coordination of product releases and communicate updates to stakeholders.</li>
+                    <li>Engaged with users to gather feedback, address their concerns, and build strong user relationships.</li>
+                    <li>Supported the Product Manager in creating and maintaining the product roadmap.</li>
                 </ul>
             </section>
         </section>
@@ -300,53 +322,39 @@
         <section class="mdl-color--white mdl-shadow--2dp">
             <h2 class="mdl-typography--display-1">Some Featured Projects</h2>
             <section>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">FynPay</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://www.figma.com/file/18iRtyL4zNcNY1jIC7Rusi/FynPay">https://www.figma.com/file/18iRtyL4zNcNY1jIC7Rusi/FynPay</a></p>
+                <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
+                    Jan 2023 – July 2023
+                </p>
+            </section>
+            <section>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Fyngram</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://www.figma.com/file/iPqpu7xLYv9cR57TjD8EGS/fyngram-mobile-prototype">https://www.figma.com/file/iPqpu7xLYv9cR57TjD8EGS/fyngram-mobile-prototype</a></p>
+                <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
+                    Jan 2023 – July 2023
+                </p>
+            </section>
+            <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">CometOTP - OTP Authenticator app for Android</h3>
                 <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.app.CometOTP">https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.app.CometOTP</a></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     Nov 2017 – Present
                 </p>
-                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
-                    <li>Designed and developed the app which implements Time-based One-time Passwords (TOTP) algorithm like specified in RFC 6238</li>
-                    <li>Added compatibility which implements HMAC-based One-time Password (HOTP) algorithm like specified in RFC 4226</li>
-                    <li>Developed the support for end-to-end encryption technology used for encrypting one-time passwords generated</li>
-                    <li>Used by over 5,000 people with over 1,000 daily active users</li>
-                </ul>
-            </section>
-            <section>
-                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">FireFiles</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.app.explorer">https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.app.explorer</a></p>
-                <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
-                    Feb 2018 – Present
-                </p>
-                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
-                    <li>Designed based on Material Design Guidelines, featuring beautiful and consistent design, meaningful transitions, night mode, and tablet multi-pane support</li>
-                    <li>Implemented support for Android TV</li>
-                    <li>Developed support for Google Wear OS</li>
-                    <li>Designed and developed support for Chromecast devices like Google Home</li>
-                </ul>
             </section>
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">SonsHub Mobile</h3>
                 <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.apps.sonshub">https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.apps.sonshub</a></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
-                    Jan 2019 – Present
+                    Jan 2019 – Jan 2021
                 </p>
-                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
-                    <li>Designed and developed the app which implements media streaming</li>
-                    <li>Implemented support for downloading content in the app</li>
-                    <li>AndroidX support with backward compatibility</li>
-                    <li>Utilized Firebase and Google Cloud Messaging (GCM) for instant push notifications</li>
-                </ul>
             </section>
             <section>
-                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">The Abia State Judiciary High Court (Probate Division)</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://abiaprobate.com">https://abiaprobate.com</a></p>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">The Abia State Judiciary High Court</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://abiahighcourt.org">https://abiahighcourt.org</a></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     Feb, 2021 – May, 2021
                 </p>
-                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
-                    <li>Designed and developed the website for the organization</li>
-                </ul>
             </section>
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">The Straight Child Foundation</h3>
@@ -354,21 +362,13 @@
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     May, 2021 – Jul, 2021
                 </p>
-                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
-                    <li>Designed and developed the website for the organization (NGO)</li>
-                    <li>Implemented both online and offline donation support to receive donations</li>
-                </ul>
             </section>
-            <section>
+            <!--<section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">ISmileBecauseYouSmile</h3>
                 <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://ismilebecauseyousmile.org">https://ismilebecauseyousmile.org</a></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     Aug, 2020 – Nov, 2021
                 </p>
-                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
-                    <li>Designed and developed the website for the organization (NGO)</li>
-                    <li>Implemented both online and offline donation support to receive donations</li>
-                </ul>
             </section>
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Obago Media</h3>
@@ -376,10 +376,7 @@
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     Oct, 2020 – Dec, 2021
                 </p>
-                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
-                    <li>Designed and developed the website for the organization</li>
-                </ul>
-            </section>
+            </section>-->
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Some Other Projects (Android)</h3>
                 <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
@@ -392,10 +389,6 @@
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     Jan, 2017 – Present
                 </p>
-                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
-                    <li>Developed and Open-sourced <a href="https://github.com/enwokoma">other projects and libraries</a></li>
-                    <!--                <li>Maintaining <a href="https://aur.archlinux.org/packages/?SeB=m&K=dreamingincode">12 packages</a> for Arch Linux including the Android SDK package with over 1400 votes</li>-->
-                </ul>
             </section>
         </section>
         <!-- end Projects -->
