@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="CIO and IT Director at Octofi Limited">
+    <meta name="description" content="Technical Product Manager">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.png">
-    <title>Nwokoma Emmanuel's Portfolio</title>
+    <title>Emmanuel Nwokoma's Portfolio</title>
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="google-site-verification" content="RjAgqUgYfT94lQ7oGZqqRI87NeSdR_6fecSUipiGBmg" />
     <meta name="msvalidate.01" content="F39E6D2A441B34A5BCA816D83B967BDF" />
@@ -15,13 +15,13 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Gigabyte Developers Incorporated">
     <meta property="og:title" content="Emmanuel Nwokoma's Portfolio" />
-    <meta property="og:description" content="CIO and IT Director at Octofi Limited" />
+    <meta property="og:description" content="Technical Product Manager" />
     <meta property="og:image" itemprop="image" content="https://gitlab.com/enwokoma/personal/-/raw/master/personal_thumbnail.png" />
     <meta property="og:image:url" itemprop="image" content="https://gitlab.com/enwokoma/personal/-/raw/master/personal_thumbnail.png" />
     <meta property="og:image:type" content="image/png" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CIO and IT Director at Octofi Limited">
+    <meta name="description" content="Technical Product Manager">
     <meta name="author" content="Emmanuel Nwokoma">
     <!--<meta name="theme-color" content="#3F51B5">-->
     <meta name="theme-color" content="#028fcc">
@@ -55,8 +55,8 @@
 
     <header class="mdl-color--indigo-700 mdl-color-text--white mdl-shadow--4dp">
         <section class="title mdl-color--indigo-500">
-            <h1 class="mdl-typography--display-1"><strong>Nwokoma Emmanuel</strong></h1>
-            <p class="mdl-typography--body-1">Software (Android &amp; Web) Developer</p>
+            <h1 class="mdl-typography--display-1"><strong>Emmanuel Nwokoma</strong></h1>
+            <p class="mdl-typography--body-1">Technical Product Manager</p>
         </section>
         <section class="about">
             <i class="mdi mdi-account mdi-24px"></i>
