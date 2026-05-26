@@ -318,7 +318,7 @@
 
 <!-- jQuery first, then Other JS. -->
 
-<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
 
 
 <!-- jQuery-scripts -->
