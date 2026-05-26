@@ -1191,7 +1191,7 @@
 
             function R(e, t) {
                 if (!t) return e;
-                for (var n, r, o, i = Object.keys(t), a = 0; a < i.length; a++) n = i[a], "__proto__" !== n && "constructor" !== n && "prototype" !== n && (r = e[n], o = t[n], v(e, n) ? u(r) && u(o) && R(r, o) : P(e, n, o));
+                for (var n, r, o, i = Object.keys(t), a = 0; a < i.length; a++) n = i[a], "__proto__" !== n && "constructor" !== n && "prototype" !== n && (r = e[n], o = t[n], Object.prototype.hasOwnProperty.call(e, n) && v(e, n) ? u(r) && u(o) && R(r, o) : P(e, n, o));
                 return e
             }
 
