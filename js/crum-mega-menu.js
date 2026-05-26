@@ -27,11 +27,16 @@
 		var mobileWidthBase = 768;
 		var bigScreenFlag = 2000; // a number greater than "mobileWidthBase"
 		var smallScreenFlag = 200; // a number less than "mobileWidthBase"
+		function createIndicator(value) {
+			var match = String(value).match(/^&#x([0-9a-f]+);$/i);
+			var text = match ? String.fromCharCode(parseInt(match[1], 16)) : String(value);
+			return $("<span>").addClass("indicator").text(text);
+		}
 
 		// sub-menu/megamenu indicators
 		$(menu).children("li").children("a").each(function(){
 			if($(this).siblings(".sub-menu, .megamenu").length > 0){
-				$(this).append("<span class='indicator'>" + settings.indicatorFirstLevel + "</span>");
+				$(this).append(createIndicator(settings.indicatorFirstLevel));
 			}
 		});
 		$(menu).children("li").children(".megamenu").each(function(){
@@ -39,7 +44,7 @@
 		});
 		$(menu).find(".sub-menu").children("li").children("a").each(function(){
 			if($(this).siblings(".sub-menu").length > 0){
-				$(this).append("<span class='indicator'>" + settings.indicatorSecondLevel + "</span>");
+				$(this).append(createIndicator(settings.indicatorSecondLevel));
 			}
 		});
 
