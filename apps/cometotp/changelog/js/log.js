@@ -1039,7 +1039,7 @@
             }
 
             function _(e, t) {
-                for (var n in t) e[n] = t[n];
+                for (var n, r = Object.keys(t), o = 0; o < r.length; o++) n = r[o], "__proto__" !== n && "constructor" !== n && "prototype" !== n && (e[n] = t[n]);
                 return e
             }
 
@@ -1151,6 +1151,7 @@
             }
 
             function L(e, t, n, r, o) {
+                if ("__proto__" === t || "constructor" === t || "prototype" === t) return;
                 var i = new zr,
                     a = Object.getOwnPropertyDescriptor(e, t);
                 if (!a || !1 !== a.configurable) {
