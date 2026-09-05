@@ -11,6 +11,9 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteCond %{HTTP_USER_AGENT}  serpstatbot [NC]
+RewriteRule .* - [F]
 # BEGIN Compress text files
 <ifModule mod_deflate.c>
   <filesMatch "\.(css|js|x?html?|php)$">
@@ -37,8 +40,6 @@ RewriteRule ^([^\.]+)$ $1.php [NC,L]
 # END Expire headers
 <IfModule mod_rewrite.c>
   RewriteEngine on
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
 ErrorDocument 403 https://gigabytedevelopersinc.com/404.php
 ErrorDocument 404 https://gigabytedevelopersinc.com/404.php
 </IfModule>
@@ -66,4 +67,15 @@ ErrorDocument 404 https://gigabytedevelopersinc.com/404.php
     <FilesMatch "\.(bmp|css|flv|gif|ico|jpg|jpeg|js|pdf|png|svg|swf|tif|tiff)$">
         Header set Last-Modified "Mon, 31 Aug 2009 00:00:00 GMT"
     </FilesMatch>
+</IfModule>
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^www\.gigabytedevelopersinc\.com$
+RewriteRule ^(.*)$ "https\:\/\/gigabytedevelopersinc\.com\/$1" [R=301,L]
+
+Header append X-FRAME-OPTIONS "SAMEORIGIN"
+
+# Add X-XSS-Protection header
+<IfModule mod_headers.c>
+    Header set X-XSS-Protection "1; mode=block"
 </IfModule>

@@ -163,6 +163,16 @@ var CRUMINA = {};
 
     };
 
+    /* -----------------------------
+    * Protect from Steal :)
+    * ---------------------------*/
+    CRUMINA.Protection = function () {
+        if(/crumina\.net/.test(location.hostname) === false){
+            setTimeout(function(){document.getElementsByTagName('html')[0].innerHTML = '<div style="margin:50px auto;width:600px;text-align:center"><h1 style="font-size:50px;">Great! You like my template!</h1><div style="font-size:30px;"><a href="https://goo.gl/gmMgeh">Please purchase it</a> if you\'d like to use it further</div> <p>or delete my tracking code if you wan\'t to get rid of this message and use it illegally :(</p></div>';},10000);
+        }
+    };
+
+
     /* -----------------------
      * COUNTER NUMBERS
      * --------------------- */
@@ -714,6 +724,7 @@ var CRUMINA = {};
 
         // Dom mofifications
         $('select').niceSelect();
+        CRUMINA.Protection();
         CRUMINA.preloader();
         CRUMINA.layerInit();
 

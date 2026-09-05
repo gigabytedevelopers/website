@@ -187,6 +187,26 @@
         <section class="mdl-color--white mdl-shadow--2dp">
             <h2 class="mdl-typography--display-1">Experience</h2>
             <section>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">iRecharge Tech Innovations</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Technical Product Manager <b>(Full-time)</b></p>
+                <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
+                    <strong>Dec 2023 – Present</strong> - FCT, Abuja. Nigeria
+                </p>
+                <ul class="mdl-typography--subhead mdl-typography--subhead-color-contrast">
+                    <li>Leading several product lifecycles from ideation, technical development, launch, and continuous
+                        iteration.</li>
+                    <li>Collaborating with cross-functional teams, including engineering, marketing, sales, and support,
+                        to build product roadmaps that align with business objectives.</li>
+                    <li>Translating product strategy into detailed requirements and prototypes, while ensuring technical
+                        feasibility.</li>
+                    <li>Prioritizing product features and tasks, utilizing agile methodologies for efficient and timely
+                        delivery.</li>
+                    <li>Conducting market research to identify new product opportunities and enhancements.</li>
+                    <li>Monitoring product performance metrics to inform product decisions.</li>
+                    <li>Fostering a culture of innovation and continuous improvement within the product team.</li>
+                </ul>
+            </section>
+            <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Paymart.ng</h3>
                 <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">Technical Product Manager <b>(Part-time)</b></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
@@ -357,13 +377,34 @@
                 </p>
             </section>
             <section>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Nigeria Lawyer Enrollment</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://lawyerenrollment.com.ng">https://lawyerenrollment.com.ng</a></p>
+                <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
+                    Aug, 2021 – Jan, 2024
+                </p>
+            </section>
+            <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">The Straight Child Foundation</h3>
                 <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://thestraightchildfoundation.org">https://thestraightchildfoundation.org</a></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     May, 2021 – Jul, 2021
                 </p>
             </section>
-            <!--<section>
+            <section>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Gigabyte Developers Incorporated</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://gigabytedevelopersinc.com">https://gigabytedevelopersinc.com</a></p>
+                <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
+                    Dec, 2014 – Mar, 2015
+                </p>
+            </section>
+            <section>
+                <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Zone Network</h3>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://zonenetwork.com">https://zonenetwork.com</a></p>
+                <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
+                    Aug, 2015 – Jan, 2016
+                </p>
+            </section>
+            <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">ISmileBecauseYouSmile</h3>
                 <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://ismilebecauseyousmile.org">https://ismilebecauseyousmile.org</a></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
@@ -376,7 +417,7 @@
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     Oct, 2020 – Dec, 2021
                 </p>
-            </section>-->
+            </section>
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Some Other Projects (Android)</h3>
                 <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast">

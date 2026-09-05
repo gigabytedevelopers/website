@@ -4,6 +4,72 @@ website: http://bit.ly/CometOTP_changelog
 
 # CometOTP
 
+## 7.0.0 (2026-09-05)
+### Breaking
+- CometOTP now requires Android 6.0 or later
+
+### New
+- Added an Otter.ai account thumbnail
+- Added Android 13+ notification permission support for backup notifications
+
+### Improvement
+- Updated CometOTP for Android 17 and newer Android platform requirements
+- Improved edge-to-edge layouts, system bar styling, and back navigation
+- Improved onboarding and backup screen state restoration
+- Improved account thumbnail matching for issuer names containing dots
+- Updated website, deep-link, and support email references
+- Updated Android libraries and build components
+
+### Fix
+- Improved authentication failure handling
+- Improved account thumbnail loading and error handling
+
+## 6.0.1 (2025-07-24)
+### Improvement
+- Modernized authentication result handling
+- Migrated backup dialogs to current AndroidX fragment APIs
+
+### Fix
+- Added safer handling for missing encrypted-backup signature results
+- Improved authentication and backup screen compatibility
+
+## 6.0.0 (2025-07-23)
+### New
+- Added account thumbnails for Asana, Bitget, BitGo, Busha, Bybit, ClickUp, Cowrywise, Fireblocks, Go54, Grey, Intercom, OnlyFans, OpenAI, Reloadly, Stake, STEPN, Truth Social, and Yahoo
+
+### Improvement
+- Updated Android compatibility through Android 16
+- Improved OTP URI, deep-link, and Custom Tabs handling
+- Improved account thumbnail lookup performance and null safety
+- Improved preference handling and general stability
+- Updated the Ubiquiti Networks account thumbnail mapping
+- Updated app dependencies and Android platform components
+
+### Fix
+- Fixed OTP URI generation and duplicate secret parameters
+- Fixed HOTP counter handling when editing accounts
+- Fixed floating action button icons not appearing
+- Improved the clear-cache screen on Android 6.0 and later
+- Corrected text in the Terms and Conditions
+
+## 5.7.0 (2023-03-15)
+### New
+- Added fast scrolling to the account list
+- Added account thumbnails for 500px, Algolia, Barter, Blacknight, Braintrust, CoinDCX, cPanel, Digitec, Fluid Finance, Gate.io, Geegpay, Keyhelp, Linus Tech Tips, Papaki, Pleroma, Plesk, RubyGems, Tildes, TradingView, Wazir, XDA Developers, and Xend Finance
+
+### Improvement
+- Added Android 13 support
+- Updated several existing account thumbnails
+- Improved null handling and general application stability
+- Updated app dependencies and Android platform components
+
+## 5.6.2.1 (2022-06-18)
+### Improvement
+- Updated app dependencies
+
+### Fix
+- Updated onboarding defaults to comply with Google Play policies
+
 ## 5.6.2 (2022-05-27T10:00:00)
 ### New
 - Added new account thumbnails

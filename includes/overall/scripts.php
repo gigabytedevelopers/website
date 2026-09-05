@@ -1,4 +1,4 @@
-<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery-3.2.0.min.js"></script>
 <script src="js/crum-mega-menu.js"></script>
 <script src="js/swiper.jquery.min.js"></script>
 <script src="js/theme-plugins.js"></script>

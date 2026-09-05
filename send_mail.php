@@ -1,6 +1,6 @@
 <?php
 global $_POST;
-$mail_to = 'support@gigabytedevelopersin.com'; //Your email here
+$mail_to = 'gigabytedevelopers@gmail.com'; //Your email here
 
 // Required fields
 $email = isset( $_POST['email'] ) ? strip_tags( trim( $_POST['email'] ) ) : '';

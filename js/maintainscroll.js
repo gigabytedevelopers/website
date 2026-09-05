@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
-    if (localStorage.getItem("website_page_scroll") != null) {
-        $(window).scrollTop(localStorage.getItem("website_page_scroll"));
+    if (localStorage.getItem("my_app_name_here-quote-scroll") != null) {
+        $(window).scrollTop(localStorage.getItem("my_app_name_here-quote-scroll"));
     }
 
     $(window).on("scroll", function() {
-        localStorage.setItem("website_page_scroll", $(window).scrollTop());
+        localStorage.setItem("my_app_name_here-quote-scroll", $(window).scrollTop());
     });
 
 });

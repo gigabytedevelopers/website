@@ -1039,7 +1039,7 @@
             }
 
             function _(e, t) {
-                for (var n, r = Object.keys(t), o = 0; o < r.length; o++) n = r[o], "__proto__" !== n && "constructor" !== n && "prototype" !== n && (e[n] = t[n]);
+                for (var n in t) e[n] = t[n];
                 return e
             }
 
@@ -1151,7 +1151,6 @@
             }
 
             function L(e, t, n, r, o) {
-                if ("__proto__" === t || "constructor" === t || "prototype" === t) return;
                 var i = new zr,
                     a = Object.getOwnPropertyDescriptor(e, t);
                 if (!a || !1 !== a.configurable) {
@@ -1192,7 +1191,7 @@
 
             function R(e, t) {
                 if (!t) return e;
-                for (var n, r, o, i = Object.keys(t), a = 0; a < i.length; a++) n = i[a], "__proto__" !== n && "constructor" !== n && "prototype" !== n && (r = e[n], o = t[n], Object.prototype.hasOwnProperty.call(e, n) && v(e, n) ? u(r) && u(o) && R(r, o) : P(e, n, o));
+                for (var n, r, o, i = Object.keys(t), a = 0; a < i.length; a++) n = i[a], r = e[n], o = t[n], v(e, n) ? u(r) && u(o) && R(r, o) : P(e, n, o);
                 return e
             }
 
@@ -4037,7 +4036,7 @@
         })(0, function() {
             "use strict";
             return function(e) {
-                return e.replace(/[<>]/g, "").replace(/[!\"#$%&'\(\)\*\+,\/:;<=>\?\@\[\\\]\^`\{\|\}~]/g, "").replace(/(\s|\.)/g, "-").toLowerCase()
+                return e.replace(/<(?:.|\n)*?>/gm, "").replace(/[!\"#$%&'\(\)\*\+,\/:;<=>\?\@\[\\\]\^`\{\|\}~]/g, "").replace(/(\s|\.)/g, "-").toLowerCase()
             }
         })
     }, function(e, t, n) {
