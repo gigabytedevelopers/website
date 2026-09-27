@@ -4,6 +4,13 @@ website: http://bit.ly/CometOTP_changelog
 
 # CometOTP
 
+## 8.1.1 (2026-09-27T19:00:00)
+### Improvement
+- The timer stays at the top of the screen while you search, as long as the search finds something.
+
+### Fix
+- tapping the clear (X) button in the search field now shows its feedback on the button instead of behind the field, and the OK button in password dialogs looks disabled until the password is long enough.
+
 ## 8.1.0 (2026-09-24T19:00:00)
 ### Improvement
 - The app is now written entirely in Kotlin.
