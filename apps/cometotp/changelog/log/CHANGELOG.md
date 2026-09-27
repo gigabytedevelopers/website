@@ -4,8 +4,16 @@ website: http://bit.ly/CometOTP_changelog
 
 # CometOTP
 
-## 8.0.0 (2026-09-22)
+## 8.1.0 (2026-09-24T19:00:00)
+### Improvement
+- The app is now written entirely in Kotlin.
 
+### Fix
+- CometOTP 8.1.0 is a reliability and security update.
+- CometOTP asks you to unlock again after Android closes it in the background, and no longer keeps your password or database key in saved screen state.
+- Fixed more than 70 bugs, including crashes in the intro, backup and password screens, backups that could be left half-written, and Steam accounts losing their settings.
+
+## 8.0.0 (2026-09-22T09:00:00)
 ### Breaking
 - The launcher icon is now supplied by a set of aliases so it can be changed from Settings. An
   existing CometOTP shortcut pinned to the home screen may need to be added again after updating.
@@ -56,7 +64,7 @@ website: http://bit.ly/CometOTP_changelog
 - Fixed a blank band across the cards while tokens were recalculated
 - Fixed the label size setting no longer reaching the token
 
-## 7.0.0 (2026-09-05)
+## 7.0.0 (2026-09-05T18:00:00)
 ### Breaking
 - CometOTP now requires Android 6.0 or later
 
@@ -76,7 +84,7 @@ website: http://bit.ly/CometOTP_changelog
 - Improved authentication failure handling
 - Improved account thumbnail loading and error handling
 
-## 6.0.1 (2025-07-24)
+## 6.0.1 (2025-07-24T20:00:00)
 ### Improvement
 - Modernized authentication result handling
 - Migrated backup dialogs to current AndroidX fragment APIs
@@ -85,7 +93,7 @@ website: http://bit.ly/CometOTP_changelog
 - Added safer handling for missing encrypted-backup signature results
 - Improved authentication and backup screen compatibility
 
-## 6.0.0 (2025-07-23)
+## 6.0.0 (2025-07-23T19:00:00)
 ### New
 - Added account thumbnails for Asana, Bitget, BitGo, Busha, Bybit, ClickUp, Cowrywise, Fireblocks, Go54, Grey, Intercom, OnlyFans, OpenAI, Reloadly, Stake, STEPN, Truth Social, and Yahoo
 
@@ -104,7 +112,7 @@ website: http://bit.ly/CometOTP_changelog
 - Improved the clear-cache screen on Android 6.0 and later
 - Corrected text in the Terms and Conditions
 
-## 5.7.0 (2023-03-15)
+## 5.7.0 (2023-03-15T19:00:00)
 ### New
 - Added fast scrolling to the account list
 - Added account thumbnails for 500px, Algolia, Barter, Blacknight, Braintrust, CoinDCX, cPanel, Digitec, Fluid Finance, Gate.io, Geegpay, Keyhelp, Linus Tech Tips, Papaki, Pleroma, Plesk, RubyGems, Tildes, TradingView, Wazir, XDA Developers, and Xend Finance
@@ -115,7 +123,7 @@ website: http://bit.ly/CometOTP_changelog
 - Improved null handling and general application stability
 - Updated app dependencies and Android platform components
 
-## 5.6.2.1 (2022-06-18)
+## 5.6.2.1 (2022-06-18T09:00:00)
 ### Improvement
 - Updated app dependencies
 
