@@ -1,0 +1,56 @@
+startapp.com, 144952039, DIRECT
+start.io, 144952039, DIRECT
+pubmatic.com, 157559, RESELLER, 5d62403b186f2ace
+yahoo.com, 1510636, RESELLER
+aol.com, 50987, RESELLER
+gothamads.com, 880, DIRECT, d9c86e5dec870222
+Peak226.com, 12401, DIRECT
+criteo.com, 180031, DIRECT
+smaato.com, 1100042823, RESELLER, 07bcf65f187117b4
+video.unrulymedia.com, 2458015955, DIRECT
+webeyemob.com, 70094, RESELLER
+selectmedia.asia, 606ee23ee3eb016f3811e9e4, DIRECT, e365c871a27c655d
+betweendigital.com, 42843, DIRECT
+pokkt.com, 7092, DIRECT, c45702d9311e25fd
+pubmatic.com, 156520, RESELLER, 5d62403b186f2ace
+spotxchange.com, 117872, RESELLER, 7842df1d2fe2db34
+spotx.tv, 117872, RESELLER, 7842df1d2fe2db34
+rhythmone.com, 2464975885, RESELLER, a670c89d4a324e47
+video.unrulymedia.com, 2464975885, RESELLER
+pubnative.net, 1007349, RESELLER, d641df8625486a7b
+Verve.com, 15503, RESELLER, 0c8f5958fc2d6270 #Verve
+Pubmatic.com, 160145, RESELLER, 5d62403b186f2ace
+appnexus.com, 8178, RESELLER, f5ab79cb980f11d1
+rubiconproject.com, 17328, RESELLER, 0bfd66d529a55807
+adcolony.com, 1efc6603710003ea, RESELLER, 1ad675c9de6b5176
+rhythmone.com, 4173858586, RESELLER, a670c89d4a324e47
+pubnative.net , 1007455, RESELLER, d641df8625486a7b
+engagebdr.com, 10252, RESELLER
+bidmachine.io, 55, RESELLER
+bidmachine.io, 59, RESELLER
+inmobi.com, f3924290136e4129a5c082ff982c3a58, RESELLER, 83e75a7ae333ca9d
+indexexchange.com, 191332, RESELLER, 50b1c356f2c5c8fc
+Rubiconproject.com, 15278, RESELLER, 0bfd66d529a55807
+hitapps.com, 8613985ec49eb8f757ae6439e879bb2a6784, RESELLER
+openx.com, 540679900, DIRECT, 6a698e2ec38604c6
+adcolony.com, 801e49d1be83b5f9, DIRECT, 1ad675c9de6b5176
+waardex.com, 113507, DIRECT
+152media.com, 152, DIRECT
+loopme.com, 11318, RESELLER, 6c8d5f95897a5a3b
+rubiconproject.com, 20744, RESELLER, 0bfd66d529a55807
+openx.com, 540298543, RESELLER, 6a698e2ec38604c6
+google.com, pub-4236520483129668, DIRECT, f08c47fec0942fa0
+onetag.com, 6049d2c92852238, DIRECT
+freewheel.tv, 1160817, RESELLER
+freewheel.tv, 1160929, RESELLER
+e-planning.net, dfe3c13594cd35a3, DIRECT, c1ba615865ed87b2
+improvedigital.com, 1556, RESELLER
+openx.com, 541031350, RESELLER, 6a698e2ec38604c6
+rubiconproject.com, 12186, RESELLER, 0bfd66d529a55807
+axonix.com, 56222, RESELLER
+pubmatic.com, 160233, RESELLER, 5d62403b186f2ace
+indexexchange.com, 194730, RESELLER
+pokkt.com, 7606, RESELLER, c45702d9311e25fd
+appads.in, 107606, RESELLER
+advertising.com, 28210, RESELLER
+ssp.logan.ai, LG8, RESELLER
