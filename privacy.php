@@ -59,7 +59,7 @@
                         Our Privacy Policy
                     </h1>
                     <p style="text-align: right">
-                        Last updated: <b>January 05, 2018</b>
+                        Last updated: <b>September 29, 2026</b>
                     </p>
                 </div>
             </div>
@@ -67,13 +67,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0">
-                <p>Gigabyte Developers Incorporated ("us", "we", or "our") operates the <b><i>https://www.gigabytedevelopersinc.com</i></b> website (the "Service").</p>
+                <p>Gigabyte Developers Incorporated ("us", "we", or "our") operates the <b><i>https://www.gigabytedevelopers.com</i></b> website (the "Service").</p>
 
                 <p>This page informs you of our policies regarding the collection, use and disclosure of Personal Information when you use our Service.</p>
 
                 <p>We will not use or share your information with anyone except as described in this Privacy Policy.</p>
 
-                <p>We use your Personal Information for providing and improving the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at <a href="https://www.gigabytedevelopersinc.com/terms" style="color: #0083ff;">https://www.gigabytedevelopersinc.com/terms</a></p>
+                <p>We use your Personal Information for providing and improving the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at <a href="https://www.gigabytedevelopers.com/terms" style="color: #0083ff;">https://www.gigabytedevelopers.com/terms</a></p>
 
 
                 <h2>Information Collection And Use</h2>
@@ -95,6 +95,22 @@
                 <p>We may employ third party companies and individuals to facilitate our Service, to provide the Service on our behalf, to perform Service-related services or to assist us in analyzing how our Service is used.</p>
 
                 <p>These third parties have access to your Personal Information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
+
+                <h2 id="cometotp">CometOTP</h2>
+
+                <p>This section applies to CometOTP, our two-factor authentication app for Android.</p>
+
+                <p><b>Your accounts stay on your phone.</b> The accounts you add to CometOTP, including their secret keys, are stored on your phone, encrypted. CometOTP has no server of ours to send them to, and we never receive them.</p>
+
+                <p><b>Backups.</b> Backups are only made when you ask for them: by hand, or by turning on Scheduled Backups or Auto Sync. You choose where they are saved. Automatic backups are always encrypted on your phone with your backup password before they are saved. A backup you make by hand can also be saved as unencrypted plain text or encrypted with OpenPGP, if you choose to.</p>
+
+                <p><b>Google Drive backups.</b> If you choose to save automatic backups to Google Drive, CometOTP asks Google for access only to the files and folders it creates in your Drive (the "drive.file" permission). It cannot see or change anything else in your Drive. Each backup is encrypted on your phone before it is uploaded and goes straight from your phone to your own Google Drive; it is never sent to us. You can disconnect Google Drive at any time under Backup &amp; Restore &gt; Scheduled Backups, or in your Google Account's security settings. Backups already in your Drive stay there until you delete them.</p>
+
+                <p>CometOTP's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" style="color: #0083ff;">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+                <p><b>Android backup.</b> If you turn on Android Sync, Android's own backup service stores CometOTP's settings and its encrypted database in your Google account, as it does for other apps. It is only available when your accounts are protected with your own password.</p>
+
+                <p><b>Camera.</b> The camera is only used to scan QR codes when you add an account. The images are read on your phone and are not stored or sent anywhere.</p>
 
                 <h2>Security</h2>
 
