@@ -3,14 +3,6 @@ Options -Indexes
 order allow,deny
 deny from all
 </Files>
-# Database dumps, data exports, logs and archives are never served, even when a deploy
-# uploads them into the web root.
-<FilesMatch "\.(sql|csv|log|zip|bak)$">
-order allow,deny
-deny from all
-</FilesMatch>
-# Nor is IDE or git metadata. (.well-known stays reachable for certificate validation.)
-RedirectMatch 404 /\.(git|idea|vscode)(/|$)
 RewriteEngine On
 # RewriteCond %{REQUEST_URI} !^/moved.php$ [NC]
 # RewriteRule ^(.*)$ /moved.php [R=301,L]
