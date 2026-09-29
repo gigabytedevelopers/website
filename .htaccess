@@ -3,15 +3,13 @@ Options -Indexes
 order allow,deny
 deny from all
 </Files>
-# Database dumps, data exports, logs and archives are never served, even when a deploy
-# uploads them into the web root.
-<FilesMatch "\.(sql|csv|log|zip|bak)$">
-order allow,deny
-deny from all
-</FilesMatch>
-# Nor is IDE or git metadata. (.well-known stays reachable for certificate validation.)
+# IDE and git metadata are hidden too. (.well-known stays reachable for certificate validation.)
 RedirectMatch 404 /\.(git|idea|vscode)(/|$)
 RewriteEngine On
+# Database dumps, data exports, logs and archives are never served, even when a deploy
+# uploads them into the web root. A rewrite rule rather than FilesMatch/Order: this LiteSpeed
+# host ignores Order/Deny, while mod_rewrite is known to work here.
+RewriteRule \.(sql|csv|log|zip|bak)$ - [F,NC,L]
 # RewriteCond %{REQUEST_URI} !^/moved.php$ [NC]
 # RewriteRule ^(.*)$ /moved.php [R=301,L]
 RewriteCond %{HTTPS} off
