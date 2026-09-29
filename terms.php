@@ -69,7 +69,7 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0">
                 <h2>Introduction</h2>
 
-                <p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, <b>Gigabyte Developers</b> accessible at <a href="https://www.gigabytedevelopersinc.com/terms" style="color: #0083ff;">https://www.gigabytedevelopersinc.com/terms</a></p>
+                <p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, <b>Gigabyte Developers</b> accessible at <a href="https://www.gigabytedevelopers.com/terms" style="color: #0083ff;">https://www.gigabytedevelopers.com/terms</a></p>
 
                 <p>These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website's Standard Terms and Conditions.</a></p>
 

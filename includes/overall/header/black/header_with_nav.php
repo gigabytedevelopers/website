@@ -26,7 +26,7 @@
 
                 <div class="contact-item">
                     <svg class="utouch-icon utouch-icon-letter"><use xlink:href="#utouch-icon-letter"></use></svg>
-                    <a href="mailto:support@gigabytedevelopersinc.com">Mail Support</a>
+                    <a href="mailto:support@gigabytedevelopers.com">Mail Support</a>
                 </div>
 
             </div>

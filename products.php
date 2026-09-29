@@ -101,13 +101,13 @@
 						</li>
 						<li>
 							<svg class="utouch-icon utouch-icon-checked"><use xlink:href="#utouch-icon-checked"></use></svg>
-							<a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.app.explorer" target="_blank">
+							<a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopers.app.explorer" target="_blank">
                                 FireFiles - All-in-One File Manager for Android
                             </a>
 						</li>
 						<li>
 							<svg class="utouch-icon utouch-icon-checked"><use xlink:href="#utouch-icon-checked"></use></svg>
-							<a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.app.CometOTP" target="_blank">
+							<a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopers.app.CometOTP" target="_blank">
                                 CometOTP - The leading Authenticator for Android
                             </a>
 						</li>
@@ -119,7 +119,7 @@
 						</li>
 						<li>
 							<svg class="utouch-icon utouch-icon-checked"><use xlink:href="#utouch-icon-checked"></use></svg>
-							<a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.apps.sonshub" target="_blank">
+							<a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopers.apps.sonshub" target="_blank">
                                 SonsHub Mobile - Latest Gospel, Music, Videos
                             </a>
 						</li>

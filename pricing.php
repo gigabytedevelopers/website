@@ -130,7 +130,7 @@
 							</div>
 
 							<div class="bg-pricing-content bg-green">
-								<a href="mailto:support@gigabytedevelopersinc.com?subject=I am interested in the Business Basic Starter Plan" class="h6 title">Let's Talk</a>
+								<a href="mailto:support@gigabytedevelopers.com?subject=I am interested in the Business Basic Starter Plan" class="h6 title">Let's Talk</a>
 							</div>
 
 						</div>
@@ -182,7 +182,7 @@
 							</div>
 
 							<div class="bg-pricing-content bg-pamaranch">
-								<a href="mailto:support@gigabytedevelopersinc.com?subject=I am interested in the Commercial Business Plan" class="h6 title">Let's Talk</a>
+								<a href="mailto:support@gigabytedevelopers.com?subject=I am interested in the Commercial Business Plan" class="h6 title">Let's Talk</a>
 							</div>
 
 						</div>
@@ -236,7 +236,7 @@
 							</div>
 
 							<div class="bg-pricing-content bg-red">
-								<a href="mailto:support@gigabytedevelopersinc.com?subject=I am interested in the Business Builder Plan" class="h6 title">Let's Talk</a>
+								<a href="mailto:support@gigabytedevelopers.com?subject=I am interested in the Business Builder Plan" class="h6 title">Let's Talk</a>
 							</div>
 
 						</div>
@@ -274,7 +274,7 @@
 
 								<p class="pricing-description">Beating your local competitors can make a huge difference for your business. Make sure your business shows up with Local SEO service pack.</p>
 
-								<a href="mailto:support@gigabytedevelopersinc.com?subject=I am interested in the Starter SEO" class="more-arrow">
+								<a href="mailto:support@gigabytedevelopers.com?subject=I am interested in the Starter SEO" class="more-arrow">
 									<span class="duration">Let's Talk</span>
 									<div class="btn-next">
 										<svg class="utouch-icon icon-hover utouch-icon-arrow-right-1"><use xlink:href="#utouch-icon-arrow-right-1"></use></svg>
@@ -298,7 +298,7 @@
 
 								<p class="pricing-description">Selling Products Online? Want to keep inventory moving? Sales SEO is the longterm strategy your business needs to keep your warehouse busy!</p>
 
-								<a href="mailto:support@gigabytedevelopersinc.com?subject=I am interested in the Professional SEO" class="more-arrow">
+								<a href="mailto:support@gigabytedevelopers.com?subject=I am interested in the Professional SEO" class="more-arrow">
 									<span class="duration1">Let's Talk</span>
 									<div class="btn-next">
 										<svg class="utouch-icon icon-hover utouch-icon-arrow-right-1"><use xlink:href="#utouch-icon-arrow-right-1"></use></svg>
@@ -322,7 +322,7 @@
 
 								<p class="pricing-description">Do you want to rank a service or product keyword at the top of your favorite Search Engine? National SEO is the strategy you need to get there.</p>
 
-								<a href="mailto:support@gigabytedevelopersinc.com?subject=I am interested in the Corporate SEO" class="more-arrow">
+								<a href="mailto:support@gigabytedevelopers.com?subject=I am interested in the Corporate SEO" class="more-arrow">
 									<span class="duration2">Let's Talk</span>
 									<div class="btn-next">
 										<svg class="utouch-icon icon-hover utouch-icon-arrow-right-1"><use xlink:href="#utouch-icon-arrow-right-1"></use></svg>
@@ -392,7 +392,7 @@
                                     </li>
 								</ul>
 
-								<a href="mailto:support@gigabytedevelopersinc.com?subject=I am interested in the Starter Software Development Package" class="btn btn--black btn--with-shadow">
+								<a href="mailto:support@gigabytedevelopers.com?subject=I am interested in the Starter Software Development Package" class="btn btn--black btn--with-shadow">
                                     Let's Talk
 								</a>
 
@@ -433,7 +433,7 @@
                                     </li>
                                 </ul>
 
-								<a href="mailto:support@gigabytedevelopersinc.com?subject=I am interested in the Ultimate Software Development Package" class="btn btn--orange btn--with-shadow">
+								<a href="mailto:support@gigabytedevelopers.com?subject=I am interested in the Ultimate Software Development Package" class="btn btn--orange btn--with-shadow">
                                     Let's Talk
 								</a>
 
@@ -473,7 +473,7 @@
                                     </li>
 								</ul>
 
-								<a href="mailto:support@gigabytedevelopersinc.com?subject=I am interested in the Premium Software Development Package" class="btn btn--black btn--with-shadow">
+								<a href="mailto:support@gigabytedevelopers.com?subject=I am interested in the Premium Software Development Package" class="btn btn--black btn--with-shadow">
                                     Let's Talk
 								</a>
 

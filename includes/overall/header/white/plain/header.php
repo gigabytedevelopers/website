@@ -109,7 +109,7 @@
                                         </div>
                                         <div class="product-item-content">
                                             <h6 class="title">Emoji Stickers<br>Emoji WhatsApp Stickers</h6>
-                                            <a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.apps.whatsapp.stickers" class="more-arrow">
+                                            <a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopers.apps.whatsapp.stickers" class="more-arrow">
                                                 <span>View Emoji Stickers</span>
                                                 <div class="btn-next">
                                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1"><use xlink:href="#utouch-icon-arrow-right-1"></use></svg>
@@ -128,7 +128,7 @@
                                         </div>
                                         <div class="product-item-content">
                                             <h6 class="title">FireFiles<br>Powerful File Manager</h6>
-                                            <a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.app.explorer" class="more-arrow">
+                                            <a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopers.app.explorer" class="more-arrow">
                                                 <span>View FireFiles</span>
                                                 <div class="btn-next">
                                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1"><use xlink:href="#utouch-icon-arrow-right-1"></use></svg>
@@ -147,7 +147,7 @@
                                         </div>
                                         <div class="product-item-content">
                                             <h6 class="title">CometOTP<br>2-Factor Authenticator</h6>
-                                            <a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.app.CometOTP" class="more-arrow">
+                                            <a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopers.app.CometOTP" class="more-arrow">
                                                 <span>View CometOTP</span>
                                                 <div class="btn-next">
                                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1"><use xlink:href="#utouch-icon-arrow-right-1"></use></svg>
@@ -166,7 +166,7 @@
                                         </div>
                                         <div class="product-item-content">
                                             <h6 class="title">SonsHub Mobile<br>Gospel Content Platform</h6>
-                                            <a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.apps.sonshub" class="more-arrow">
+                                            <a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopers.apps.sonshub" class="more-arrow">
                                                 <span>View SonsHub Mobile</span>
                                                 <div class="btn-next">
                                                     <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1"><use xlink:href="#utouch-icon-arrow-right-1"></use></svg>

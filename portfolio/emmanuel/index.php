@@ -92,7 +92,7 @@
                     </li>
                     <li>
                         <i class="mdi mdi-email mdi-18px"></i>
-                        <a href="mailto:emmanuel@gigabytedevelopersinc.com">nwokoma@gigabytedevelopersinc.com</a>
+                        <a href="mailto:emmanuel@gigabytedevelopers.com">nwokoma@gigabytedevelopers.com</a>
                     </li>
                     <li>
                         <i class="mdi mdi-github-circle mdi-18px"></i>
@@ -357,14 +357,14 @@
             </section>
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">CometOTP - OTP Authenticator app for Android</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.app.CometOTP">https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.app.CometOTP</a></p>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopers.app.CometOTP">https://play.google.com/store/apps/details?id=com.gigabytedevelopers.app.CometOTP</a></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     Nov 2017 – Present
                 </p>
             </section>
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">SonsHub Mobile</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.apps.sonshub">https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.apps.sonshub</a></p>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopers.apps.sonshub">https://play.google.com/store/apps/details?id=com.gigabytedevelopers.apps.sonshub</a></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     Jan 2019 – Jan 2021
                 </p>
@@ -392,7 +392,7 @@
             </section>
             <section>
                 <h3 class="mdl-typography--title mdl-typography--title mdl-color-text--indigo-500">Gigabyte Developers Incorporated</h3>
-                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://gigabytedevelopersinc.com">https://gigabytedevelopersinc.com</a></p>
+                <p class="mdl-typography--subhead mdl-typography--subhead-color-contrast"><a href="https://gigabytedevelopers.com">https://gigabytedevelopers.com</a></p>
                 <p class="mdl-typography--body-1 mdl-typography--body-1-color-contrast">
                     Dec, 2014 – Mar, 2015
                 </p>

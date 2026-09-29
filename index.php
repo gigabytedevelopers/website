@@ -228,7 +228,7 @@
 								</p>
 							</div>
 
-							<a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.app.explorer" target="_blank" class="btn-next">
+							<a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopers.app.explorer" target="_blank" class="btn-next">
 								<svg class="utouch-icon icon-hover utouch-icon-arrow-right-1"><use xlink:href="#utouch-icon-arrow-right-1"></use></svg>
 								<svg class="utouch-icon utouch-icon-arrow-right1"><use xlink:href="#utouch-icon-arrow-right1"></use></svg>
 							</a>
@@ -250,7 +250,7 @@
 								</p>
 							</div>
 
-							<a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopersinc.app.CometOTP" target="_blank" class="btn-next">
+							<a href="https://play.google.com/store/apps/details?id=com.gigabytedevelopers.app.CometOTP" target="_blank" class="btn-next">
 								<svg class="utouch-icon icon-hover utouch-icon-arrow-right-1"><use xlink:href="#utouch-icon-arrow-right-1"></use></svg>
 								<svg class="utouch-icon utouch-icon-arrow-right1"><use xlink:href="#utouch-icon-arrow-right1"></use></svg>
 							</a>
@@ -271,7 +271,7 @@
                                 </p>
                             </div>
 
-                            <a href="https://play.google.com/store/apps/details?id=com.cuid.gigabytedevelopersinc.splanner" target="_blank" class="btn-next">
+                            <a href="https://play.google.com/store/apps/details?id=com.cuid.gigabytedevelopers.splanner" target="_blank" class="btn-next">
                                 <svg class="utouch-icon icon-hover utouch-icon-arrow-right-1"><use xlink:href="#utouch-icon-arrow-right-1"></use></svg>
                                 <svg class="utouch-icon utouch-icon-arrow-right1"><use xlink:href="#utouch-icon-arrow-right1"></use></svg>
                             </a>
@@ -975,7 +975,7 @@
 									<div class="author-info-wrap" data-swiper-parallax="-100">
 
 										<div class="author-info">
-											<a href="https://www.sitejabber.com/reviews/gigabytedevelopersinc.com#2" target="_blank" class="h6 author-name">Igweka Emeka (Emskaro)</a>
+											<a href="https://www.sitejabber.com/reviews/gigabytedevelopers.com#2" target="_blank" class="h6 author-name">Igweka Emeka (Emskaro)</a>
 											<div class="author-company">Student, 23 years old</div>
 										</div>
 
@@ -995,7 +995,7 @@
 									<div class="author-info-wrap" data-swiper-parallax="-100">
 
 										<div class="author-info">
-											<a href="https://www.sitejabber.com/reviews/gigabytedevelopersinc.com#4" target="_blank" class="h6 author-name">Bedav .R</a>
+											<a href="https://www.sitejabber.com/reviews/gigabytedevelopers.com#4" target="_blank" class="h6 author-name">Bedav .R</a>
 											<div class="author-company">Student, 23 years old</div>
 										</div>
 
