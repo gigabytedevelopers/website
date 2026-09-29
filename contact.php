@@ -104,7 +104,7 @@
 					</div>
 					<div class="contact-item display-flex">
 						<svg class="utouch-icon utouch-icon-message"><use xlink:href="#utouch-icon-message"></use></svg>
-						<a href="#" class="info">support@gigabytedevelopersinc.com</a>
+						<a href="#" class="info">support@gigabytedevelopers.com</a>
 					</div>
 
 					<a href="#" class="btn btn--grey btn--with-shadow js-message-popup cd-nav-trigger">
