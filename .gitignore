@@ -29,9 +29,6 @@ verify.php
 
 /js/payment.js
 /verify.php
-branch_structure.json
-temp_auto_push.bat
-temp_interactive_push.bat
 .gitignore
 
 # Files the host and Windows create on the server
